@@ -46,10 +46,7 @@
 					},
 					"events": {
 						"OnTrue": {
-							"SetTrue": [
-								"030294ff09a17fb0",
-								"7a75eb6a6c21f6a6"
-							]
+							"SetTrue": ["030294ff09a17fb0", "7a75eb6a6c21f6a6"]
 						}
 					}
 				}

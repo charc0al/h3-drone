@@ -1,29 +1,21 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.2.0",
+	"version": "1.0.0",
 	"id": "Notex.Drone",
 	"name": "Drone",
 	"description": "A flyable drone.",
-	"authors": [
-		"Notex"
-	],
+	"authors": ["Notex"],
 	"options": [
 		{
 			"name": "Experimental - NPC Transport",
 			"tooltip": "Ability to grab and drop singular or multiple NPCs",
 			"type": "checkbox",
 			"enabledByDefault": false,
-			"contentFolders": [
-				"experimental_modes/npc_transport"
-			]
+			"contentFolders": ["experimental_modes/npc_transport"]
 		}
 	],
-	"contentFolders": [
-		"content"
-	],
-	"blobsFolders": [
-		"blobs"
-	],
+	"contentFolders": ["content"],
+	"blobsFolders": ["blobs"],
 	"dependencies": [
 		"009851E0493468F8",
 		"005C71048D8DAA9D",
@@ -187,12 +179,7 @@
 		"003E117C597CE3F2": "UI_PROP_GADGET_DRONE_PICKUP_NPC",
 		"00DE86E31F78986D": "UI_PROP_GADGET_DRONE_DROP_NPC"
 	},
-	"requirements": [
-		[
-			"Notex.SimpleKeyEventHelper",
-			">=1.1.0"
-		]
-	],
+	"requirements": [["Notex.SimpleKeyEventHelper", ">=1.1.0"]],
 	"frameworkVersion": "2.33.35",
 	"updateCheck": "https://github.com/NotexMods/h3-drone/releases/latest/download/updates.json"
 }

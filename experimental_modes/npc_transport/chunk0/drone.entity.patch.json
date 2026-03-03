@@ -10,16 +10,10 @@
 						"m_States",
 						[
 							{
-								"AddItemAfter": [
-									"cafe1cd21e6a5817",
-									"cafe336f30dc5e59"
-								]
+								"AddItemAfter": ["cafe1cd21e6a5817", "cafe336f30dc5e59"]
 							},
 							{
-								"AddItemAfter": [
-									"cafe336f30dc5e59",
-									"cafe7d4b32d6c5e5"
-								]
+								"AddItemAfter": ["cafe336f30dc5e59", "cafe7d4b32d6c5e5"]
 							}
 						]
 					]

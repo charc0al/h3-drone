@@ -1,1 +1,24 @@
-{"customPaths":["[assembly:/_pro/design/items/prop_notex_runtimes.template?/prop_gadget_drone_runtime.entitytemplate].pc_entitytemplate","[assembly:/_pro/design/items/prop_notex_runtimes.template?/prop_gadget_drone_runtime.entitytemplate].pc_entityblueprint","[assembly:/_pro/design/items/prop_notex_runtimes.template?/itemart_drone.entitytemplate].pc_entitytemplate","[assembly:/_pro/design/items/prop_notex_runtimes.template?/itemart_drone.entitytemplate].pc_entityblueprint","[assembly:/_pro/environment/geometry/props/gadgets/drone_a.wl2?/drone_a.prim].pc_entitytype","[assembly:/_pro/environment/geometry/props/gadgets/drone_a.wl2?/drone_a.prim].pc_prim","[assembly:/_pro/environment/geometry/props/gadgets/drone_a.wl2?/drone_a.prim].pc_coll","[assembly:/_pro/ui/common/icons_inventoryitems/item_left_946c60df-6fae-4abc-af6f-6bd7b2d28126_0.png].pc_gfx","[assembly:/templates/aspectdummy.aspect]([assembly:/_pro/environment/geometry/props/gadgets/drone_a.wl2?/drone_a.prim].entitytype,[modules:/zgeomscalesaveaspect.class].entitytype).pc_entitytype","[assembly:/_pro/design/items/prop_notex_runtimes.template?/prop_remote_gadget_drone.entitytemplate].pc_entitytemplate","[assembly:/_pro/design/items/prop_notex_runtimes.template?/prop_remote_gadget_drone.entitytemplate].pc_entityblueprint","[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_name.sweetline].pc_sweetline","[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_change_camera.sweetline].pc_sweetline","[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_trigger_payload.sweetline].pc_sweetline","[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_drop_payload.sweetline].pc_sweetline","[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_boost.sweetline].pc_sweetline","[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_trigger_emp.sweetline].pc_sweetline","[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_pickup_npc.sweetline].pc_sweetline","[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_drop_npc.sweetline].pc_sweetline","[assembly:/ui/data/menu3/map/drone_mod_tracker_data.json].pc_json"]}
+{
+	"customPaths": [
+		"[assembly:/_pro/design/items/prop_notex_runtimes.template?/prop_gadget_drone_runtime.entitytemplate].pc_entitytemplate",
+		"[assembly:/_pro/design/items/prop_notex_runtimes.template?/prop_gadget_drone_runtime.entitytemplate].pc_entityblueprint",
+		"[assembly:/_pro/design/items/prop_notex_runtimes.template?/itemart_drone.entitytemplate].pc_entitytemplate",
+		"[assembly:/_pro/design/items/prop_notex_runtimes.template?/itemart_drone.entitytemplate].pc_entityblueprint",
+		"[assembly:/_pro/environment/geometry/props/gadgets/drone_a.wl2?/drone_a.prim].pc_entitytype",
+		"[assembly:/_pro/environment/geometry/props/gadgets/drone_a.wl2?/drone_a.prim].pc_prim",
+		"[assembly:/_pro/environment/geometry/props/gadgets/drone_a.wl2?/drone_a.prim].pc_coll",
+		"[assembly:/_pro/ui/common/icons_inventoryitems/item_left_946c60df-6fae-4abc-af6f-6bd7b2d28126_0.png].pc_gfx",
+		"[assembly:/templates/aspectdummy.aspect]([assembly:/_pro/environment/geometry/props/gadgets/drone_a.wl2?/drone_a.prim].entitytype,[modules:/zgeomscalesaveaspect.class].entitytype).pc_entitytype",
+		"[assembly:/_pro/design/items/prop_notex_runtimes.template?/prop_remote_gadget_drone.entitytemplate].pc_entitytemplate",
+		"[assembly:/_pro/design/items/prop_notex_runtimes.template?/prop_remote_gadget_drone.entitytemplate].pc_entityblueprint",
+		"[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_name.sweetline].pc_sweetline",
+		"[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_change_camera.sweetline].pc_sweetline",
+		"[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_trigger_payload.sweetline].pc_sweetline",
+		"[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_drop_payload.sweetline].pc_sweetline",
+		"[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_boost.sweetline].pc_sweetline",
+		"[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_trigger_emp.sweetline].pc_sweetline",
+		"[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_pickup_npc.sweetline].pc_sweetline",
+		"[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_drop_npc.sweetline].pc_sweetline",
+		"[assembly:/ui/data/menu3/map/drone_mod_tracker_data.json].pc_json"
+	]
+}

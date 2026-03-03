@@ -6,4 +6,4 @@ A flyable drone.
 
 ---
 
-`Notex.Drone` v0.2.0, by Notex. This README was automatically generated from the mod's manifest.
+`Notex.Drone` v1.0.0, by Notex. This README was automatically generated from the mod's manifest.
