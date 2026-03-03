@@ -1,0 +1,153 @@
+{
+	"tempHash": "00F19E3EFC56778A",
+	"tbluHash": "0088037C247B6B3C",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafebfd7c00219f8",
+				{
+					"parent": "ef431ef4342ff5d8",
+					"name": "Drone explosion",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe86a595e67c09",
+				{
+					"parent": "cafebfd7c00219f8",
+					"name": "ItemKeywordProxy",
+					"factory": "[modules:/zitemkeywordproxyentity.class].pc_entitytype",
+					"blueprint": "[modules:/zitemkeywordproxyentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafed9a006310896",
+				{
+					"parent": "cafebfd7c00219f8",
+					"name": "KeywordCondition_Drone_ItemStashed",
+					"factory": "[modules:/zkeywordcondition.class].pc_entitytype",
+					"blueprint": "[modules:/zkeywordcondition.class].pc_entityblueprint",
+					"properties": {
+						"m_rRequirements": {
+							"type": "SEntityTemplateReference",
+							"value": "cafec7205290364f",
+							"postInit": true
+						},
+						"m_rTarget": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe86a595e67c09",
+							"postInit": true
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetTrue": [
+								"030294ff09a17fb0",
+								"7a75eb6a6c21f6a6"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafec7205290364f",
+				{
+					"parent": "cafebfd7c00219f8",
+					"name": "Keyword_Drone_ItemStashed",
+					"factory": "[modules:/zkeywordentity.class].pc_entitytype",
+					"blueprint": "[modules:/zkeywordentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sKeyword": {
+							"type": "ZString",
+							"value": "Drone_ItemStashed"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7ac34ca82593",
+				{
+					"parent": "cafebfd7c00219f8",
+					"name": "EVR_Drone_Payload_TriggerExplosion",
+					"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe86d48c1f08a3"
+						}
+					},
+					"events": {
+						"EventReceived": { "Get": ["cafed9a006310896"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe86d48c1f08a3",
+				{
+					"parent": "cafe7ac34ca82593",
+					"name": "Token_Drone_Payload_TriggerExplosion",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "Drone_Payload_TriggerExplosion"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeda7763d19219",
+				{
+					"parent": "cafebfd7c00219f8",
+					"name": "EVR_Drone_Payload_EntityRef",
+					"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_zentityref.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_zentityref.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafebd4e23d8f33f"
+						}
+					},
+					"events": {
+						"EventReceived": {
+							"SetItem": ["cafe86a595e67c09"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafebd4e23d8f33f",
+				{
+					"parent": "cafeda7763d19219",
+					"name": "Token_Drone_Payload_EntityRef",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "Drone_Payload_EntityRef"
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

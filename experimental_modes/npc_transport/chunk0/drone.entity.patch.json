@@ -1,0 +1,31 @@
+{
+	"tempHash": "0069B27FB7BCBB98",
+	"tbluHash": "0022DA52D29E5A6C",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"cafe6700ed05acd1",
+				{
+					"PatchArrayPropertyValue": [
+						"m_States",
+						[
+							{
+								"AddItemAfter": [
+									"cafe1cd21e6a5817",
+									"cafe336f30dc5e59"
+								]
+							},
+							{
+								"AddItemAfter": [
+									"cafe336f30dc5e59",
+									"cafe7d4b32d6c5e5"
+								]
+							}
+						]
+					]
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

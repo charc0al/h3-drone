@@ -1,0 +1,220 @@
+{
+	"tempHash": "004A146F1908223F",
+	"tbluHash": "007D2A007EFDAC6E",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafe3af47b7c5123",
+				{
+					"parent": "3804e5a8e5011175",
+					"name": "VolumeTriggerListener_Drone",
+					"factory": "[modules:/zvolumetriggerlistenerentity.class].pc_entitytype",
+					"blueprint": "[modules:/zvolumetriggerlistenerentity.class].pc_entityblueprint",
+					"properties": {
+						"m_rEnableCondition": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe82b4327dd91a"
+						},
+						"m_TriggerEntities": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["cafec936d3fee215"],
+							"postInit": true
+						},
+						"m_Boxes": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["fb1e7ff7b867b81b"],
+							"postInit": true
+						},
+						"m_TriggerOnHitman": {
+							"type": "bool",
+							"value": true
+						},
+						"m_TriggerOnActorAlive": {
+							"type": "bool",
+							"value": true
+						},
+						"m_TriggerOnActorDead": {
+							"type": "bool",
+							"value": true
+						},
+						"m_TriggerOnActorPacified": {
+							"type": "bool",
+							"value": true
+						},
+						"m_TriggerOnThrownItem": {
+							"type": "bool",
+							"value": true
+						},
+						"m_TriggerOnItem": {
+							"type": "bool",
+							"value": true
+						},
+						"m_TriggerSpatials": {
+							"type": "bool",
+							"value": true
+						},
+						"m_TriggerOnOverlap": {
+							"type": "bool",
+							"value": true
+						},
+						"m_bExplosionBlocker": {
+							"type": "bool",
+							"value": true
+						}
+					},
+					"events": {
+						"OnTrue": { "SetTrue": ["cafe228637764158"] },
+						"OnFalse": { "SetFalse": ["cafe228637764158"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafea6c64ba396b4",
+				{
+					"parent": "cafe3af47b7c5123",
+					"name": "Keyword_GADGET_DRONE",
+					"factory": "[modules:/zkeywordentity.class].pc_entitytype",
+					"blueprint": "[modules:/zkeywordentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sKeyword": {
+							"type": "ZString",
+							"value": "GADGET_DRONE"
+						},
+						"m_aHolders": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [],
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe228637764158",
+				{
+					"parent": "cafe3af47b7c5123",
+					"name": "VB_NearDrone",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": false }
+					},
+					"events": {
+						"OnFalse": { "Poll": ["0a6fb798bf21214e"] },
+						"OnTrue": { "Poll": ["a256d762b59cff3b"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe78e50ddc6e87",
+				{
+					"parent": "cafe3af47b7c5123",
+					"name": "EVR_EventChannel_DroneInPhysicsWorld",
+					"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_bool.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_bool.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafec6af28db641f",
+							"postInit": true
+						}
+					},
+					"events": {
+						"EventReceived": {
+							"SetValue": ["cafe82b4327dd91a"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafec6af28db641f",
+				{
+					"parent": "cafe78e50ddc6e87",
+					"name": "Token_DroneInPhysicsWorld",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "EventChannel_DroneInPhysicsWorld"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe82b4327dd91a",
+				{
+					"parent": "cafe3af47b7c5123",
+					"name": "VB_DroneInPhysicsWorld",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": false }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafec936d3fee215",
+				{
+					"parent": "cafe3af47b7c5123",
+					"name": "VolumeTriggerEntity_Drone",
+					"factory": "[modules:/zvolumetriggerentity.class].pc_entitytype",
+					"blueprint": "[modules:/zvolumetriggerentity.class].pc_entityblueprint",
+					"properties": {
+						"m_rKeywords": {
+							"type": "SEntityTemplateReference",
+							"value": "cafea6c64ba396b4"
+						},
+						"m_TypeHitman": { "type": "bool", "value": false },
+						"m_TypeActorAlive": {
+							"type": "bool",
+							"value": true
+						},
+						"m_TypeActorDead": {
+							"type": "bool",
+							"value": true
+						},
+						"m_TypeActorPacified": {
+							"type": "bool",
+							"value": true
+						},
+						"m_TypeItem": { "type": "bool", "value": true },
+						"m_TypeExplodeableItem": {
+							"type": "bool",
+							"value": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe860c54e115fc",
+				{
+					"parent": "cafe228637764158",
+					"name": "NotNearDrone",
+					"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+					"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+					"properties": {
+						"m_rCondition": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe228637764158"
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

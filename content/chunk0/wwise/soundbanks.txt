@@ -1,0 +1,1 @@
+0091B26476B353C0.WBNK,[assembly:/sound/wwise/exportedwwisedata/SoundBanks/Notex/Gadget_Drone.wwisesoundbank].pc_wwisebank

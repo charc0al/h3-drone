@@ -1,0 +1,18 @@
+{
+	"WorldTransform": "$.spatial_transform",
+	"legend_data": {
+		"category": "objective",
+		"id": "$.Objective.Properties.Id",
+		"legend_visiblity": true,
+		"displayaskill": "$.Objective.Properties.DisplayAsKill"
+	},
+	"show-info": { "data": "$.", "type": "objective" },
+	"onhover": {
+		"show-map-reticle-legend": {
+			"header": "$loc UI_PROP_GADGET_DRONE_NAME",
+			"title": "$expand $.Objective.Properties.BriefingName",
+			"typeicon": "objective"
+		}
+	},
+	"unhover": { "show-map-reticle-legend": {} }
+}

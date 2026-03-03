@@ -1,0 +1,410 @@
+{
+	"tempHash": "004F327A42B01C42",
+	"tbluHash": "00CA2362445D0EAE",
+	"rootEntity": "35c0f09c4f596c28",
+	"entities": {
+		"c45d2bb9ebcd1268": {
+			"parent": "35c0f09c4f596c28",
+			"name": "SoundSetup_Item02",
+			"factory": "[assembly:/templates/itemtemplates/item_soundsetup.template?/soundsetup_item.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/itemtemplates/item_soundsetup.template?/soundsetup_item.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
+						"position": { "x": 0.0, "y": 0.0, "z": 0.0 }
+					}
+				},
+				"PropEquipped_Sound": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/sound/wwise/exportedwwisedata/events/item_events/item_equip_unequip/equip/play_fol_item_equip_generic_solid.wwiseevent].pc_wwisebank",
+						"flag": "5F"
+					}
+				},
+				"PropUnEquipped_Sound": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/sound/wwise/exportedwwisedata/events/item_events/item_equip_unequip/unequip/play_fol_item_unequip_generic_solid.wwiseevent].pc_wwisebank",
+						"flag": "5F"
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "03dbf12b653e7e07",
+					"postInit": true
+				},
+				"m_eidParent1": {
+					"type": "SEntityTemplateReference",
+					"value": "03dbf12b653e7e07",
+					"postInit": true
+				},
+				"m_rHolder": {
+					"type": "SEntityTemplateReference",
+					"value": "03dbf12b653e7e07",
+					"postInit": true
+				},
+				"m_ObstructionShapeRoot": {
+					"type": "SEntityTemplateReference",
+					"value": "03dbf12b653e7e07",
+					"postInit": true
+				}
+			},
+			"subsets": { "AudioEmitters": ["35c0f09c4f596c28"] }
+		},
+		"5d314b0680ddffff": {
+			"parent": "35c0f09c4f596c28",
+			"name": "ItemHelpers_GripPose_Remote_Detonator",
+			"factory": "[assembly:/_pro/design/gamecore/itemhelpers_grippose.template?/itemhelpers_grippose_remote_detonator.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/itemhelpers_grippose.template?/itemhelpers_grippose_remote_detonator.entitytemplate].pc_entityblueprint"
+		},
+		"03dbf12b653e7e07": {
+			"parent": "35c0f09c4f596c28",
+			"name": "ItemArt_Remote_Detonator_A",
+			"factory": "[assembly:/_pro/items/templates/ica/remote_detonator_a.template?/itemart_remote_detonator_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/items/templates/ica/remote_detonator_a.template?/itemart_remote_detonator_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
+						"position": {
+							"x": 0.7098199725151062,
+							"y": -1.8774490356445312,
+							"z": 0.4848560094833374
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": null,
+					"postInit": true
+				}
+			}
+		},
+		"de2b4112d43d9ca5": {
+			"parent": "35c0f09c4f596c28",
+			"name": "ItemCoreNoPhys",
+			"factory": "[assembly:/_pro/design/gamecore/itemcore.template?/itemcorenophys.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/itemcore.template?/itemcorenophys.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rGeomentity": {
+					"type": "SEntityTemplateReference",
+					"value": "03dbf12b653e7e07"
+				},
+				"m_aSubactions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe06ce98eff2b9"]
+				},
+				"m_PosHandAttach": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "03dbf12b653e7e07",
+						"externalScene": null,
+						"exposedEntity": "HandAttacherSpatial"
+					}
+				},
+				"m_PosPlacementAttach": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "03dbf12b653e7e07",
+						"externalScene": null,
+						"exposedEntity": "PropHelper_Item_Placement"
+					}
+				},
+				"m_pVariationResource": {
+					"type": "SEntityTemplateReference",
+					"value": "5d314b0680ddffff"
+				},
+				"m_PlacementVolume": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "03dbf12b653e7e07",
+						"externalScene": null,
+						"exposedEntity": "PlacementVolume"
+					}
+				},
+				"m_rVisibleInInventory": {
+					"type": "SEntityTemplateReference",
+					"value": "cafec1158266c9fb"
+				}
+			},
+			"events": {
+				"OnEquip": { "Item_Equipped": ["c45d2bb9ebcd1268"] },
+				"OnUnEquip": { "Item_UnEquipped": ["c45d2bb9ebcd1268"] },
+				"OnPlaced": { "ItemPlaced": ["c45d2bb9ebcd1268"] },
+				"OnDrop": { "OnDrop_MixingEvent": ["c45d2bb9ebcd1268"] },
+				"OnThrown": {
+					"OnThrown_MixingEvent": ["c45d2bb9ebcd1268"]
+				}
+			},
+			"subsets": { "Replicable": ["35c0f09c4f596c28"] }
+		},
+		"35c0f09c4f596c28": {
+			"parent": null,
+			"name": "Prop_Remote_Gadget_Drone",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
+						"position": {
+							"x": 0.7098199725151062,
+							"y": -1.8774490356445312,
+							"z": 0.4848560094833374
+						}
+					}
+				}
+			},
+			"propertyAliases": {
+				"Kinematic": [
+					{
+						"originalProperty": "Kinematic",
+						"originalEntity": "de2b4112d43d9ca5"
+					}
+				],
+				"m_bStartKinematic": [
+					{
+						"originalProperty": "m_bStartKinematic",
+						"originalEntity": "de2b4112d43d9ca5"
+					}
+				],
+				"m_bStartPhysical": [
+					{
+						"originalProperty": "m_bStartPhysical",
+						"originalEntity": "de2b4112d43d9ca5"
+					}
+				],
+				"m_bStartVisible": [
+					{
+						"originalProperty": "m_bStartVisible",
+						"originalEntity": "de2b4112d43d9ca5"
+					}
+				],
+				"m_eidParent": [
+					{
+						"originalProperty": "m_eidParent",
+						"originalEntity": "03dbf12b653e7e07"
+					}
+				],
+				"m_mTransform": [
+					{
+						"originalProperty": "m_mTransform",
+						"originalEntity": "03dbf12b653e7e07"
+					}
+				]
+			},
+			"exposedInterfaces": {
+				"ZHM5Item": "de2b4112d43d9ca5",
+				"IDynamicPhysics": "03dbf12b653e7e07",
+				"IItem": "de2b4112d43d9ca5",
+				"ZGeomEntity": "03dbf12b653e7e07",
+				"IPhysicsAccessor": "03dbf12b653e7e07",
+				"ZSpatialEntity": "03dbf12b653e7e07",
+				"IItemBase": "de2b4112d43d9ca5"
+			}
+		},
+		"cafe06ce98eff2b9": {
+			"parent": "35c0f09c4f596c28",
+			"name": "Interaction_Subaction",
+			"factory": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_subaction.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_subaction.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_eActionType": {
+					"type": "EActionType",
+					"value": "AT_USE_QUICK"
+				},
+				"m_RuntimeNetworkResourceID": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/animationnetworks/hitman01/contextactions/hm_remote_activate_detonator.aln].pc_rtn",
+						"flag": "9F"
+					}
+				},
+				"m_bShowPromptInWorld": { "type": "bool", "value": false },
+				"m_bCanBeOperatedFromAnyAngle": {
+					"type": "bool",
+					"value": true
+				},
+				"m_sPromptText": {
+					"type": "ZString",
+					"value": "Control drone"
+				},
+				"m_sPromptTextPassive": {
+					"type": "ZString",
+					"value": "\n      "
+				},
+				"m_bCanBeOperatedWithItemsInHand": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bUseAnimlayer": { "type": "bool", "value": false },
+				"m_nAnimlayerTime": {
+					"type": "float32",
+					"value": 1.1200000047683716
+				},
+				"m_bInterruptibleAction": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bIsIllegal": { "type": "bool", "value": false },
+				"m_bIsLargeScale": { "type": "bool", "value": true },
+				"m_bIsSevere": { "type": "bool", "value": true },
+				"m_rPromptDescriptionTextResource": {
+					"type": "ZRuntimeResourceID",
+					"value": null
+				},
+				"m_ConditionList_Visible": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "de2b4112d43d9ca5",
+							"externalScene": null,
+							"exposedEntity": "IsEquipped"
+						}
+					],
+					"postInit": true
+				}
+			},
+			"events": {
+				"Completed": { "TransmitEvent": ["cafe544691881c07"] }
+			}
+		},
+		"cafe544691881c07": {
+			"parent": "35c0f09c4f596c28",
+			"name": "EventChannelTransmitter_Void",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bEnabled": { "type": "bool", "value": true },
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe3139a9cfcfe7"
+				}
+			}
+		},
+		"cafe3139a9cfcfe7": {
+			"parent": "35c0f09c4f596c28",
+			"name": "Token_ITEM_REMOTE_DRONE",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "ITEM_REMOTE_DRONE"
+				}
+			}
+		},
+		"cafe184af1f80fc1": {
+			"parent": "35c0f09c4f596c28",
+			"name": "Keyword_ITEM_REMOTE_DETONATOR",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_remote_detonator.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_remote_detonator.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["03dbf12b653e7e07"]
+				}
+			}
+		},
+		"cafe99ae482d9ca5": {
+			"parent": "35c0f09c4f596c28",
+			"name": "EVR_DroneDestroyed",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_bool.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_bool.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe884a42c535db",
+					"postInit": true
+				}
+			},
+			"events": {
+				"OnTrue": {
+					"DestroyItem": ["de2b4112d43d9ca5"],
+					"SetVisible": [
+						{
+							"ref": "03dbf12b653e7e07",
+							"value": { "type": "bool", "value": false }
+						}
+					]
+				}
+			}
+		},
+		"cafe884a42c535db": {
+			"parent": "cafe99ae482d9ca5",
+			"name": "Token_DroneDestroyed",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "EventChannel_DroneDestroyed"
+				}
+			}
+		},
+		"cafe1f2beabcadb3": {
+			"parent": "35c0f09c4f596c28",
+			"name": "Keyword_ITEMRULE_LEGAL",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_itemrule_legal.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_itemrule_legal.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["03dbf12b653e7e07"],
+					"postInit": true
+				}
+			}
+		},
+		"cafe805999f16959": {
+			"parent": "35c0f09c4f596c28",
+			"name": "EVR_EventChannel_DroneInPhysicsWorld",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_bool.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_bool.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe5417cb7dc2bd",
+					"postInit": true
+				}
+			},
+			"events": {
+				"EventReceived": { "SetValue": ["cafec1158266c9fb"] }
+			}
+		},
+		"cafe5417cb7dc2bd": {
+			"parent": "cafe805999f16959",
+			"name": "Token_DroneInPhysicsWorld",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "EventChannel_DroneInPhysicsWorld"
+				}
+			}
+		},
+		"cafec1158266c9fb": {
+			"parent": "35c0f09c4f596c28",
+			"name": "VB_DroneInPhysicsWorld",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}

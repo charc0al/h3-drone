@@ -1,0 +1,12 @@
+006CCE318711D4BB.TEXT,[assembly:/_pro/environment/textures/drone_body/material.texture?/diffuse.tex](ascolormap).pc_tex
+0001830FB8539BED.TEXD,[assembly:/_pro/environment/textures/drone_body/material.texture?/diffuse.tex](ascolormap).pc_mipblock1
+0053A0A09F0E8FA6.TEXT,[assembly:/_pro/environment/textures/drone_body/material.texture?/normal.tex](asnormalmap).pc_tex
+00249200CD4ACF94.TEXD,[assembly:/_pro/environment/textures/drone_body/material.texture?/normal.tex](asnormalmap).pc_mipblock1
+003D7CB0D0511CE9.TEXT,[assembly:/_pro/environment/textures/drone_body/material.texture?/specular.tex](ascolormap).pc_tex
+003A264C97D7F793.TEXD,[assembly:/_pro/environment/textures/drone_body/material.texture?/specular.tex](ascolormap).pc_mipblock1
+00AC88889414A46D.MATI,[assembly:/_pro/environment/materials/drone_body/material.mi].pc_mi
+0011FCB7F0138D80.MATT,[assembly:/_pro/environment/materials/drone_body/material.mi].pc_entitytype
+00472FCB7A9275C4.MATB,[assembly:/_pro/environment/materials/drone_body/material.mi].pc_entityblueprint
+0018B6277015A452.TEMP,[assembly:/_pro/environment/geometry/drone_body/drone_body.prim].pc_entitytype
+009A615A27046CAB.PRIM,[assembly:/_pro/environment/materials/drone_body/drone_body.prim].pc_prim
+006D4D61E91B5362.ALOC,[assembly:/_pro/environment/materials/drone_body/drone_body.prim].pc_coll

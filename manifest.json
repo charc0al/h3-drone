@@ -4,7 +4,195 @@
 	"id": "Notex.Drone",
 	"name": "Drone",
 	"description": "A flyable drone.",
-	"authors": ["Notex"],
+	"authors": [
+		"Notex"
+	],
+	"options": [
+		{
+			"name": "Experimental - NPC Transport",
+			"tooltip": "Ability to grab and drop singular or multiple NPCs",
+			"type": "checkbox",
+			"enabledByDefault": false,
+			"contentFolders": [
+				"experimental_modes/npc_transport"
+			]
+		}
+	],
+	"contentFolders": [
+		"content"
+	],
+	"blobsFolders": [
+		"blobs"
+	],
+	"dependencies": [
+		"009851E0493468F8",
+		"005C71048D8DAA9D",
+		{
+			"runtimeID": "002597DE2A5CA7CD",
+			"portFromChunk1": true,
+			"toChunk": 0
+		},
+		{
+			"runtimeID": "006FFE4372666E78",
+			"portFromChunk1": true,
+			"toChunk": 0
+		},
+		{
+			"runtimeID": "00034C7AC340734B",
+			"portFromChunk1": true,
+			"toChunk": 0
+		},
+		{
+			"runtimeID": "00E597CA88C36DFE",
+			"portFromChunk1": true,
+			"toChunk": 0
+		},
+		{
+			"runtimeID": "0088A87088CB7BBA",
+			"portFromChunk1": true,
+			"toChunk": 0
+		},
+		{
+			"runtimeID": "00CE62961FC03DDB",
+			"portFromChunk1": true,
+			"toChunk": 0
+		}
+	],
+	"localisation": {
+		"english": {
+			"UI_PROP_GADGET_DRONE_NAME": "Drone",
+			"UI_PROP_GADGET_DRONE_DESC": "A flyable drone.",
+			"UI_PROP_REMOTE_GADGET_DRONE_NAME": "Drone remote",
+			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "Remote control for the Drone.",
+			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Change camera",
+			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "Trigger EMP",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Trigger payload",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Drop payload",
+			"UI_PROP_GADGET_DRONE_BOOST": "Boost",
+			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "Grab NPC(s) (Total {0})",
+			"UI_PROP_GADGET_DRONE_DROP_NPC": "Drop NPC(s) (Total {0})"
+		},
+		"chineseSimplified": {
+			"UI_PROP_GADGET_DRONE_NAME": "Drone",
+			"UI_PROP_GADGET_DRONE_DESC": "A flyable drone.",
+			"UI_PROP_REMOTE_GADGET_DRONE_NAME": "Drone remote",
+			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "Remote control for the Drone.",
+			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Change camera",
+			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "Trigger EMP",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Trigger payload",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Drop payload",
+			"UI_PROP_GADGET_DRONE_BOOST": "Boost",
+			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "Grab NPC(s) (Total {0})",
+			"UI_PROP_GADGET_DRONE_DROP_NPC": "Drop NPC(s) (Total {0})"
+		},
+		"chineseTraditional": {
+			"UI_PROP_GADGET_DRONE_NAME": "Drone",
+			"UI_PROP_GADGET_DRONE_DESC": "A flyable drone.",
+			"UI_PROP_REMOTE_GADGET_DRONE_NAME": "Drone remote",
+			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "Remote control for the Drone.",
+			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Change camera",
+			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "Trigger EMP",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Trigger payload",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Drop payload",
+			"UI_PROP_GADGET_DRONE_BOOST": "Boost",
+			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "Grab NPC(s) (Total {0})",
+			"UI_PROP_GADGET_DRONE_DROP_NPC": "Drop NPC(s) (Total {0})"
+		},
+		"french": {
+			"UI_PROP_GADGET_DRONE_NAME": "Drone",
+			"UI_PROP_GADGET_DRONE_DESC": "A flyable drone.",
+			"UI_PROP_REMOTE_GADGET_DRONE_NAME": "Drone remote",
+			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "Remote control for the Drone.",
+			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Change camera",
+			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "Trigger EMP",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Trigger payload",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Drop payload",
+			"UI_PROP_GADGET_DRONE_BOOST": "Boost",
+			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "Grab NPC(s) (Total {0})",
+			"UI_PROP_GADGET_DRONE_DROP_NPC": "Drop NPC(s) (Total {0})"
+		},
+		"german": {
+			"UI_PROP_GADGET_DRONE_NAME": "Drone",
+			"UI_PROP_GADGET_DRONE_DESC": "A flyable drone.",
+			"UI_PROP_REMOTE_GADGET_DRONE_NAME": "Drone remote",
+			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "Remote control for the Drone.",
+			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Change camera",
+			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "Trigger EMP",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Trigger payload",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Drop payload",
+			"UI_PROP_GADGET_DRONE_BOOST": "Boost",
+			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "Grab NPC(s) (Total {0})",
+			"UI_PROP_GADGET_DRONE_DROP_NPC": "Drop NPC(s) (Total {0})"
+		},
+		"italian": {
+			"UI_PROP_GADGET_DRONE_NAME": "Drone",
+			"UI_PROP_GADGET_DRONE_DESC": "A flyable drone.",
+			"UI_PROP_REMOTE_GADGET_DRONE_NAME": "Drone remote",
+			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "Remote control for the Drone.",
+			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Change camera",
+			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "Trigger EMP",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Trigger payload",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Drop payload",
+			"UI_PROP_GADGET_DRONE_BOOST": "Boost",
+			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "Grab NPC(s) (Total {0})",
+			"UI_PROP_GADGET_DRONE_DROP_NPC": "Drop NPC(s) (Total {0})"
+		},
+		"japanese": {
+			"UI_PROP_GADGET_DRONE_NAME": "Drone",
+			"UI_PROP_GADGET_DRONE_DESC": "A flyable drone.",
+			"UI_PROP_REMOTE_GADGET_DRONE_NAME": "Drone remote",
+			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "Remote control for the Drone.",
+			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Change camera",
+			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "Trigger EMP",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Trigger payload",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Drop payload",
+			"UI_PROP_GADGET_DRONE_BOOST": "Boost",
+			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "Grab NPC(s) (Total {0})",
+			"UI_PROP_GADGET_DRONE_DROP_NPC": "Drop NPC(s) (Total {0})"
+		},
+		"russian": {
+			"UI_PROP_GADGET_DRONE_NAME": "Drone",
+			"UI_PROP_GADGET_DRONE_DESC": "A flyable drone.",
+			"UI_PROP_REMOTE_GADGET_DRONE_NAME": "Drone remote",
+			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "Remote control for the Drone.",
+			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Change camera",
+			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "Trigger EMP",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Trigger payload",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Drop payload",
+			"UI_PROP_GADGET_DRONE_BOOST": "Boost",
+			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "Grab NPC(s) (Total {0})",
+			"UI_PROP_GADGET_DRONE_DROP_NPC": "Drop NPC(s) (Total {0})"
+		},
+		"spanish": {
+			"UI_PROP_GADGET_DRONE_NAME": "Drone",
+			"UI_PROP_GADGET_DRONE_DESC": "A flyable drone.",
+			"UI_PROP_REMOTE_GADGET_DRONE_NAME": "Drone remote",
+			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "Remote control for the Drone.",
+			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Change camera",
+			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "Trigger EMP",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Trigger payload",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Drop payload",
+			"UI_PROP_GADGET_DRONE_BOOST": "Boost",
+			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "Grab NPC(s) (Total {0})",
+			"UI_PROP_GADGET_DRONE_DROP_NPC": "Drop NPC(s) (Total {0})"
+		}
+	},
+	"localisedLines": {
+		"00B6C0801C33A651": "UI_PROP_GADGET_DRONE_NAME",
+		"00259A44E2D624F2": "UI_PROP_GADGET_DRONE_CHANGE_CAMERA",
+		"005AA27FC68F005A": "UI_PROP_GADGET_DRONE_TRIGGER_EMP",
+		"0013555C3F3680FC": "UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD",
+		"003CD48B0D53436C": "UI_PROP_GADGET_DRONE_DROP_PAYLOAD",
+		"00393B5E33B830C5": "UI_PROP_GADGET_DRONE_BOOST",
+		"003E117C597CE3F2": "UI_PROP_GADGET_DRONE_PICKUP_NPC",
+		"00DE86E31F78986D": "UI_PROP_GADGET_DRONE_DROP_NPC"
+	},
+	"requirements": [
+		[
+			"Notex.SimpleKeyEventHelper",
+			">=1.1.0"
+		]
+	],
 	"frameworkVersion": "2.33.35",
 	"updateCheck": "https://github.com/NotexMods/h3-drone/releases/latest/download/updates.json"
 }

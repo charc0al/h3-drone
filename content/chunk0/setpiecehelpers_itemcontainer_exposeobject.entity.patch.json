@@ -1,0 +1,49 @@
+{
+	"tempHash": "004327B0D2645F8C",
+	"tbluHash": "00198A8A17E6EFB5",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"b6cce88acbc8967c",
+				{
+					"AddPropertyAliasConnection": [
+						"m_Object_DroneMod",
+						{
+							"originalProperty": "m_Object",
+							"originalEntity": "76e10449587bf9cd"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"b6cce88acbc8967c",
+				{
+					"AddPropertyAliasConnection": [
+						"m_Object_DroneMod",
+						{
+							"originalProperty": "m_Object",
+							"originalEntity": "68f6dc9bf7dc8228"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"b6cce88acbc8967c",
+				{
+					"AddPropertyAliasConnection": [
+						"m_Object_DroneMod",
+						{
+							"originalProperty": "m_Object",
+							"originalEntity": "d8d107c5cfaf4069"
+						}
+					]
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

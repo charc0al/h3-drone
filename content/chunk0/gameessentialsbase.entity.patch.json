@@ -1,0 +1,95 @@
+{
+	"tempHash": "0093B7139387B988",
+	"tbluHash": "004D99E9BEC3EA51",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafe52bdb71aee69",
+				{
+					"parent": "6933599ccecbd1ed",
+					"name": "Drone",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe131c9b8a4d17",
+				{
+					"parent": "cafe52bdb71aee69",
+					"name": "EVR_DroneInUse",
+					"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_bool.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_bool.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe0d3a03d085f6",
+							"postInit": true
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetVisible": [
+								{
+									"ref": "cafe2bf518e34f40",
+									"value": {
+										"type": "bool",
+										"value": false
+									}
+								}
+							]
+						},
+						"OnFalse": {
+							"SetVisible": [
+								{
+									"ref": "cafe2bf518e34f40",
+									"value": {
+										"type": "bool",
+										"value": true
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe0d3a03d085f6",
+				{
+					"parent": "cafe131c9b8a4d17",
+					"name": "Token_EventChannel_DroneInUse",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "EventChannel_DroneInUse"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe2bf518e34f40",
+				{
+					"parent": "cafe52bdb71aee69",
+					"name": "UIControlVisibilityController_hud_evergreen_MenUoverlayContainer",
+					"factory": "[modules:/zuicontrolvisibilitycontrollerentity.class].pc_entitytype",
+					"blueprint": "[modules:/zuicontrolvisibilitycontrollerentity.class].pc_entityblueprint",
+					"properties": {
+						"m_fFadeTime": { "type": "float32", "value": 0 },
+						"m_pTargetControl": {
+							"type": "SEntityTemplateReference",
+							"value": "fffa08ac423eeda2"
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

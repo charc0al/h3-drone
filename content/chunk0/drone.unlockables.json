@@ -1,0 +1,23 @@
+{
+	"PROP_GADGET_DRONE": {
+		"Id": "PROP_GADGET_DRONE",
+		"Guid": "099fe0b4-cfaf-47bf-b5dd-f2399002accb",
+		"Type": "gear",
+		"Subtype": "tool",
+		"ImageId": "",
+		"RMTPrice": 149,
+		"GamePrice": 149,
+		"IsPurchasable": false,
+		"IsPublished": true,
+		"IsDroppable": false,
+		"Capabilities": [],
+		"Qualities": {},
+		"Properties": {
+			"Quality": 4,
+			"LoadoutSlot": "gear",
+			"Rarity": "common",
+			"RepositoryId": "946c60df-6fae-4abc-af6f-6bd7b2d28126"
+		},
+		"Rarity": "common"
+	}
+}

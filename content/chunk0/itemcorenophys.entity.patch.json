@@ -1,0 +1,136 @@
+{
+	"tempHash": "001780C22BAE2B0F",
+	"tbluHash": "0000B8314955A290",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafe791dd872daf5",
+				{
+					"parent": "4830af9ef390301b",
+					"name": "Drone dropped event",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe42be6de04f34",
+				{
+					"parent": "cafe791dd872daf5",
+					"name": "ItemKeywordProxy",
+					"factory": "[modules:/zitemkeywordproxyentity.class].pc_entitytype",
+					"blueprint": "[modules:/zitemkeywordproxyentity.class].pc_entityblueprint",
+					"properties": {
+						"m_rItem": {
+							"type": "SEntityTemplateReference",
+							"value": "ca10e070e661e083"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafebb254d8f9f60",
+				{
+					"parent": "cafe791dd872daf5",
+					"name": "KeywordCondition_Drone_ItemStashed",
+					"factory": "[modules:/zkeywordcondition.class].pc_entitytype",
+					"blueprint": "[modules:/zkeywordcondition.class].pc_entityblueprint",
+					"properties": {
+						"m_rRequirements": {
+							"type": "SEntityTemplateReference",
+							"value": "cafee0f87c5ddefb",
+							"postInit": true
+						},
+						"m_rTarget": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe42be6de04f34",
+							"postInit": true
+						}
+					},
+					"events": {
+						"OnTrue": { "Poll": ["cafe5a853bd970de"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafee0f87c5ddefb",
+				{
+					"parent": "cafe791dd872daf5",
+					"name": "Keyword_Drone_ItemStashed",
+					"factory": "[modules:/zkeywordentity.class].pc_entitytype",
+					"blueprint": "[modules:/zkeywordentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sKeyword": {
+							"type": "ZString",
+							"value": "Drone_ItemStashed"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe86a06d5d8e19",
+				{
+					"parent": "cafe791dd872daf5",
+					"name": "EVR_Drone_Payload_TriggerDropped",
+					"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe5f7597597578"
+						}
+					},
+					"events": {
+						"EventReceived": { "Get": ["cafebb254d8f9f60"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe5f7597597578",
+				{
+					"parent": "cafe86a06d5d8e19",
+					"name": "Token_Drone_Payload_TriggerDropped",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "Drone_Payload_TriggerDropped"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe5a853bd970de",
+				{
+					"parent": "cafe791dd872daf5",
+					"name": "ValueBool_Poll",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafebb254d8f9f60",
+							"postInit": true
+						}
+					},
+					"outputCopying": {
+						"PollTrue": { "OnThrown": ["4830af9ef390301b"] }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

@@ -1,0 +1,12 @@
+00F5BD6901705166.TEXT,[assembly:/_pro/environment/textures/drone_fan/material.texture?/diffuse.tex](ascolormap).pc_tex
+00FF45EDFB472558.TEXD,[assembly:/_pro/environment/textures/drone_fan/material.texture?/diffuse.tex](ascolormap).pc_mipblock1
+00CC7D83ACD70C69.TEXT,[assembly:/_pro/environment/textures/drone_fan/material.texture?/normal.tex](asnormalmap).pc_tex
+00A27B3C63FD33E2.TEXD,[assembly:/_pro/environment/textures/drone_fan/material.texture?/normal.tex](asnormalmap).pc_mipblock1
+00FC95623645FC27.TEXT,[assembly:/_pro/environment/textures/drone_fan/material.texture?/specular.tex](ascolormap).pc_tex
+00B3AB3214DDA3F6.TEXD,[assembly:/_pro/environment/textures/drone_fan/material.texture?/specular.tex](ascolormap).pc_mipblock1
+0048D570C8D7CE15.MATI,[assembly:/_pro/environment/materials/drone_fan/material.mi].pc_mi
+00D1680580AD3F81.MATT,[assembly:/_pro/environment/materials/drone_fan/material.mi].pc_entitytype
+00AA09852A96A293.MATB,[assembly:/_pro/environment/materials/drone_fan/material.mi].pc_entityblueprint
+004BED24C640C345.TEMP,[assembly:/_pro/environment/geometry/drone_fan/drone_fan.prim].pc_entitytype
+0075AD755C3B6704.PRIM,[assembly:/_pro/environment/materials/drone_fan/drone_fan.prim].pc_prim
+0092C2DF60ED25A0.ALOC,[assembly:/_pro/environment/materials/drone_fan/drone_fan.prim].pc_coll

@@ -1,0 +1,1 @@
+0078665EEDE1CEEE.WWEV,[assembly:/sound/wwise/exportedwwisedata/Events/Notex/Play_Gadget_Drone.wwiseevent].pc_wwisebank
