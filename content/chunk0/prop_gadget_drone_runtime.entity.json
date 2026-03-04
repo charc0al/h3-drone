@@ -464,7 +464,11 @@
 			"events": {
 				"OnPressed": {
 					"ExitSafeZoneNoAnim": ["cafeb4802fc3f7af"],
-					"BlendOut": ["cafe38869c01d9ce", "cafe9b506b4275df", "cafe70c367f2bbc6"],
+					"BlendOut": [
+						"cafe38869c01d9ce",
+						"cafe9b506b4275df",
+						"cafe70c367f2bbc6"
+					],
 					"SetFalse": ["cafe97d6ae376395", "cafefdb12f986a66"]
 				}
 			}
@@ -824,7 +828,11 @@
 			"properties": {
 				"m_States": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafe4f7a3f466f22", "cafe86410dccd83c", "cafeafce1d59c430"]
+					"value": [
+						"cafe4f7a3f466f22",
+						"cafe86410dccd83c",
+						"cafeafce1d59c430"
+					]
 				},
 				"m_rEnableCondition": {
 					"type": "SEntityTemplateReference",
@@ -1173,7 +1181,12 @@
 				},
 				"m_States": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafebf8fb62d1831", "cafec3f8f27efe88", "cafe1cd21e6a5817", "cafed6f665af2340"],
+					"value": [
+						"cafebf8fb62d1831",
+						"cafec3f8f27efe88",
+						"cafe1cd21e6a5817",
+						"cafed6f665af2340"
+					],
 					"postInit": true
 				}
 			}
@@ -1621,12 +1634,20 @@
 						}
 					],
 					"GetRotation": ["cafe1368a7449625"],
-					"Enable": ["cafe5d2449ba0af5", "cafec65a5385dcea", "cafea6e69d4c2911"],
+					"Enable": [
+						"cafe5d2449ba0af5",
+						"cafec65a5385dcea",
+						"cafea6e69d4c2911"
+					],
 					"Send": ["cafe0ed5b88ad7dd"]
 				},
 				"OnFalse": {
 					"SetFalse": ["cafe156ea6d59cf2"],
-					"Disable": ["cafe5d2449ba0af5", "cafec65a5385dcea", "cafea6e69d4c2911"],
+					"Disable": [
+						"cafe5d2449ba0af5",
+						"cafec65a5385dcea",
+						"cafea6e69d4c2911"
+					],
 					"Stop": ["cafe0ed5b88ad7dd"]
 				},
 				"OnValue": { "TransmitEvent": ["cafe59c4aaaea6ba"] }
@@ -3220,15 +3241,31 @@
 			"events": {
 				"OnTrue": {
 					"TransmitTrue": ["cafe56a8fc6b8097"],
-					"SetFalse": ["cafec610680bb93d", "cafefa473eba3db8", "cafe17bf0b702703"],
+					"SetFalse": [
+						"cafec610680bb93d",
+						"cafefa473eba3db8",
+						"cafe17bf0b702703"
+					],
 					"SetTrue": ["cafe4f7a3f466f22"],
 					"DisablePickup": ["cafef8c807a2be56"],
-					"Break": ["cafefc354798b099", "cafea1fdd9b687ed", "cafe03f984d98702"],
-					"Abort": ["cafeef5078a7a8da", "cafec6d77d80f8c4", "cafee1ea3f0384bb", "cafeeed97bbfb639"],
+					"Break": [
+						"cafefc354798b099",
+						"cafea1fdd9b687ed",
+						"cafe03f984d98702"
+					],
+					"Abort": [
+						"cafeef5078a7a8da",
+						"cafec6d77d80f8c4",
+						"cafee1ea3f0384bb",
+						"cafeeed97bbfb639"
+					],
 					"Fuse": ["cafe7f75f1a9509a"],
 					"Smoke": ["cafe7f75f1a9509a"],
 					"In": ["cafeea660450102d", "cafe0a6cd0ee1bcc"],
-					"TransmitEvent": ["cafee1408f21d9bd", "cafe1e8af949aec0"],
+					"TransmitEvent": [
+						"cafee1408f21d9bd",
+						"cafe1e8af949aec0"
+					],
 					"EjectItems": ["cafe0d2f3c8dc503"]
 				}
 			}
@@ -3626,7 +3663,11 @@
 			"events": {
 				"Out": {
 					"ExitSafeZoneNoAnim": ["cafeb4802fc3f7af"],
-					"BlendOut": ["cafe38869c01d9ce", "cafe9b506b4275df", "cafe70c367f2bbc6"],
+					"BlendOut": [
+						"cafe38869c01d9ce",
+						"cafe9b506b4275df",
+						"cafe70c367f2bbc6"
+					],
 					"SetFalse": ["cafe97d6ae376395", "cafefdb12f986a66"]
 				}
 			}
@@ -3803,7 +3844,12 @@
 				},
 				"m_additionalPrompts": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafe591f9ac64508", "cafeec06448b208f", "cafeec0197824a27", "cafe2010e8b872bf"],
+					"value": [
+						"cafe591f9ac64508",
+						"cafeec06448b208f",
+						"cafeec0197824a27",
+						"cafe2010e8b872bf"
+					],
 					"postInit": true
 				},
 				"m_addOns": {
@@ -5606,7 +5652,11 @@
 				"m_bOnlyLivingActors": { "type": "bool", "value": false },
 				"m_aEnterEffects": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafeb903a7173fd8", "cafe2347f819958c", "cafe0c6fbd3e181c"],
+					"value": [
+						"cafeb903a7173fd8",
+						"cafe2347f819958c",
+						"cafe0c6fbd3e181c"
+					],
 					"postInit": true
 				},
 				"m_aCurrentEffects": {
@@ -6018,7 +6068,10 @@
 			},
 			"events": {
 				"EventReceived": {
-					"RemoveActor": ["cafe32ba60757876", "cafef14f73eee9c7"],
+					"RemoveActor": [
+						"cafe32ba60757876",
+						"cafef14f73eee9c7"
+					],
 					"Variant": ["cafecd804f62cc8c"]
 				}
 			}
@@ -6243,6 +6296,728 @@
 			"name": "Keyword_WEAPON_MINE_DEVICE",
 			"factory": "[assembly:/_pro/design/gamecore/keywords/keywordweapondescriptors.template?/keyword_weapon_mine_device.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordweapondescriptors.template?/keyword_weapon_mine_device.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe89e6832502f0": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_CHLOROFORM_FLASK",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_chloroform_flask.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_chloroform_flask.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe166449c5bea9": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_BRICK",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_brick.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_brick.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe8f24adf87c62": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_CANNONBALL",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_cannonball.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_cannonball.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafed26722c9f898": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_BUST",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_bust.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_bust.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe5978b66ec574": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_BUST_WHITE",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_bust_white.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_bust_white.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafebcbde409bad9": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_BUST_BLACK",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_bust_black.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_bust_black.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe979ef7952a33": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_BURGER",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_burger.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_burger.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe993ce2134d67": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_FISH",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_fish.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_fish.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe723fce04f99c": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_FISH_FUGU",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_fish_fugu.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_fish_fugu.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe1214595179bf": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_FULL_SODACAN",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_full_sodacan.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_full_sodacan.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafee25c4eb24140": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_GUNPOWDERPOUCH",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_gunpowderpouch.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_gunpowderpouch.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe9830c66f8ed8": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_HANDFLARE",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_handflare.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_handflare.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe6402a1085194": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_HOLIPOT",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_holipot.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_holipot.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafea8e5a936c2bb": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_HONEYJAR",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_honeyjar.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_honeyjar.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe1ddf6fc7e3c9": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_NITROGLYCERIN",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_nitroglycerin.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_nitroglycerin.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe31835d2fa286": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_PACKAGE",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_package.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_package.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafef45060d256c8": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_PEARL",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_pearl.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_pearl.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe306c7d26cd6a": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_PRETZEL",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_pretzel.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_pretzel.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe26231de0180f": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_PUMPKIN_SMALL",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_pumpkin_small.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_pumpkin_small.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe6a9797605373": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_SHURIKEN",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_shuriken.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_shuriken.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafec636cde81333": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_SNOWBALL",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_snowball.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_snowball.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe05b1db2bd05b": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_SPAGHETTI_SANDWICH",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_spaghetti_sandwich.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_spaghetti_sandwich.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe9e6d554078a2": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_SQUEAKYTOY_DOLL",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_squeakytoy_doll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_squeakytoy_doll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe0c398d97581e": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_SQUEAKYTOY_KIWI",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_squeakytoy_kiwi.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_squeakytoy_kiwi.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe01a132665840": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_SUGAR_01",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_sugar.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_sugar.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe3b967a440330": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_TOYTANK",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_toytank.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_toytank.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe0f69bc32bc56": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_APPLE",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_apple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_apple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafec2bba18bd939": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_APRICOT",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_apricot.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_apricot.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe59804c56cb8b": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_BANANA",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_banana.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_banana.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe3ebfa0ef7740": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_BELLINI_JAR_A",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_bellini_jar_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_bellini_jar_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe81fa1795ae8b": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_BASEBALL",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_baseball.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_baseball.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe5d6fa2b532cb": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_FOODITEM",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_fooditem.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_fooditem.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafebcc97d8d572f": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_DURIAN",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_durian.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_durian.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe6291a0883501": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_FIREWORKS_FLASH",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_fireworks_flash.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_fireworks_flash.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafedecb0551c12e": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_QUESTITEM_BURN_PHONE",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_questitem_burn_phone.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_questitem_burn_phone.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafecfe446019846": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_WEAPON_DELIVERYTYPE_PROXIMITY",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keywordweapondescriptors.template?/keyword_weapon_deliverytype_proximity.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordweapondescriptors.template?/keyword_weapon_deliverytype_proximity.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafec89acca19829": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_QUESTITEM_ITALY_CAN_SPAGHETTI",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_questitem_italy_canned_spaghetti.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_questitem_italy_canned_spaghetti.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe155b2f5a26ad": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_QUEST_ITEM_ITALY_ICON_ACTION_FIGURE",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_questitem_italy_icon_action_figure.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_questitem_italy_icon_action_figure.entitytemplate].pc_entityblueprint",
 			"properties": {
 				"m_aHolders": {
 					"type": "TArray<SEntityTemplateReference>",
