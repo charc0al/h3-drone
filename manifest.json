@@ -91,17 +91,17 @@
 			"UI_PROP_GADGET_DRONE_DROP_NPC": "放下NPC (總計 {0})"
 		},
 		"french": {
-			"UI_PROP_GADGET_DRONE_NAME": "Drone",
-			"UI_PROP_GADGET_DRONE_DESC": "A flyable drone.",
-			"UI_PROP_REMOTE_GADGET_DRONE_NAME": "Drone remote",
-			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "Remote control for the Drone.",
-			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Change camera",
-			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "Trigger EMP",
-			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Trigger payload",
-			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Drop payload",
+			"UI_PROP_GADGET_DRONE_NAME": "Drone de l'ICA",
+			"UI_PROP_GADGET_DRONE_DESC": "Un drone, fourni par l'ICA.",
+			"UI_PROP_REMOTE_GADGET_DRONE_NAME": "Télécommande du drone",
+			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "Une télécommande pour le drone de l'ICA.",
+			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Changez de caméra",
+			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "Déclenchez l'EMP",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Activer l'outil",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Lâchez l'outil",
 			"UI_PROP_GADGET_DRONE_BOOST": "Boost",
-			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "Grab NPC(s) (Total {0})",
-			"UI_PROP_GADGET_DRONE_DROP_NPC": "Drop NPC(s) (Total {0})"
+			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "Attrapez NPC(s) (Total {0})",
+			"UI_PROP_GADGET_DRONE_DROP_NPC": "Lâchez NPC(s) (Total {0})"
 		},
 		"german": {
 			"UI_PROP_GADGET_DRONE_NAME": "Drohne",
