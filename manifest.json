@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "1.2.0",
+	"version": "1.3.0",
 	"id": "Notex.Drone",
 	"name": "Drone",
 	"description": "A flyable drone.",
@@ -103,19 +103,19 @@
 			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "Grab NPC(s) (Total {0})",
 			"UI_PROP_GADGET_DRONE_DROP_NPC": "Drop NPC(s) (Total {0})"
 		},
-        "german": {
-            "UI_PROP_GADGET_DRONE_NAME": "Drohne",
-            "UI_PROP_GADGET_DRONE_DESC": "Eine flugfähige Drohne.",
-            "UI_PROP_REMOTE_GADGET_DRONE_NAME": "Drohenfernbedienung",
-            "UI_PROP_REMOTE_GADGET_DRONE_DESC": "Fernbedienung der Drone.",
-            "UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Blickwinkel ändern",
-            "UI_PROP_GADGET_DRONE_TRIGGER_EMP": "EMP auslösen",
-            "UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Sprengladung auslösen",
-            "UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Sprengladung fallen lassen",
-            "UI_PROP_GADGET_DRONE_BOOST": "Beschleunigen",
-            "UI_PROP_GADGET_DRONE_PICKUP_NPC": "NPC(s) greifen (Total {0})",
-            "UI_PROP_GADGET_DRONE_DROP_NPC": "NPC(s) loslassen (Total {0})"
-        },
+		"german": {
+			"UI_PROP_GADGET_DRONE_NAME": "Drohne",
+			"UI_PROP_GADGET_DRONE_DESC": "Eine flugfähige Drohne.",
+			"UI_PROP_REMOTE_GADGET_DRONE_NAME": "Drohenfernbedienung",
+			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "Fernbedienung der Drone.",
+			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Blickwinkel ändern",
+			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "EMP auslösen",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Sprengladung auslösen",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Sprengladung fallen lassen",
+			"UI_PROP_GADGET_DRONE_BOOST": "Beschleunigen",
+			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "NPC(s) greifen (Total {0})",
+			"UI_PROP_GADGET_DRONE_DROP_NPC": "NPC(s) loslassen (Total {0})"
+		},
 		"italian": {
 			"UI_PROP_GADGET_DRONE_NAME": "Drone",
 			"UI_PROP_GADGET_DRONE_DESC": "A flyable drone.",
