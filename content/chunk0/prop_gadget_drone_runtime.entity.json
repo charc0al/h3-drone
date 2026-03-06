@@ -7012,6 +7012,63 @@
 					"postInit": true
 				}
 			}
+		},
+		"cafec97497166fe6": {
+			"parent": "cafebb8f0e01d308",
+			"name": "ValueBool_Operation",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafec1e5b31b80f1", "cafefed14bcbf5a1"]
+				},
+				"m_eEvaluation": {
+					"type": "ZValueBool_Operation_Signal.EEvaluationType",
+					"value": "ALL"
+				}
+			},
+			"events": {
+				"OnTrue": {
+					"SetValue": [
+						{
+							"ref": "cafe04e0b545f75a",
+							"value": { "type": "float32", "value": 0 }
+						}
+					]
+				},
+				"OnFalse": {
+					"SetValue": [
+						{
+							"ref": "cafe04e0b545f75a",
+							"value": { "type": "float32", "value": 0.2 }
+						}
+					]
+				}
+			}
+		},
+		"cafe122d7fb2844f": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_DRONE_ALLOWED_PAYLOAD_ITEM",
+			"factory": "[modules:/zkeywordentity.class].pc_entitytype",
+			"blueprint": "[modules:/zkeywordentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sKeyword": {
+					"type": "ZString",
+					"value": "ITEM_DRONE_ALLOWED_PAYLOAD_ITEM"
+				},
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
 		}
 	},
 	"propertyOverrides": [],
