@@ -69,6 +69,11 @@
 							"type": "ZString",
 							"value": "Drone_ItemStashed"
 						}
+					},
+					"events": {
+						"Keyword": {
+							"RemoveKeyword": ["cafe42be6de04f34"]
+						}
 					}
 				}
 			]
@@ -125,8 +130,31 @@
 							"postInit": true
 						}
 					},
+					"events": {
+						"PollTrue": { "In": ["cafeda2a1020ca8d"] }
+					},
 					"outputCopying": {
 						"PollTrue": { "OnThrown": ["4830af9ef390301b"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeda2a1020ca8d",
+				{
+					"parent": "cafe791dd872daf5",
+					"name": "TimerSimple",
+					"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"Delay time (ms)": {
+							"type": "int32",
+							"value": 300
+						}
+					},
+					"events": {
+						"Out": { "GetKeyword": ["cafee0f87c5ddefb"] }
 					}
 				}
 			]
