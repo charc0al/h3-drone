@@ -464,7 +464,11 @@
 			"events": {
 				"OnPressed": {
 					"ExitSafeZoneNoAnim": ["cafeb4802fc3f7af"],
-					"BlendOut": ["cafe38869c01d9ce", "cafe9b506b4275df", "cafe70c367f2bbc6"],
+					"BlendOut": [
+						"cafe38869c01d9ce",
+						"cafe9b506b4275df",
+						"cafe70c367f2bbc6"
+					],
 					"SetFalse": ["cafe97d6ae376395", "cafefdb12f986a66"]
 				}
 			}
@@ -824,7 +828,11 @@
 			"properties": {
 				"m_States": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafe4f7a3f466f22", "cafe86410dccd83c", "cafeafce1d59c430"]
+					"value": [
+						"cafe4f7a3f466f22",
+						"cafe86410dccd83c",
+						"cafeafce1d59c430"
+					]
 				},
 				"m_rEnableCondition": {
 					"type": "SEntityTemplateReference",
@@ -1173,7 +1181,12 @@
 				},
 				"m_States": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafebf8fb62d1831", "cafec3f8f27efe88", "cafe1cd21e6a5817", "cafed6f665af2340"],
+					"value": [
+						"cafebf8fb62d1831",
+						"cafec3f8f27efe88",
+						"cafe1cd21e6a5817",
+						"cafed6f665af2340"
+					],
 					"postInit": true
 				}
 			}
@@ -1621,13 +1634,22 @@
 						}
 					],
 					"GetRotation": ["cafe1368a7449625"],
-					"Enable": ["cafe5d2449ba0af5", "cafec65a5385dcea", "cafea6e69d4c2911"],
+					"Enable": [
+						"cafe5d2449ba0af5",
+						"cafec65a5385dcea",
+						"cafea6e69d4c2911"
+					],
 					"Send": ["cafe0ed5b88ad7dd"]
 				},
 				"OnFalse": {
 					"SetFalse": ["cafe156ea6d59cf2"],
-					"Disable": ["cafe5d2449ba0af5", "cafec65a5385dcea", "cafea6e69d4c2911"],
-					"Stop": ["cafe0ed5b88ad7dd"]
+					"Disable": [
+						"cafe5d2449ba0af5",
+						"cafec65a5385dcea",
+						"cafea6e69d4c2911"
+					],
+					"Stop": ["cafe0ed5b88ad7dd"],
+					"In": ["cafe0a6cd0ee1bcc"]
 				},
 				"OnValue": { "TransmitEvent": ["cafe59c4aaaea6ba"] }
 			}
@@ -3220,15 +3242,31 @@
 			"events": {
 				"OnTrue": {
 					"TransmitTrue": ["cafe56a8fc6b8097"],
-					"SetFalse": ["cafec610680bb93d", "cafefa473eba3db8", "cafe17bf0b702703"],
+					"SetFalse": [
+						"cafec610680bb93d",
+						"cafefa473eba3db8",
+						"cafe17bf0b702703"
+					],
 					"SetTrue": ["cafe4f7a3f466f22"],
 					"DisablePickup": ["cafef8c807a2be56"],
-					"Break": ["cafefc354798b099", "cafea1fdd9b687ed", "cafe03f984d98702"],
-					"Abort": ["cafeef5078a7a8da", "cafec6d77d80f8c4", "cafee1ea3f0384bb", "cafeeed97bbfb639"],
+					"Break": [
+						"cafefc354798b099",
+						"cafea1fdd9b687ed",
+						"cafe03f984d98702"
+					],
+					"Abort": [
+						"cafeef5078a7a8da",
+						"cafec6d77d80f8c4",
+						"cafee1ea3f0384bb",
+						"cafeeed97bbfb639"
+					],
 					"Fuse": ["cafe7f75f1a9509a"],
 					"Smoke": ["cafe7f75f1a9509a"],
 					"In": ["cafeea660450102d", "cafe0a6cd0ee1bcc"],
-					"TransmitEvent": ["cafee1408f21d9bd", "cafe1e8af949aec0"],
+					"TransmitEvent": [
+						"cafee1408f21d9bd",
+						"cafe1e8af949aec0"
+					],
 					"EjectItems": ["cafe0d2f3c8dc503"]
 				}
 			}
@@ -3626,7 +3664,11 @@
 			"events": {
 				"Out": {
 					"ExitSafeZoneNoAnim": ["cafeb4802fc3f7af"],
-					"BlendOut": ["cafe38869c01d9ce", "cafe9b506b4275df", "cafe70c367f2bbc6"],
+					"BlendOut": [
+						"cafe38869c01d9ce",
+						"cafe9b506b4275df",
+						"cafe70c367f2bbc6"
+					],
 					"SetFalse": ["cafe97d6ae376395", "cafefdb12f986a66"]
 				}
 			}
@@ -3803,7 +3845,12 @@
 				},
 				"m_additionalPrompts": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafe591f9ac64508", "cafeec06448b208f", "cafeec0197824a27", "cafe2010e8b872bf"],
+					"value": [
+						"cafe591f9ac64508",
+						"cafeec06448b208f",
+						"cafeec0197824a27",
+						"cafe2010e8b872bf"
+					],
 					"postInit": true
 				},
 				"m_addOns": {
@@ -5606,7 +5653,11 @@
 				"m_bOnlyLivingActors": { "type": "bool", "value": false },
 				"m_aEnterEffects": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafeb903a7173fd8", "cafe2347f819958c", "cafe0c6fbd3e181c"],
+					"value": [
+						"cafeb903a7173fd8",
+						"cafe2347f819958c",
+						"cafe0c6fbd3e181c"
+					],
 					"postInit": true
 				},
 				"m_aCurrentEffects": {
@@ -6018,7 +6069,10 @@
 			},
 			"events": {
 				"EventReceived": {
-					"RemoveActor": ["cafe32ba60757876", "cafef14f73eee9c7"],
+					"RemoveActor": [
+						"cafe32ba60757876",
+						"cafef14f73eee9c7"
+					],
 					"Variant": ["cafecd804f62cc8c"]
 				}
 			}
