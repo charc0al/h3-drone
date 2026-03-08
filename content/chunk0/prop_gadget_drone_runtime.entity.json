@@ -5234,7 +5234,9 @@
 					"SetItem": ["cafea89de5d511e7"],
 					"TransmitEvent": ["cafea77395ca6cc7"]
 				},
-				"OnRetrieve": { "GetKeyword": ["cafe93e13d2b5e67"] }
+				"OnRetrieve": {
+					"GetKeyword": ["cafe93e13d2b5e67", "cafe898d21a61f95"]
+				}
 			}
 		},
 		"cafe00a3662f737a": {
@@ -7069,6 +7071,40 @@
 					],
 					"postInit": true
 				}
+			}
+		},
+		"cafe0680ea9c8c8b": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_POISON",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_poison.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_poison.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe898d21a61f95": {
+			"parent": "cafeddbe76a14ed3",
+			"name": "Remove_Keyword_Drone_PoisonDroppedFromDrone",
+			"factory": "[modules:/zkeywordentity.class].pc_entitytype",
+			"blueprint": "[modules:/zkeywordentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sKeyword": {
+					"type": "ZString",
+					"value": "Drone_PoisonDroppedFromDrone"
+				}
+			},
+			"events": {
+				"Keyword": { "RemoveKeyword": ["cafea89de5d511e7"] }
 			}
 		}
 	},
