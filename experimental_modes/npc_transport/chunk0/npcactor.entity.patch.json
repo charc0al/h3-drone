@@ -173,7 +173,12 @@
 							"value": true
 						}
 					},
-					"events": { "OnTrue": { "In": ["cafeddd9af18a557"] } }
+					"events": {
+						"OnTrue": {
+							"Get": ["cafe3e082118b534"],
+							"In": ["cafe96d85eae777e"]
+						}
+					}
 				}
 			]
 		},
@@ -347,9 +352,7 @@
 							"value": 1000
 						}
 					},
-					"events": {
-						"Out": { "ReviveActor": ["cafea38bd598c8cc"] }
-					}
+					"events": { "Out": { "Poll": ["cafe54896e89e7c6"] } }
 				}
 			]
 		},
@@ -702,7 +705,7 @@
 					"properties": {
 						"m_rValueEntity": {
 							"type": "SEntityTemplateReference",
-							"value": "cafeb019b8b619aa"
+							"value": "cafedfd83d4eea54"
 						}
 					},
 					"events": {
@@ -722,6 +725,119 @@
 					"name": "Dialogue",
 					"factory": "[modules:/zentity.class].pc_entitytype",
 					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe3e082118b534",
+				{
+					"parent": "cafe7c3fadfd5dc2",
+					"name": "ActorKeywordCondition 2",
+					"factory": "[modules:/zactorkeywordcondition.class].pc_entitytype",
+					"blueprint": "[modules:/zactorkeywordcondition.class].pc_entityblueprint",
+					"properties": {
+						"m_rActor": {
+							"type": "SEntityTemplateReference",
+							"value": "0594561be5ddfb63"
+						},
+						"m_rRequirements": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe739f1235859f",
+							"postInit": true
+						},
+						"m_bSubscribeToKeywordChanges": {
+							"type": "bool",
+							"value": false
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe739f1235859f",
+				{
+					"parent": "cafe3e082118b534",
+					"name": "Keyword_ACTOR_PACIFIED",
+					"factory": "[assembly:/_pro/design/gamecore/keywords/keywordsactor.template?/keyword_actor_pacified.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordsactor.template?/keyword_actor_pacified.entitytemplate].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafedfd83d4eea54",
+				{
+					"parent": "cafe7c3fadfd5dc2",
+					"name": "ABO_AliveButNotInitiallyPacified",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								"cafeb019b8b619aa",
+								"cafef8b801a403f3"
+							]
+						},
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafef8b801a403f3",
+				{
+					"parent": "cafe3e082118b534",
+					"name": "Not pacified",
+					"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+					"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+					"properties": {
+						"m_rCondition": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe3e082118b534"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe96d85eae777e",
+				{
+					"parent": "cafe7c3fadfd5dc2",
+					"name": "TimerSimple_AfterPacifiedCheck",
+					"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"Delay time (ms)": { "type": "int32", "value": 33 }
+					},
+					"events": { "Out": { "In": ["cafeddd9af18a557"] } }
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe54896e89e7c6",
+				{
+					"parent": "cafe5405781dea0e",
+					"name": "ValueBool_Poll",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafedfd83d4eea54"
+						}
+					},
+					"events": {
+						"PollTrue": { "ReviveActor": ["cafea38bd598c8cc"] }
+					}
 				}
 			]
 		}
