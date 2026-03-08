@@ -139,10 +139,7 @@
 					},
 					"events": {
 						"EventReceived": {
-							"SetItem": [
-								"cafeac4b655284f3",
-								"cafe611ae6b73534"
-							]
+							"SetItem": ["cafeac4b655284f3", "cafe611ae6b73534"]
 						}
 					}
 				}

@@ -776,10 +776,7 @@
 					"properties": {
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"cafeb019b8b619aa",
-								"cafef8b801a403f3"
-							]
+							"value": ["cafeb019b8b619aa", "cafef8b801a403f3"]
 						},
 						"m_eEvaluation": {
 							"type": "ZValueBool_Operation_Signal.EEvaluationType",
