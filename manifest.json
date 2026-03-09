@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "1.7.0",
+	"version": "1.7.1",
 	"id": "Notex.Drone",
 	"name": "Drone",
 	"description": "A flyable drone.",
