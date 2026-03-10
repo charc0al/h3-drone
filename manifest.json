@@ -200,5 +200,5 @@
 	},
 	"requirements": [["Notex.SimpleKeyEventHelper", ">=1.1.0"]],
 	"frameworkVersion": "2.33.35",
-	"updateCheck": "https://github.com/NotexMods/h3-drone/releases/latest/download/updates.json"
+	"updateCheck": "https://github.com/Charc0al/h3-drone/releases/latest/download/updates.json"
 }
