@@ -366,6 +366,7 @@
 						"cafedf64e98041cf",
 						"cafe6b73310670b0",
 						"cafeda32ed77f29b",
+						"cafe77889900aabb",
 						"cafe187ea6484f00",
 						"cafe03c780da6862",
 						"cafecd996dfa4eed",
@@ -1454,7 +1455,7 @@
 			"properties": {
 				"m_bDivide": { "type": "bool", "value": false },
 				"m_bGenerateOnStart": { "type": "bool", "value": false },
-				"m_fB": { "type": "float32", "value": -5 }
+				"m_fB": { "type": "float32", "value": -10 }
 			},
 			"events": {
 				"Out": {
@@ -1548,7 +1549,36 @@
 		},
 		"cafeda32ed77f29b": {
 			"parent": "cafe7269e65e70d9",
-			"name": "Toggle HUD",
+			"name": "Trigger Payload (DPad)",
+			"factory": "[modules:/zinputlistenerdpadentity.class].pc_entitytype",
+			"blueprint": "[modules:/zinputlistenerdpadentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eDirection": {
+					"type": "ZInputListenerDpadEntity.eInputListenerDpad",
+					"value": "EILDP_UP"
+				},
+				"m_rPromptTextResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_trigger_payload.sweetline].pc_sweetline"
+				},
+				"m_UseableCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafec732edcc6530"
+				},
+				"m_VisibleCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe489d60af0c7b"
+				},
+				"m_Condition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafec610680bb93d"
+				}
+			},
+			"events": { "OnPressed": { "Poll": ["cafe10c4e1a6972a"] } }
+		},
+		"cafe77889900aabb": {
+			"parent": "cafe7269e65e70d9",
+			"name": "Drop Payload (DPad)",
 			"factory": "[modules:/zinputlistenerdpadentity.class].pc_entitytype",
 			"blueprint": "[modules:/zinputlistenerdpadentity.class].pc_entityblueprint",
 			"properties": {
@@ -1558,7 +1588,11 @@
 				},
 				"m_rPromptTextResource": {
 					"type": "ZRuntimeResourceID",
-					"value": "[assembly:/localization/hitman6/conversations/ui/pro/menutext.sweetmenutext?/ui_menu_page_settings_hide_menu.sweetline].pc_sweetline"
+					"value": "[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_drop_payload.sweetline].pc_sweetline"
+				},
+				"m_Condition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafec610680bb93d"
 				},
 				"m_UseableCondition": {
 					"type": "SEntityTemplateReference",
@@ -1569,7 +1603,7 @@
 					"value": "cafe489d60af0c7b"
 				}
 			},
-			"events": { "OnPressed": { "Toggle": ["cafefdb12f986a66"] } }
+			"events": { "OnPressed": { "Poll": ["cafe1c4d3712c23a"] } }
 		},
 		"cafe44be6adfaaa0": {
 			"parent": "cafeda32ed77f29b",
@@ -2385,7 +2419,7 @@
 			"properties": {
 				"m_sExpression": {
 					"type": "ZString",
-					"value": "20 + (a * 10)"
+					"value": "40 + (a * 20)"
 				}
 			},
 			"events": {
@@ -4179,7 +4213,7 @@
 				},
 				"m_aChildren": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafed3f833039e44"],
+					"value": [],
 					"postInit": true
 				}
 			}
@@ -4599,7 +4633,13 @@
 						"cafe892ffe92e010",
 						"cafec2a30524cac0",
 						"cafed7a01448aaa2",
-						"cafe24a2954f902b"
+						"cafe445566778899",
+						"cafe24a2954f902b",
+						"cafe1ab2c3d4e5f6",
+						"cafe334455667788",
+						"cafef1e2d3c4b5a6",
+						"cafe112233445566",
+						"cafe223344556677"
 					]
 				},
 				"Disable": {
@@ -4608,7 +4648,13 @@
 						"cafe892ffe92e010",
 						"cafec2a30524cac0",
 						"cafed7a01448aaa2",
-						"cafe24a2954f902b"
+						"cafe445566778899",
+						"cafe24a2954f902b",
+						"cafe1ab2c3d4e5f6",
+						"cafe334455667788",
+						"cafef1e2d3c4b5a6",
+						"cafe112233445566",
+						"cafe223344556677"
 					]
 				}
 			}
@@ -4663,6 +4709,21 @@
 				"m_sKeyName": { "type": "ZString", "value": "H" }
 			},
 			"events": { "Up": { "Toggle": ["cafefdb12f986a66"] } }
+		},
+		"cafe445566778899": {
+			"parent": "cafe8160d480094a",
+			"name": "Boost",
+			"factory": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bEnabled": { "type": "bool", "value": false },
+				"m_sModifierKeyName": {
+					"type": "ZString",
+					"value": "None"
+				},
+				"m_sKeyName": { "type": "ZString", "value": "SHIFT" }
+			},
+			"events": { "Down": { "SetTrue": ["cafea410c43f2360"] } }
 		},
 		"cafe0eeb6497d715": {
 			"parent": "cafe8890228eded7",
@@ -4925,7 +4986,7 @@
 		},
 		"cafe6b73310670b0": {
 			"parent": "cafe7269e65e70d9",
-			"name": "Cycle modes - Right",
+			"name": "Trigger NPC Transport Drop (DPad)",
 			"factory": "[modules:/zinputlistenerdpadentity.class].pc_entitytype",
 			"blueprint": "[modules:/zinputlistenerdpadentity.class].pc_entityblueprint",
 			"properties": {
@@ -4935,7 +4996,11 @@
 				},
 				"m_rPromptTextResource": {
 					"type": "ZRuntimeResourceID",
-					"value": "[assembly:/localization/hitman6/conversations/ui/pro/menutext.sweetmenutext?/ui_menu_page_settings_hide_menu.sweetline].pc_sweetline"
+					"value": "[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_drop_npc.sweetline].pc_sweetline"
+				},
+				"m_Condition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafec610680bb93d"
 				},
 				"m_UseableCondition": {
 					"type": "SEntityTemplateReference",
@@ -4947,12 +5012,12 @@
 				}
 			},
 			"events": {
-				"OnPressed": { "NextState": ["cafe6700ed05acd1"] }
+				"OnPressed": { "In": ["cafe0a6cd0ee1bcc"] }
 			}
 		},
 		"cafedf64e98041cf": {
 			"parent": "cafe7269e65e70d9",
-			"name": "Cycle modes - Left",
+			"name": "Trigger NPC Transport Grab (DPad)",
 			"factory": "[modules:/zinputlistenerdpadentity.class].pc_entitytype",
 			"blueprint": "[modules:/zinputlistenerdpadentity.class].pc_entityblueprint",
 			"properties": {
@@ -4962,7 +5027,11 @@
 				},
 				"m_rPromptTextResource": {
 					"type": "ZRuntimeResourceID",
-					"value": "[assembly:/localization/hitman6/conversations/ui/pro/menutext.sweetmenutext?/ui_menu_page_settings_hide_menu.sweetline].pc_sweetline"
+					"value": "[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_pickup_npc.sweetline].pc_sweetline"
+				},
+				"m_Condition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafec610680bb93d"
 				},
 				"m_UseableCondition": {
 					"type": "SEntityTemplateReference",
@@ -4974,7 +5043,7 @@
 				}
 			},
 			"events": {
-				"OnPressed": { "PreviousState": ["cafe6700ed05acd1"] }
+				"OnPressed": { "In": ["cafe60f46bac8b4f"] }
 			}
 		},
 		"cafe6b2754038415": {
@@ -4988,7 +5057,7 @@
 					"type": "ZString",
 					"value": "None"
 				},
-				"m_sKeyName": { "type": "ZString", "value": "LEFT" }
+				"m_sKeyName": { "type": "ZString", "value": "G" }
 			},
 			"events": { "Up": { "PreviousState": ["cafe6700ed05acd1"] } }
 		},
@@ -5003,9 +5072,84 @@
 					"type": "ZString",
 					"value": "None"
 				},
-				"m_sKeyName": { "type": "ZString", "value": "RIGHT" }
+				"m_sKeyName": { "type": "ZString", "value": "B" }
 			},
 			"events": { "Up": { "NextState": ["cafe6700ed05acd1"] } }
+		},
+		"cafe1ab2c3d4e5f6": {
+			"parent": "cafe8160d480094a",
+			"name": "Trigger Payload",
+			"factory": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bEnabled": { "type": "bool", "value": false },
+				"m_sModifierKeyName": {
+					"type": "ZString",
+					"value": "None"
+				},
+				"m_sKeyName": { "type": "ZString", "value": "T" }
+			},
+			"events": { "Up": { "Poll": ["cafe10c4e1a6972a"] } }
+		},
+		"cafe334455667788": {
+			"parent": "cafe8160d480094a",
+			"name": "Trigger EMP",
+			"factory": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bEnabled": { "type": "bool", "value": false },
+				"m_sModifierKeyName": {
+					"type": "ZString",
+					"value": "None"
+				},
+				"m_sKeyName": { "type": "ZString", "value": "NUMBER_4" }
+			},
+			"events": { "Up": { "Trigger": ["cafe24e22e61d8df"] } }
+		},
+		"cafef1e2d3c4b5a6": {
+			"parent": "cafe8160d480094a",
+			"name": "Drop Payload",
+			"factory": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bEnabled": { "type": "bool", "value": false },
+				"m_sModifierKeyName": {
+					"type": "ZString",
+					"value": "None"
+				},
+				"m_sKeyName": { "type": "ZString", "value": "V" }
+			},
+			"events": { "Up": { "Poll": ["cafe1c4d3712c23a"] } }
+		},
+		"cafe112233445566": {
+			"parent": "cafe8160d480094a",
+			"name": "Trigger NPC Transport Grab",
+			"factory": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bEnabled": { "type": "bool", "value": false },
+				"m_sModifierKeyName": {
+					"type": "ZString",
+					"value": "None"
+				},
+				"m_sKeyName": { "type": "ZString", "value": "Z" }
+			},
+			"events": { "Up": { "In": ["cafe60f46bac8b4f"] } }
+		},
+		"cafe223344556677": {
+			"parent": "cafe8160d480094a",
+			"name": "Trigger NPC Transport Drop",
+			"factory": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bEnabled": { "type": "bool", "value": false },
+				"m_sModifierKeyName": {
+					"type": "ZString",
+					"value": "None"
+				},
+				"m_sKeyName": { "type": "ZString", "value": "X" }
+			},
+			"events": { "Up": { "In": ["cafe0a6cd0ee1bcc"] } }
 		},
 		"cafe63cdbc9550a9": {
 			"parent": "cafe8890228eded7",
