@@ -12,6 +12,13 @@
 			"type": "checkbox",
 			"enabledByDefault": false,
 			"contentFolders": ["experimental_modes/npc_transport"]
+		},
+		{
+			"name": "Add Drone to Safehouse",
+			"tooltip": "Adds a Drone spawn in the safehouse garage.",
+			"type": "checkbox",
+			"enabledByDefault": false,
+			"contentFolders": ["garage_drone"]
 		}
 	],
 	"contentFolders": ["content"],
@@ -186,5 +193,5 @@
 	},
 	"requirements": [["Notex.SimpleKeyEventHelper", ">=1.1.0"]],
 	"frameworkVersion": "2.33.35",
-	"updateCheck": "https://github.com/NotexMods/h3-drone/releases/latest/download/updates.json"
+	"updateCheck": "https://github.com/Charc0al/h3-drone/releases/latest/download/updates.json"
 }
