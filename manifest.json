@@ -8,17 +8,24 @@
 	"options": [
 		{
 			"name": "Experimental - NPC Transport",
-			"tooltip": "Ability to grab and drop singular or multiple NPCs",
+			"tooltip": "Ability to grab and drop singular or multiple NPCs.",
 			"type": "checkbox",
 			"enabledByDefault": false,
 			"contentFolders": ["experimental_modes/npc_transport"]
 		},
 		{
 			"name": "General - Spawn in Freelancer Safehouse",
-			"tooltip": "Drone will spawn in the garage",
+			"tooltip": "Drone will spawn in the garage. Will probably work in online mode.",
 			"type": "checkbox",
 			"enabledByDefault": false,
 			"contentFolders": ["general/spawn_in_safehouse"]
+		},
+		{
+			"name": "General - Infinite Drones",
+			"tooltip": "Drone will respawn after a few seconds of being destroyed.",
+			"type": "checkbox",
+			"enabledByDefault": false,
+			"contentFolders": ["general/infinite_drones"]
 		}
 	],
 	"contentFolders": ["content"],

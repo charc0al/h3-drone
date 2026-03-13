@@ -77,7 +77,7 @@
 				"cafe2bf518e34f40",
 				{
 					"parent": "cafe52bdb71aee69",
-					"name": "UIControlVisibilityController_hud_evergreen_MenUoverlayContainer",
+					"name": "UIControlVisibilityController_hud_evergreen_MenuOverlayContainer",
 					"factory": "[modules:/zuicontrolvisibilitycontrollerentity.class].pc_entitytype",
 					"blueprint": "[modules:/zuicontrolvisibilitycontrollerentity.class].pc_entityblueprint",
 					"properties": {

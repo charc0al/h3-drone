@@ -3094,7 +3094,7 @@
 					"value": true
 				}
 			},
-			"events": { "OnValue": { "SetZ": ["cafeea993eeb1021"] } }
+			"events": { "OnValue": { "In": ["cafe6dc678f6d11b"] } }
 		},
 		"cafe04e0b545f75a": {
 			"parent": "cafebb8f0e01d308",
@@ -7159,6 +7159,20 @@
 					"SetTrue": ["cafe97d6ae376395"]
 				}
 			}
+		},
+		"cafe6dc678f6d11b": {
+			"parent": "cafef9a3e3e5e7cc",
+			"name": "SignalGate_float32",
+			"factory": "[modules:/zsignalgateentity_float32.class].pc_entitytype",
+			"blueprint": "[modules:/zsignalgateentity_float32.class].pc_entityblueprint",
+			"properties": {
+				"m_bEnabled": { "type": "bool", "value": true },
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafefed14bcbf5a1"
+				}
+			},
+			"events": { "Out": { "SetZ": ["cafeea993eeb1021"] } }
 		}
 	},
 	"propertyOverrides": [],

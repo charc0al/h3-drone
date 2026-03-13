@@ -1,0 +1,250 @@
+{
+	"tempHash": "0093B7139387B988",
+	"tbluHash": "004D99E9BEC3EA51",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafe34dcf758c499",
+				{
+					"parent": "cafecc9caf497cc6",
+					"name": "EVR_EventChannel_DroneDestroyed",
+					"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_bool.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_bool.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe312c7dc04771",
+							"postInit": true
+						}
+					},
+					"events": {
+						"OnTrue": { "SetTrue": ["cafeb396720bd7fd"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe312c7dc04771",
+				{
+					"parent": "cafe34dcf758c499",
+					"name": "Token_DroneDestroyed",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "EventChannel_DroneDestroyed"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb396720bd7fd",
+				{
+					"parent": "cafecc9caf497cc6",
+					"name": "VB_DroneDestroyed",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": false }
+					},
+					"events": { "OnTrue": { "In": ["cafe833ed1e94117"] } }
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb145ab4d4a45",
+				{
+					"parent": "cafecc9caf497cc6",
+					"name": "ItemSpawner",
+					"factory": "[modules:/zitemspawner.class].pc_entitytype",
+					"blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": 0.0,
+									"z": -0.0
+								},
+								"position": {
+									"x": 81.0267562866211,
+									"y": -218.77810668945312,
+									"z": 15.957030296325684
+								}
+							}
+						},
+						"m_bSpawnOnStart": {
+							"type": "bool",
+							"value": false
+						},
+						"m_eRoomBehaviour": {
+							"type": "ZSpatialEntity.ERoomBehaviour",
+							"value": "ROOM_STATIC"
+						},
+						"m_rMainItemKey": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe9c82c4e1dcf1",
+							"postInit": true
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "fffffffffffffffe",
+							"postInit": true
+						}
+					},
+					"events": {
+						"Item": { "SetItem": ["cafe35d196b3b1fd"] },
+						"ItemReady": {
+							"SetFalse": ["cafeb396720bd7fd"],
+							"PickupIntoPocket": ["cafe35d196b3b1fd"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafed1aa95b3c73f",
+				{
+					"parent": "cafecc9caf497cc6",
+					"name": "HeroItemCondition",
+					"factory": "[modules:/zheroitemcondition.class].pc_entitytype",
+					"blueprint": "[modules:/zheroitemcondition.class].pc_entityblueprint",
+					"properties": {
+						"m_bCheckEquippedItem": {
+							"type": "bool",
+							"value": false
+						},
+						"m_bCheckInventory": {
+							"type": "bool",
+							"value": true
+						},
+						"m_ItemKeyToFind": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe9c82c4e1dcf1",
+							"postInit": true
+						}
+					},
+					"events": {
+						"OnTrue": { "SetTrue": ["cafe460e0c16acfb"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafec8ce482482b1",
+				{
+					"parent": "cafecc9caf497cc6",
+					"name": "GameEventListener",
+					"factory": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
+					"blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
+					"properties": {
+						"m_eEvent": {
+							"type": "EGameEventType",
+							"value": "GET_IntroCutEnd"
+						}
+					},
+					"events": {
+						"EventOccurred": { "Poll": ["cafe0c3608870287"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe9c82c4e1dcf1",
+				{
+					"parent": "cafecc9caf497cc6",
+					"name": "ItemKey_Gadget_Drone",
+					"factory": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
+					"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
+					"properties": {
+						"m_RepositoryId": {
+							"type": "ZGuid",
+							"value": "5661d56b-7686-4235-b0a6-f00e6cd4797c"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafecc9caf497cc6",
+				{
+					"parent": "6933599ccecbd1ed",
+					"name": "Infinite Drones",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe460e0c16acfb",
+				{
+					"parent": "cafecc9caf497cc6",
+					"name": "Phone is or has been in inventory",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe0c3608870287",
+				{
+					"parent": "cafecc9caf497cc6",
+					"name": "Avoid duplication when save_Loading",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe460e0c16acfb"
+						}
+					},
+					"events": { "PollFalse": { "SpawnItem": [] } }
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe35d196b3b1fd",
+				{
+					"parent": "cafecc9caf497cc6",
+					"name": "HeroItemAction",
+					"factory": "[modules:/zheroitemaction.class].pc_entitytype",
+					"blueprint": "[modules:/zheroitemaction.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe833ed1e94117",
+				{
+					"parent": "cafecc9caf497cc6",
+					"name": "TimerSimple",
+					"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"Delay time (ms)": {
+							"type": "int32",
+							"value": 5000
+						}
+					},
+					"events": {
+						"Out": { "SpawnItem": ["cafeb145ab4d4a45"] }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
