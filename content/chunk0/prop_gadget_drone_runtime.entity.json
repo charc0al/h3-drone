@@ -4524,14 +4524,6 @@
 							"value": { "type": "bool", "value": false }
 						}
 					]
-				},
-				"OnFalse": {
-					"SetOpen": [
-						{
-							"ref": "cafe049bb69ebacb",
-							"value": { "type": "bool", "value": true }
-						}
-					]
 				}
 			}
 		},
@@ -7113,6 +7105,45 @@
 			},
 			"events": {
 				"Keyword": { "RemoveKeyword": ["cafea89de5d511e7"] }
+			}
+		},
+		"cafeba3a6d58749c": {
+			"parent": "cafee6838a09548e",
+			"name": "VBO_DroneInUseAndGameNotPaused",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe6f76a31774e4", "cafe53c680b5c955"],
+					"postInit": true
+				},
+				"m_eEvaluation": {
+					"type": "ZValueBool_Operation_Signal.EEvaluationType",
+					"value": "ALL"
+				}
+			},
+			"events": {
+				"OnTrue": {
+					"SetOpen": [
+						{
+							"ref": "cafe049bb69ebacb",
+							"value": { "type": "bool", "value": true }
+						}
+					]
+				}
+			}
+		},
+		"cafe53c680b5c955": {
+			"parent": "cafec1e5b31b80f1",
+			"name": "Not paused",
+			"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafec1e5b31b80f1"
+				}
 			}
 		}
 	},
