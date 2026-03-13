@@ -12,6 +12,13 @@
 			"type": "checkbox",
 			"enabledByDefault": false,
 			"contentFolders": ["experimental_modes/npc_transport"]
+		},
+		{
+			"name": "General - Spawn in Freelancer Safehouse",
+			"tooltip": "Drone will spawn in the garage",
+			"type": "checkbox",
+			"enabledByDefault": false,
+			"contentFolders": ["general/spawn_in_safehouse"]
 		}
 	],
 	"contentFolders": ["content"],
