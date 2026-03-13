@@ -310,42 +310,6 @@
 				}
 			}
 		},
-		"cafe99ae482d9ca5": {
-			"parent": "35c0f09c4f596c28",
-			"name": "EVR_DroneDestroyed",
-			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_bool.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_bool.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_rChannelToken": {
-					"type": "SEntityTemplateReference",
-					"value": "cafe884a42c535db",
-					"postInit": true
-				}
-			},
-			"events": {
-				"OnTrue": {
-					"DestroyItem": ["de2b4112d43d9ca5"],
-					"SetVisible": [
-						{
-							"ref": "03dbf12b653e7e07",
-							"value": { "type": "bool", "value": false }
-						}
-					]
-				}
-			}
-		},
-		"cafe884a42c535db": {
-			"parent": "cafe99ae482d9ca5",
-			"name": "Token_DroneDestroyed",
-			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
-			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
-			"properties": {
-				"m_sName": {
-					"type": "ZString",
-					"value": "EventChannel_DroneDestroyed"
-				}
-			}
-		},
 		"cafe1f2beabcadb3": {
 			"parent": "35c0f09c4f596c28",
 			"name": "Keyword_ITEMRULE_LEGAL",

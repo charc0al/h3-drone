@@ -1545,13 +1545,7 @@
 					"value": "cafe1ea605a5dd4c"
 				}
 			},
-			"events": {
-				"EventReceived": {
-					"EnterSafeZoneNoAnim": ["cafeb4802fc3f7af"],
-					"InitialState": ["cafee6629e213e59"],
-					"SetTrue": ["cafe97d6ae376395"]
-				}
-			}
+			"events": { "EventReceived": { "Poll": ["cafe8b0322f8134e"] } }
 		},
 		"cafe1ea605a5dd4c": {
 			"parent": "cafec7d2cac6d306",
@@ -7143,6 +7137,25 @@
 				"m_rCondition": {
 					"type": "SEntityTemplateReference",
 					"value": "cafec1e5b31b80f1"
+				}
+			}
+		},
+		"cafe8b0322f8134e": {
+			"parent": "cafe48593497cd0d",
+			"name": "Poll_DroneDestroyed",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe34b525aaabcd"
+				}
+			},
+			"events": {
+				"PollFalse": {
+					"EnterSafeZoneNoAnim": ["cafeb4802fc3f7af"],
+					"InitialState": ["cafee6629e213e59"],
+					"SetTrue": ["cafe97d6ae376395"]
 				}
 			}
 		}
