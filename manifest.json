@@ -14,11 +14,11 @@
 			"contentFolders": ["experimental_modes/npc_transport"]
 		},
 		{
-			"name": "General - Spawn in Freelancer Safehouse",
-			"tooltip": "Drone will spawn in the garage. Will probably work in online mode.",
+			"name": "General - Spawn on start",
+			"tooltip": "Drone will spawn in your inventory when you start a mission. The Spawn in Freelancer Safehouse option has no affect with this option enabled.",
 			"type": "checkbox",
 			"enabledByDefault": false,
-			"contentFolders": ["general/spawn_in_safehouse"]
+			"contentFolders": ["general/spawn_on_start"]
 		},
 		{
 			"name": "General - Infinite Drones",
@@ -26,6 +26,13 @@
 			"type": "checkbox",
 			"enabledByDefault": false,
 			"contentFolders": ["general/infinite_drones"]
+		},
+		{
+			"name": "General - Spawn in Freelancer Safehouse",
+			"tooltip": "Drone will spawn in the garage.",
+			"type": "checkbox",
+			"enabledByDefault": false,
+			"contentFolders": ["general/spawn_in_safehouse"]
 		}
 	],
 	"contentFolders": ["content"],
