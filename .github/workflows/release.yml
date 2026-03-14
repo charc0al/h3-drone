@@ -209,9 +209,9 @@ jobs:
               id: upload
               uses: Nexus-Mods/upload-action@main
               with:
-                api_key: ${{ secrets.NEXUSMODS_API_KEY }}
-                file_group_id: ${{ vars.NEXUSMODS_FILE_GROUP_ID }}
-                filename: mod.framework.zip
-                display_name: ${{ steps.modName.outputs.prop }}
-                description: "See changelog"
-                version: ${{ steps.newVersion.outputs.new-release-version }}
+                  api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+                  file_group_id: ${{ vars.NEXUSMODS_FILE_GROUP_ID }}
+                  filename: mod.framework.zip
+                  display_name: ${{ steps.modName.outputs.prop }}
+                  description: "See changelog"
+                  version: ${{ steps.newVersion.outputs.new-release-version }}
