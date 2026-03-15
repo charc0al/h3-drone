@@ -7120,6 +7120,44 @@
 				}
 			},
 			"events": { "Out": { "SetZ": ["cafeea993eeb1021"] } }
+		},
+		"cafe032728cb5975": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_EXPLOSIVE_BASEBALL",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_explosive_baseball.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_item_explosive_baseball.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe1ccb61b91f59": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_QUESTITEM_ITALY_GOLFBALL",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_questitem_italy_golfball.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_questitem_italy_golfball.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
 		}
 	},
 	"propertyOverrides": [],
