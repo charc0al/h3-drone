@@ -2950,7 +2950,7 @@
 						}
 					],
 					"SetTrue": ["cafec610680bb93d", "cafe156ea6d59cf2"],
-					"Disable": ["cafef8372f8a2957"]
+					"Poll": ["cafe92dcac529834"]
 				}
 			}
 		},
@@ -7158,6 +7158,19 @@
 					"postInit": true
 				}
 			}
+		},
+		"cafe92dcac529834": {
+			"parent": "cafea32a31ca3727",
+			"name": "Poll_DroneInUse",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe97d6ae376395"
+				}
+			},
+			"events": { "PollFalse": { "Disable": ["cafef8372f8a2957"] } }
 		}
 	},
 	"propertyOverrides": [],
