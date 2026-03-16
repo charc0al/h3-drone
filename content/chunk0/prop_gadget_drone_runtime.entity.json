@@ -1555,7 +1555,7 @@
 			"properties": {
 				"m_eDirection": {
 					"type": "ZInputListenerDpadEntity.eInputListenerDpad",
-					"value": "EILDP_UP"
+					"value": "EILDP_RIGHT"
 				},
 				"m_rPromptTextResource": {
 					"type": "ZRuntimeResourceID",
@@ -1584,7 +1584,7 @@
 			"properties": {
 				"m_eDirection": {
 					"type": "ZInputListenerDpadEntity.eInputListenerDpad",
-					"value": "EILDP_DOWN"
+					"value": "EILDP_LEFT"
 				},
 				"m_rPromptTextResource": {
 					"type": "ZRuntimeResourceID",
@@ -4992,7 +4992,7 @@
 			"properties": {
 				"m_eDirection": {
 					"type": "ZInputListenerDpadEntity.eInputListenerDpad",
-					"value": "EILDP_LEFT"
+					"value": "EILDP_DOWN"
 				},
 				"m_rPromptTextResource": {
 					"type": "ZRuntimeResourceID",
@@ -5023,7 +5023,7 @@
 			"properties": {
 				"m_eDirection": {
 					"type": "ZInputListenerDpadEntity.eInputListenerDpad",
-					"value": "EILDP_RIGHT"
+					"value": "EILDP_UP"
 				},
 				"m_rPromptTextResource": {
 					"type": "ZRuntimeResourceID",
