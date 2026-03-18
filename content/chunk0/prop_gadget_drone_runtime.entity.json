@@ -5130,6 +5130,10 @@
 				},
 				"m_bMapTrackerEnabled": { "type": "bool", "value": false },
 				"m_bIsIllegal": { "type": "bool", "value": true },
+				"m_bUseItemIllegalityInInventorySubactionGroup": {
+					"type": "bool",
+					"value": false
+				},
 				"m_RuntimeNetworkResourceIDPlace": {
 					"type": "ZRuntimeResourceID",
 					"value": {
