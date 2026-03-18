@@ -1,0 +1,8 @@
+common.BaseControl:
+00CCBCF3AE804C71.UICT,[assembly:/ui/controls/DroneMod_LocaliseText.swf?/common.BaseControl.uic].pc_entitytype
+00E488DE17FF738B.UICB,[assembly:/ui/controls/DroneMod_LocaliseText.swf?/common.BaseControl.uic].pc_entityblueprint
+
+dronemod.LocaliseText:
+00AEE6E4E15C56CB.UICT,[assembly:/ui/controls/DroneMod_LocaliseText.swf?/dronemod.LocaliseText.uic].pc_entitytype
+00DBC35F2EA5094C.UICB,[assembly:/ui/controls/DroneMod_LocaliseText.swf?/dronemod.LocaliseText.uic].pc_entityblueprint
+

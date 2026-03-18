@@ -1200,9 +1200,9 @@
 					"type": "ZInputListenerButtonEntity.eInputListenerButtons",
 					"value": "EILB_LEFT"
 				},
-				"m_rPromptTextResource": {
-					"type": "ZRuntimeResourceID",
-					"value": "[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_drop_payload.sweetline].pc_sweetline"
+				"m_aPromptText": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafee7da23609262", "cafebd0f8e79eaa9"]
 				},
 				"m_Condition": {
 					"type": "SEntityTemplateReference",
@@ -1210,7 +1210,7 @@
 				},
 				"m_UseableCondition": {
 					"type": "SEntityTemplateReference",
-					"value": "cafe1cd21e6a5817"
+					"value": "cafe0d2f3c8dc503"
 				},
 				"m_VisibleCondition": {
 					"type": "SEntityTemplateReference",
@@ -4516,7 +4516,7 @@
 			"events": {
 				"EventOccurred": {
 					"SetFalse": ["cafec1e5b31b80f1"],
-					"Poll": ["cafe79a0582eebee", "cafe00c0a7282dda"],
+					"Poll": ["cafe79a0582eebee", "cafe00c0a7282dda", "cafe31896939c47c"],
 					"Get": ["cafe9048f00f472d"]
 				}
 			}
@@ -5193,7 +5193,8 @@
 			},
 			"events": {
 				"ItemUsed": {
-					"SetItem": ["cafea89de5d511e7"],
+					"SetItem": ["cafea89de5d511e7", "cafe1b8f5ca8e967"],
+					"Input": ["cafe25ea5c170f16"],
 					"TransmitEvent": ["cafea77395ca6cc7"]
 				},
 				"OnRetrieve": {
@@ -5422,9 +5423,9 @@
 					"type": "ZInputListenerButtonEntity.eInputListenerButtons",
 					"value": "EILB_LEFT"
 				},
-				"m_rPromptTextResource": {
-					"type": "ZRuntimeResourceID",
-					"value": "[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_trigger_payload.sweetline].pc_sweetline"
+				"m_aPromptText": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe14f7b1581212", "cafea5d0412cf54f"]
 				},
 				"m_Condition": {
 					"type": "SEntityTemplateReference",
@@ -5432,7 +5433,7 @@
 				},
 				"m_UseableCondition": {
 					"type": "SEntityTemplateReference",
-					"value": "cafec3f8f27efe88"
+					"value": "cafe0d2f3c8dc503"
 				},
 				"m_VisibleCondition": {
 					"type": "SEntityTemplateReference",
@@ -7184,6 +7185,241 @@
 				}
 			},
 			"events": { "PollFalse": { "Disable": ["cafef8372f8a2957"] } }
+		},
+		"cafebd0f8e79eaa9": {
+			"parent": "cafe930642d09d74",
+			"name": "Drop Payload - Item name",
+			"factory": "[modules:/zconditionalformattedtextlineentity.class].pc_entitytype",
+			"blueprint": "[modules:/zconditionalformattedtextlineentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sweetText": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_drop_payload.sweetline].pc_sweetline",
+						"flag": "5F"
+					}
+				},
+				"m_argsText": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe37902e9994ae"],
+					"postInit": true
+				},
+				"m_isEnabled": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe0d2f3c8dc503",
+					"postInit": true
+				}
+			}
+		},
+		"cafe37902e9994ae": {
+			"parent": "cafe7ec454c83337",
+			"name": "Value",
+			"factory": "[modules:/zuitextformatargument_string.class].pc_entitytype",
+			"blueprint": "[modules:/zuitextformatargument_string.class].pc_entityblueprint",
+			"properties": {
+				"m_bHideAsterix": { "type": "bool", "value": true }
+			}
+		},
+		"cafe25ea5c170f16": {
+			"parent": "cafe7ec454c83337",
+			"name": "EntityToRepositoryIDConverter",
+			"factory": "[modules:/zentitytorepositoryidconverter.class].pc_entitytype",
+			"blueprint": "[modules:/zentitytorepositoryidconverter.class].pc_entityblueprint",
+			"events": {
+				"RepositoryID": { "SetRepositoryID": ["cafeaf8aaf3bebd6"] }
+			}
+		},
+		"cafeaf8aaf3bebd6": {
+			"parent": "cafe7ec454c83337",
+			"name": "Repository_String_Poll",
+			"factory": "[modules:/zrepository_string_poll.class].pc_entitytype",
+			"blueprint": "[modules:/zrepository_string_poll.class].pc_entityblueprint",
+			"properties": {
+				"m_path": { "type": "ZString", "value": "Name_LOC" }
+			},
+			"events": { "OnValue": { "In": ["cafe9f805cea6a2b"] } }
+		},
+		"cafe9f805cea6a2b": {
+			"parent": "cafe7ec454c83337",
+			"name": "DroneMod_LocaliseText",
+			"factory": "[assembly:/ui/controls/DroneMod_LocaliseText.swf?/dronemod.LocaliseText.uic].pc_entitytype",
+			"blueprint": "[assembly:/ui/controls/DroneMod_LocaliseText.swf?/dronemod.LocaliseText.uic].pc_entityblueprint",
+			"properties": {
+				"m_pMovieResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/ui/controls/DroneMod_LocaliseText.swf].pc_swf",
+						"flag": "5F"
+					}
+				},
+				"m_sClassName": {
+					"type": "ZString",
+					"value": "dronemod.LocaliseText"
+				}
+			},
+			"events": { "Value": { "SetValue": ["cafe37902e9994ae"] } }
+		},
+		"cafef8ab9d997bb5": {
+			"parent": "cafe7ec454c83337",
+			"name": "ControlTree",
+			"factory": "[modules:/zuicontroltreeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zuicontroltreeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_pRootControlEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe9f805cea6a2b"
+				}
+			}
+		},
+		"cafe7ec454c83337": {
+			"parent": "cafe7269e65e70d9",
+			"name": "Payload text",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafea5d0412cf54f": {
+			"parent": "cafe4938cfb0cc46",
+			"name": "Trigger Payload - Item name",
+			"factory": "[modules:/zconditionalformattedtextlineentity.class].pc_entitytype",
+			"blueprint": "[modules:/zconditionalformattedtextlineentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sweetText": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_trigger_payload.sweetline].pc_sweetline",
+						"flag": "5F"
+					}
+				},
+				"m_argsText": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe37902e9994ae"],
+					"postInit": true
+				},
+				"m_isEnabled": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe0d2f3c8dc503",
+					"postInit": true
+				}
+			}
+		},
+		"cafef283bbac4221": {
+			"parent": "cafe7ec454c83337",
+			"name": "ValueBool_Changed",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe0d2f3c8dc503"
+				}
+			},
+			"events": {
+				"OnFalse": {
+					"SetValue": [
+						{
+							"ref": "cafe37902e9994ae",
+							"value": { "type": "ZString", "value": "" }
+						}
+					]
+				}
+			}
+		},
+		"cafe31896939c47c": {
+			"parent": "cafe7ec454c83337",
+			"name": "ValueBool_Poll",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe0d2f3c8dc503"
+				}
+			},
+			"events": { "PollTrue": { "GetItem": ["cafe1b8f5ca8e967"] } }
+		},
+		"cafe1b8f5ca8e967": {
+			"parent": "cafe7ec454c83337",
+			"name": "HM5ItemProxy",
+			"factory": "[modules:/zhm5itemproxy.class].pc_entitytype",
+			"blueprint": "[modules:/zhm5itemproxy.class].pc_entityblueprint",
+			"events": { "OnGetItem": { "Input": ["cafe25ea5c170f16"] } }
+		},
+		"cafee7da23609262": {
+			"parent": "cafe930642d09d74",
+			"name": "Drop Payload - Missing item",
+			"factory": "[modules:/zconditionalformattedtextlineentity.class].pc_entitytype",
+			"blueprint": "[modules:/zconditionalformattedtextlineentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sweetText": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_drop_payload.sweetline].pc_sweetline",
+						"flag": "5F"
+					}
+				},
+				"m_argsText": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafea8df4f26ee3b"],
+					"postInit": true
+				},
+				"m_isEnabled": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe6429a4d628d6",
+					"postInit": true
+				}
+			}
+		},
+		"cafe6429a4d628d6": {
+			"parent": "cafe0d2f3c8dc503",
+			"name": "Nothing in ItemStorage",
+			"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe0d2f3c8dc503"
+				}
+			}
+		},
+		"cafe14f7b1581212": {
+			"parent": "cafe4938cfb0cc46",
+			"name": "Trigger Payload - Missing item",
+			"factory": "[modules:/zconditionalformattedtextlineentity.class].pc_entitytype",
+			"blueprint": "[modules:/zconditionalformattedtextlineentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sweetText": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_trigger_payload.sweetline].pc_sweetline",
+						"flag": "5F"
+					}
+				},
+				"m_argsText": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafea8df4f26ee3b"],
+					"postInit": true
+				},
+				"m_isEnabled": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe6429a4d628d6",
+					"postInit": true
+				}
+			}
+		},
+		"cafea8df4f26ee3b": {
+			"parent": "cafe7ec454c83337",
+			"name": "Value_MissingItem",
+			"factory": "[modules:/zuitextformatargument_string.class].pc_entitytype",
+			"blueprint": "[modules:/zuitextformatargument_string.class].pc_entityblueprint",
+			"properties": {
+				"m_sweetText": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/ui/pro/setpieces.sweetmenutext?/setpieces_localization_prompt_missingitem.sweetline].pc_sweetline",
+						"flag": "5F"
+					}
+				}
+			}
 		}
 	},
 	"propertyOverrides": [],

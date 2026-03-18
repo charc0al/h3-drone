@@ -1,0 +1,8 @@
+common.BaseControl:
+0044238332BF550B.ASET,[assembly:/templates/aspectdummy.aspect]([assembly:/ui/controls/DroneMod_LocaliseText.swf?/common.BaseControl.uic].entitytype,[modules:/zuicontrollayoutlegacyaspect.class].entitytype).pc_entitytype
+00A81F1DBA9FFDF2.ASEB,[assembly:/templates/aspectdummy.aspect]([assembly:/ui/controls/DroneMod_LocaliseText.swf?/common.BaseControl.uic].entitytype,[modules:/zuicontrollayoutlegacyaspect.class].entitytype).pc_entityblueprint
+
+dronemod.LocaliseText:
+0083360C50C0E50E.ASET,[assembly:/templates/aspectdummy.aspect]([assembly:/ui/controls/DroneMod_LocaliseText.swf?/dronemod.LocaliseText.uic].entitytype,[modules:/zuicontrollayoutlegacyaspect.class].entitytype).pc_entitytype
+007230EDF22F81AA.ASEB,[assembly:/templates/aspectdummy.aspect]([assembly:/ui/controls/DroneMod_LocaliseText.swf?/dronemod.LocaliseText.uic].entitytype,[modules:/zuicontrollayoutlegacyaspect.class].entitytype).pc_entityblueprint
+
