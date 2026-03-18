@@ -7420,6 +7420,44 @@
 					}
 				}
 			}
+		},
+		"cafe18016fb549f9": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_WEAPON_EXPLOSIVE",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keywordweapondescriptors.template?/keyword_weapon_explosive.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordweapondescriptors.template?/keyword_weapon_explosive.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"cafe31865341677b": {
+			"parent": "cafe7251aa60bdc2",
+			"name": "Keyword_ITEM_DEVICE_REMOTE_GAS_SICK",
+			"factory": "[assembly:/_pro/design/gamecore/keywords/keywordoutbreak.template?/keyword_item_device_remote_gas_sick.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordoutbreak.template?/keyword_item_device_remote_gas_sick.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aHolders": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafe7251aa60bdc2",
+							"exposedEntity": "Keywords",
+							"externalScene": null
+						}
+					],
+					"postInit": true
+				}
+			}
 		}
 	},
 	"propertyOverrides": [],
