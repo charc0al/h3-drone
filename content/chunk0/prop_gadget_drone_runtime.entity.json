@@ -363,6 +363,8 @@
 					"value": [
 						"cafef0f045e1941b",
 						"cafe09d47e85bfc3",
+						"cafe1b2c3d4e5f60",
+						"cafe1b2c3d4e5f61",
 						"cafedf64e98041cf",
 						"cafe6b73310670b0",
 						"cafeda32ed77f29b",
@@ -467,6 +469,100 @@
 					"ExitSafeZoneNoAnim": ["cafeb4802fc3f7af"],
 					"BlendOut": ["cafe38869c01d9ce", "cafe9b506b4275df", "cafe70c367f2bbc6"],
 					"SetFalse": ["cafe97d6ae376395", "cafefdb12f986a66"]
+				}
+			}
+		},
+		"cafe1b2c3d4e5f60": {
+			"parent": "cafe7269e65e70d9",
+			"name": "Up (Mouse)",
+			"factory": "[modules:/zinputlistenerbuttonentity.class].pc_entitytype",
+			"blueprint": "[modules:/zinputlistenerbuttonentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eButton": {
+					"type": "ZInputListenerButtonEntity.eInputListenerButtons",
+					"value": "EILB_AIM"
+				},
+				"m_sPromptText": { "type": "ZString", "value": "Up" },
+				"m_UseableCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafec732edcc6530"
+				},
+				"m_VisibleCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe489d60af0c7b"
+				},
+				"m_Condition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafec610680bb93d"
+				}
+			},
+			"events": {
+				"OnPressed": {
+					"In": ["cafeeed97bbfb639"],
+					"Set_a": [
+						{
+							"ref": "cafe777f40322bbc",
+							"value": { "type": "float32", "value": 1 }
+						}
+					]
+				},
+				"OnReleased": {
+					"Abort": ["cafeeed97bbfb639"],
+					"SetFalse": ["cafe17bf0b702703"],
+					"In": ["cafeb4fcf01f2b2e"],
+					"Set_a": [
+						{
+							"ref": "cafe777f40322bbc",
+							"value": { "type": "float32", "value": 0 }
+						}
+					]
+				}
+			}
+		},
+		"cafe1b2c3d4e5f61": {
+			"parent": "cafe7269e65e70d9",
+			"name": "Down (Mouse)",
+			"factory": "[modules:/zinputlistenerbuttonentity.class].pc_entitytype",
+			"blueprint": "[modules:/zinputlistenerbuttonentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eButton": {
+					"type": "ZInputListenerButtonEntity.eInputListenerButtons",
+					"value": "EILB_TRIGGER"
+				},
+				"m_sPromptText": { "type": "ZString", "value": "Down" },
+				"m_UseableCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafec732edcc6530"
+				},
+				"m_VisibleCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe489d60af0c7b"
+				},
+				"m_Condition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafec610680bb93d"
+				}
+			},
+			"events": {
+				"OnPressed": {
+					"In": ["cafeef5078a7a8da"],
+					"A": [
+						{
+							"ref": "cafe7c997716c4f0",
+							"value": { "type": "float32", "value": 1 }
+						}
+					]
+				},
+				"OnReleased": {
+					"Abort": ["cafeef5078a7a8da"],
+					"SetFalse": ["cafefa473eba3db8"],
+					"In": ["cafeb4fcf01f2b2e"],
+					"A": [
+						{
+							"ref": "cafe7c997716c4f0",
+							"value": { "type": "float32", "value": 0 }
+						}
+					]
 				}
 			}
 		},
