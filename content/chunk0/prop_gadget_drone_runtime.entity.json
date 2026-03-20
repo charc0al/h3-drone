@@ -6316,49 +6316,6 @@
 				}
 			}
 		},
-		"cafe9145d6619e40": {
-			"parent": "cafe7269e65e70d9",
-			"name": "BoxRigidBody",
-			"factory": "[assembly:/templates/physics/rigidbodyprimitives.template?/boxrigidbody.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/templates/physics/rigidbodyprimitives.template?/boxrigidbody.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": { "x": 0, "y": 0, "z": 0 },
-						"position": { "x": 0, "y": 0, "z": 0 }
-					}
-				},
-				"m_vBoxSize": {
-					"type": "SVector3",
-					"value": { "x": 0, "y": 0, "z": 0 }
-				},
-				"m_bEnableCollision": { "type": "bool", "value": false },
-				"m_bIgnoreCharacters": { "type": "bool", "value": true },
-				"m_bRemovePhysics": { "type": "bool", "value": true },
-				"m_bKinematic": { "type": "bool", "value": true }
-			}
-		},
-		"cafefd2719977317": {
-			"parent": "cafe9145d6619e40",
-			"name": "GetPositionEntity",
-			"factory": "[modules:/zgetpositionentity.class].pc_entitytype",
-			"blueprint": "[modules:/zgetpositionentity.class].pc_entityblueprint",
-			"properties": {
-				"m_bPosPinOnActivate": { "type": "bool", "value": true },
-				"m_bPosPinOnTransformChange": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bWorldPostion": { "type": "bool", "value": true },
-				"m_Source": {
-					"type": "SEntityTemplateReference",
-					"value": "cafe9145d6619e40",
-					"postInit": true
-				}
-			},
-			"events": { "PositionOutput": {} }
-		},
 		"cafe7f12e070b680": {
 			"parent": "cafe7251aa60bdc2",
 			"name": "Keyword_WEAPON_MINE_DEVICE",
