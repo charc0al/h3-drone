@@ -215,14 +215,15 @@
 			"properties": {
 				"m_eActionType": {
 					"type": "EActionType",
-					"value": "AT_USE_QUICK"
+					"value": "AT_ITEM_INTERACTION"
 				},
 				"m_RuntimeNetworkResourceID": {
 					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "[assembly:/animationnetworks/hitman01/contextactions/hm_remote_activate_detonator.aln].pc_rtn",
-						"flag": "9F"
-					}
+					"value": null
+				},
+				"m_eInputAction": {
+					"type": "EHM5GameInputFlag",
+					"value": "eGameInputDefault"
 				},
 				"m_bShowPromptInWorld": { "type": "bool", "value": false },
 				"m_bCanBeOperatedFromAnyAngle": {
