@@ -527,7 +527,7 @@
 			"properties": {
 				"m_eButton": {
 					"type": "ZInputListenerButtonEntity.eInputListenerButtons",
-					"value": "EILB_FIRE"
+					"value": "EILB_TRIGGER"
 				},
 				"m_sPromptText": { "type": "ZString", "value": "Down" },
 				"m_UseableCondition": {
