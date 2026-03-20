@@ -480,7 +480,7 @@
 			"properties": {
 				"m_eButton": {
 					"type": "ZInputListenerButtonEntity.eInputListenerButtons",
-					"value": "EILB_AIM"
+					"value": "EILB_TRIGGER"
 				},
 				"m_sPromptText": { "type": "ZString", "value": "Up" },
 				"m_UseableCondition": {
@@ -527,7 +527,7 @@
 			"properties": {
 				"m_eButton": {
 					"type": "ZInputListenerButtonEntity.eInputListenerButtons",
-					"value": "EILB_TRIGGER"
+					"value": "EILB_AIM"
 				},
 				"m_sPromptText": { "type": "ZString", "value": "Down" },
 				"m_UseableCondition": {
@@ -5306,6 +5306,10 @@
 						"position": { "x": 0, "y": 0, "z": 0 }
 					}
 				},
+				"m_bApplyPromptDescriptionText": {
+					"type": "bool",
+					"value": true
+				},
 				"m_rStorage": {
 					"type": "SEntityTemplateReference",
 					"value": "cafe0d2f3c8dc503",
@@ -5356,6 +5360,11 @@
 				"m_aUIHighlightGeom": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": ["cafe8b6177f08e7d"],
+					"postInit": true
+				},
+				"m_Object_DroneMod_RetrievePlace": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe0d2f3c8dc503",
 					"postInit": true
 				},
 				"m_Object_DroneMod": {
