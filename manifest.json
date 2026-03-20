@@ -40,6 +40,7 @@
 	"dependencies": [
 		"009851E0493468F8",
 		"005C71048D8DAA9D",
+		"00E1936611A5CAF8",
 		{
 			"runtimeID": "002597DE2A5CA7CD",
 			"portFromChunk1": true,

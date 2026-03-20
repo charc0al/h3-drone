@@ -1,7 +1,7 @@
 {
 	"5661d56b-7686-4235-b0a6-f00e6cd4797c": {
 		"ID_": "5661d56b-7686-4235-b0a6-f00e6cd4797c",
-		"AdditionalKeywords": ["NONE"],
+		"AdditionalKeywords": ["", "INVENTORY_SIZE_SMALL", "VR_CONCEALED_WEAPON", "VR_DROPABLE", "VR_PLACEABLE"],
 		"CanBeDropped": false,
 		"CarryAnimSetType": "EAST_CARRY_WEAPON_ITEM",
 		"CheatGroup": "eCGExotics",

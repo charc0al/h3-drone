@@ -365,6 +365,7 @@
 						"cafe09d47e85bfc3",
 						"cafedf64e98041cf",
 						"cafe6b73310670b0",
+						"cafe8e1a300647b1",
 						"cafeda32ed77f29b",
 						"cafe187ea6484f00",
 						"cafe03c780da6862",
@@ -810,6 +811,18 @@
 				"m_rPromptTextResource": {
 					"type": "ZRuntimeResourceID",
 					"value": "[assembly:/localization/hitman6/conversations/ui/pro/hud.sweetmenutext?/ui_prop_gadget_drone_change_camera.sweetline].pc_sweetline"
+				},
+				"m_Condition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe863a55bb42b5"
+				},
+				"m_UseableCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe863a55bb42b5"
+				},
+				"m_VisibleCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe863a55bb42b5"
 				}
 			},
 			"events": {
@@ -7457,6 +7470,55 @@
 					],
 					"postInit": true
 				}
+			}
+		},
+		"cafe46f3285b1d0f": {
+			"parent": "cafe8890228eded7",
+			"name": "VREnabledCondition",
+			"factory": "[modules:/zvrenabledcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zvrenabledcondition.class].pc_entityblueprint"
+		},
+		"cafe863a55bb42b5": {
+			"parent": "cafe46f3285b1d0f",
+			"name": "Not in VR",
+			"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe46f3285b1d0f"
+				}
+			}
+		},
+		"cafe8e1a300647b1": {
+			"parent": "cafe7269e65e70d9",
+			"name": "Cycle modes VR",
+			"factory": "[modules:/zinputlistenerbuttonentity.class].pc_entitytype",
+			"blueprint": "[modules:/zinputlistenerbuttonentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eButton": {
+					"type": "ZInputListenerButtonEntity.eInputListenerButtons",
+					"value": "EILB_UP"
+				},
+				"m_rPromptTextResource": {
+					"type": "ZRuntimeResourceID",
+					"value": "[assembly:/localization/hitman6/conversations/ui/legacy/legacy_options.sweetmenutext?/eui_text_options_toggle.sweetline].pc_sweetline"
+				},
+				"m_Condition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe46f3285b1d0f"
+				},
+				"m_UseableCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe46f3285b1d0f"
+				},
+				"m_VisibleCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe46f3285b1d0f"
+				}
+			},
+			"events": {
+				"OnPressed": { "NextState": ["cafe6700ed05acd1"] }
 			}
 		}
 	},
