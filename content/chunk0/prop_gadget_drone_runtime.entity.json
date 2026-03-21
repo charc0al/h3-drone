@@ -1291,13 +1291,33 @@
 			"parent": "cafe6700ed05acd1",
 			"name": "Drop payload",
 			"factory": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entityblueprint"
+			"blueprint": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entityblueprint",
+			"events": {
+				"OnTrue": {
+					"SetPage": [
+						{
+							"ref": "cafe8b3d38bdc88f",
+							"value": { "type": "int32", "value": 2 }
+						}
+					]
+				}
+			}
 		},
 		"cafebf8fb62d1831": {
 			"parent": "cafe6700ed05acd1",
 			"name": "Distraction",
 			"factory": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entityblueprint"
+			"blueprint": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entityblueprint",
+			"events": {
+				"OnTrue": {
+					"SetPage": [
+						{
+							"ref": "cafe8b3d38bdc88f",
+							"value": { "type": "int32", "value": 0 }
+						}
+					]
+				}
+			}
 		},
 		"cafe930642d09d74": {
 			"parent": "cafe7269e65e70d9",
@@ -4025,6 +4045,11 @@
 					"type": "bool",
 					"value": false
 				},
+				"m_rDataProvider": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe8b3d38bdc88f"
+				},
+				"m_dtActionCoolDown": { "type": "float32", "value": 0 },
 				"m_sweetCancelPromptText": {
 					"type": "ZRuntimeResourceID",
 					"value": null,
@@ -4924,7 +4949,17 @@
 			"parent": "cafe6700ed05acd1",
 			"name": "EMP",
 			"factory": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entityblueprint"
+			"blueprint": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entityblueprint",
+			"events": {
+				"OnTrue": {
+					"SetPage": [
+						{
+							"ref": "cafe8b3d38bdc88f",
+							"value": { "type": "int32", "value": 3 }
+						}
+					]
+				}
+			}
 		},
 		"cafe4f6463846057": {
 			"parent": "cafeb662f3907cec",
@@ -5481,7 +5516,17 @@
 			"parent": "cafe6700ed05acd1",
 			"name": "Trigger payload",
 			"factory": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entityblueprint"
+			"blueprint": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entityblueprint",
+			"events": {
+				"OnTrue": {
+					"SetPage": [
+						{
+							"ref": "cafe8b3d38bdc88f",
+							"value": { "type": "int32", "value": 1 }
+						}
+					]
+				}
+			}
 		},
 		"cafe93e13d2b5e67": {
 			"parent": "cafeddbe76a14ed3",
@@ -5781,7 +5826,17 @@
 			"parent": "cafe6700ed05acd1",
 			"name": "NPC transport grab",
 			"factory": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entityblueprint"
+			"blueprint": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entityblueprint",
+			"events": {
+				"OnTrue": {
+					"SetPage": [
+						{
+							"ref": "cafe8b3d38bdc88f",
+							"value": { "type": "int32", "value": 3 }
+						}
+					]
+				}
+			}
 		},
 		"cafe260aef5e200e": {
 			"parent": "cafe7269e65e70d9",
@@ -6031,7 +6086,17 @@
 			"parent": "cafe6700ed05acd1",
 			"name": "NPC transport drop",
 			"factory": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entityblueprint"
+			"blueprint": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entityblueprint",
+			"events": {
+				"OnTrue": {
+					"SetPage": [
+						{
+							"ref": "cafe8b3d38bdc88f",
+							"value": { "type": "int32", "value": 4 }
+						}
+					]
+				}
+			}
 		},
 		"cafe0a6cd0ee1bcc": {
 			"parent": "cafe70afe391a23a",
@@ -7573,6 +7638,276 @@
 			"events": {
 				"OnPressed": { "NextState": ["cafe6700ed05acd1"] }
 			}
+		},
+		"cafeed8e3f171765": {
+			"parent": "cafee8b683ff61f1",
+			"name": "PaginationTest",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe5276fdff3f67": {
+			"parent": "cafed383f7f36bac",
+			"name": "Not Zoomed In and Not Touch Input",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe4e7db4e1bc45", "cafe7def53c03b57"],
+					"postInit": true
+				}
+			}
+		},
+		"cafe628c8c091214": {
+			"parent": "cafed383f7f36bac",
+			"name": "Is Touch Input",
+			"factory": "[modules:/zinputcontrollertypecondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinputcontrollertypecondition.class].pc_entityblueprint",
+			"properties": {
+				"TouchInput": { "type": "bool", "value": true }
+			}
+		},
+		"cafe092dbcc5f608": {
+			"parent": "cafed383f7f36bac",
+			"name": "Is Zoomed In",
+			"factory": "[modules:/zevergreenmenucondition.class].pc_entitytype",
+			"blueprint": "[modules:/zevergreenmenucondition.class].pc_entityblueprint",
+			"properties": {
+				"m_query": {
+					"type": "ZEvergreenMenuCondition.EQuery",
+					"value": "IS_ZOOMED_IN"
+				},
+				"m_subject": {
+					"type": "SEntityTemplateReference",
+					"value": null,
+					"postInit": true
+				}
+			}
+		},
+		"cafe4e7db4e1bc45": {
+			"parent": "cafed383f7f36bac",
+			"name": "Is Not Zoomed In",
+			"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe092dbcc5f608"
+				}
+			}
+		},
+		"cafed383f7f36bac": {
+			"parent": "cafeed8e3f171765",
+			"name": "Combined Pagination Action",
+			"factory": "[modules:/zevergreenmenuentrypromptpaginationaction.class].pc_entitytype",
+			"blueprint": "[modules:/zevergreenmenuentrypromptpaginationaction.class].pc_entityblueprint",
+			"properties": {
+				"m_rPageController": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe8b3d38bdc88f"
+				},
+				"m_isVisible": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe5276fdff3f67"
+				},
+				"m_sweetPromptText": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00ED75F755DAB72F",
+						"flag": "5F"
+					}
+				}
+			}
+		},
+		"cafe7def53c03b57": {
+			"parent": "cafed383f7f36bac",
+			"name": "Is Not Touch Input",
+			"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe628c8c091214"
+				}
+			}
+		},
+		"cafe8b3d38bdc88f": {
+			"parent": "cafeed8e3f171765",
+			"name": "EvergreenMenuPageController",
+			"factory": "[modules:/zevergreenmenupagecontroller.class].pc_entitytype",
+			"blueprint": "[modules:/zevergreenmenupagecontroller.class].pc_entityblueprint",
+			"properties": {
+				"m_bWrap": { "type": "bool", "value": true },
+				"m_fSpeed": { "type": "float32", "value": 100 },
+				"m_aPages": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe6eb529a67035", "cafebbe1728cd88b", "cafe93ab247aed9c", "cafe68abd29b8470"],
+					"postInit": true
+				},
+				"m_rCurrentIndex": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe808e96b117c2",
+					"postInit": true
+				}
+			},
+			"events": { "Transitioning": { "SetValue": [] } }
+		},
+		"cafe808e96b117c2": {
+			"parent": "cafeed8e3f171765",
+			"name": "Value",
+			"factory": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint",
+			"properties": { "m_nValue": { "type": "int32", "value": 0 } }
+		},
+		"cafe93ab247aed9c": {
+			"parent": "cafe9bdd9c7d25b0",
+			"name": "2_Drop Payload",
+			"factory": "[modules:/zevergreenmenupageentity.class].pc_entitytype",
+			"blueprint": "[modules:/zevergreenmenupageentity.class].pc_entityblueprint"
+		},
+		"cafe6eb529a67035": {
+			"parent": "cafe9bdd9c7d25b0",
+			"name": "0_Distraction",
+			"factory": "[modules:/zevergreenmenupageentity.class].pc_entitytype",
+			"blueprint": "[modules:/zevergreenmenupageentity.class].pc_entityblueprint"
+		},
+		"cafe9bdd9c7d25b0": {
+			"parent": "cafeed8e3f171765",
+			"name": "Pages",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafebbe1728cd88b": {
+			"parent": "cafe9bdd9c7d25b0",
+			"name": "1_Trigger Payload",
+			"factory": "[modules:/zevergreenmenupageentity.class].pc_entitytype",
+			"blueprint": "[modules:/zevergreenmenupageentity.class].pc_entityblueprint"
+		},
+		"cafec59ee7ba5ac0": {
+			"parent": "cafe9bdd9c7d25b0",
+			"name": "3_NPC Transport grab",
+			"factory": "[modules:/zevergreenmenupageentity.class].pc_entitytype",
+			"blueprint": "[modules:/zevergreenmenupageentity.class].pc_entityblueprint"
+		},
+		"cafe68abd29b8470": {
+			"parent": "cafe9bdd9c7d25b0",
+			"name": "5_EMP",
+			"factory": "[modules:/zevergreenmenupageentity.class].pc_entitytype",
+			"blueprint": "[modules:/zevergreenmenupageentity.class].pc_entityblueprint"
+		},
+		"cafe98f25f8bfcd0": {
+			"parent": "cafe9bdd9c7d25b0",
+			"name": "4_NPC Transport drop",
+			"factory": "[modules:/zevergreenmenupageentity.class].pc_entitytype",
+			"blueprint": "[modules:/zevergreenmenupageentity.class].pc_entityblueprint"
+		},
+		"cafe98d6f08e3c33": {
+			"parent": "cafe6eb529a67035",
+			"name": "ValueInt_Evaluation_0",
+			"factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_evaluation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_evaluation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_nCompareTo": { "type": "int32", "value": 0 },
+				"m_eEvaluation": {
+					"type": "ZValueInt_Evaluation.EEvaluationType",
+					"value": "EQUAL"
+				},
+				"m_rValueInt": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe808e96b117c2"
+				}
+			},
+			"events": { "OnTrue": { "SetTrue": ["cafebf8fb62d1831"] } }
+		},
+		"cafecb1ffa2a03e8": {
+			"parent": "cafe98f25f8bfcd0",
+			"name": "ValueInt_Evaluation_3",
+			"factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_evaluation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_evaluation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_nCompareTo": { "type": "int32", "value": 4 },
+				"m_eEvaluation": {
+					"type": "ZValueInt_Evaluation.EEvaluationType",
+					"value": "EQUAL"
+				},
+				"m_rValueInt": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe808e96b117c2"
+				}
+			},
+			"events": { "OnTrue": { "SetTrue": ["cafe7d4b32d6c5e5"] } }
+		},
+		"cafef04cafeba6d1": {
+			"parent": "cafe68abd29b8470",
+			"name": "ValueInt_Evaluation_5",
+			"factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_evaluation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_evaluation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_nCompareTo": { "type": "int32", "value": 3 },
+				"m_eEvaluation": {
+					"type": "ZValueInt_Evaluation.EEvaluationType",
+					"value": "EQUAL"
+				},
+				"m_rValueInt": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe808e96b117c2"
+				}
+			},
+			"events": { "OnTrue": { "SetTrue": ["cafed6f665af2340"] } }
+		},
+		"cafe0a148ad1967e": {
+			"parent": "cafebbe1728cd88b",
+			"name": "ValueInt_Evaluation_1",
+			"factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_evaluation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_evaluation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_nCompareTo": { "type": "int32", "value": 1 },
+				"m_eEvaluation": {
+					"type": "ZValueInt_Evaluation.EEvaluationType",
+					"value": "EQUAL"
+				},
+				"m_rValueInt": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe808e96b117c2"
+				}
+			},
+			"events": { "OnTrue": { "SetTrue": ["cafec3f8f27efe88"] } }
+		},
+		"cafec715ed5d5856": {
+			"parent": "cafe93ab247aed9c",
+			"name": "ValueInt_Evaluation_2",
+			"factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_evaluation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_evaluation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_nCompareTo": { "type": "int32", "value": 2 },
+				"m_eEvaluation": {
+					"type": "ZValueInt_Evaluation.EEvaluationType",
+					"value": "EQUAL"
+				},
+				"m_rValueInt": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe808e96b117c2"
+				}
+			},
+			"events": { "OnTrue": { "SetTrue": ["cafe1cd21e6a5817"] } }
+		},
+		"cafeebf6afbf79c6": {
+			"parent": "cafec59ee7ba5ac0",
+			"name": "ValueInt_Evaluation_4",
+			"factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_evaluation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_evaluation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_nCompareTo": { "type": "int32", "value": 3 },
+				"m_eEvaluation": {
+					"type": "ZValueInt_Evaluation.EEvaluationType",
+					"value": "EQUAL"
+				},
+				"m_rValueInt": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe808e96b117c2"
+				}
+			},
+			"events": { "OnTrue": { "SetTrue": ["cafe336f30dc5e59"] } }
 		}
 	},
 	"propertyOverrides": [],
