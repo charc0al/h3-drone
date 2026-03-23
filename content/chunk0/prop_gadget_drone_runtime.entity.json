@@ -1333,7 +1333,8 @@
 				"OnTrue": {
 					"Enable": [
 						"cafef8372f8a2957",
-						"cafe8160d480094a"
+						"cafe8160d480094a",
+						"cafe788c7ac18280"
 					],
 					"Poll": [
 						"cafed07d339db6b4",
@@ -1346,7 +1347,8 @@
 				"OnFalse": {
 					"Disable": [
 						"cafef8372f8a2957",
-						"cafe8160d480094a"
+						"cafe8160d480094a",
+						"cafe788c7ac18280"
 					],
 					"Poll": [
 						"cafed07d339db6b4"
@@ -8887,8 +8889,8 @@
 			},
 			"events": {
 				"Output": {
-					"Set": [
-						"cafed25ae5fe6544"
+					"SetProbeDistance": [
+						"cafe788c7ac18280"
 					]
 				}
 			}
@@ -10620,6 +10622,186 @@
 					],
 					"In": [
 						"cafe7da8ffd4d6b1"
+					]
+				}
+			}
+		},
+		"cafe17bfecbc1afd": {
+			"parent": "cafec7f4a97cf289",
+			"name": "Collision detection",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe5ff0c05cea31": {
+			"parent": "cafe17bfecbc1afd",
+			"name": "SmoothOperator",
+			"factory": "[modules:/zsmoothoperator.class].pc_entitytype",
+			"blueprint": "[modules:/zsmoothoperator.class].pc_entityblueprint",
+			"properties": {
+				"m_bHasInitialValue": {
+					"type": "bool",
+					"value": true
+				},
+				"m_fCurrentValue": {
+					"type": "float32",
+					"value": 1
+				},
+				"m_eSmoothingMode": {
+					"type": "ESmoothingMode",
+					"value": "ESM_LINEAR"
+				},
+				"m_fTransitionTime": {
+					"type": "float32",
+					"value": 0.01
+				}
+			},
+			"events": {
+				"Output": {
+					"Set": [
+						"cafed25ae5fe6544"
+					]
+				}
+			}
+		},
+		"cafec7c12595ffd9": {
+			"parent": "cafe788c7ac18280",
+			"name": "ValueFloat_RayLength",
+			"factory": "[assembly:/_pro/design/logic/valuefloat.template?/valuefloat_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuefloat.template?/valuefloat_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_fValue": {
+					"type": "float32",
+					"value": 0
+				},
+				"m_bSetValueAlwaysTriggerChangedEvent": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"events": {
+				"OnValue": {
+					"A": [
+						"cafe9e42e6a1bcf6"
+					]
+				}
+			}
+		},
+		"cafe6d9fdbee45df": {
+			"parent": "cafe788c7ac18280",
+			"name": "VB_RayHit",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": {
+					"type": "bool",
+					"value": false
+				}
+			}
+		},
+		"cafe266ba047efd9": {
+			"parent": "cafe17bfecbc1afd",
+			"name": "Raycast spatial",
+			"factory": "[modules:/zspatialentity.class].pc_entitytype",
+			"blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 90,
+							"y": 0,
+							"z": 90
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0.1
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe8b6177f08e7d",
+					"postInit": true
+				}
+			}
+		},
+		"cafe788c7ac18280": {
+			"parent": "cafe266ba047efd9",
+			"name": "HM5DynamicRaycast",
+			"factory": "[modules:/zhm5dynamicraycastentity.class].pc_entitytype",
+			"blueprint": "[modules:/zhm5dynamicraycastentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -180.0,
+							"y": 0.0,
+							"z": -180.0
+						},
+						"position": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 0.0
+						}
+					}
+				},
+				"m_bEnabled": {
+					"type": "bool",
+					"value": false
+				},
+				"m_eCollideType": {
+					"type": "ZHM5DynamicRayCastEntity.ECollideType",
+					"value": "eStaticOnly"
+				},
+				"m_nProbeDistance": {
+					"type": "float32",
+					"value": 1
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe266ba047efd9",
+					"postInit": true
+				}
+			},
+			"events": {
+				"RayLength": {
+					"SetValue": [
+						"cafec7c12595ffd9"
+					]
+				},
+				"OnRayEnter": {
+					"SetTrue": [
+						"cafe6d9fdbee45df"
+					]
+				},
+				"OnRayLeave": {
+					"SetFalse": [
+						"cafe6d9fdbee45df"
+					]
+				}
+			}
+		},
+		"cafe9e42e6a1bcf6": {
+			"parent": "cafe266ba047efd9",
+			"name": "MultiplyDivide",
+			"factory": "[modules:/zmathmultiplydivide.class].pc_entitytype",
+			"blueprint": "[modules:/zmathmultiplydivide.class].pc_entityblueprint",
+			"properties": {
+				"m_bDivide": {
+					"type": "bool",
+					"value": false
+				},
+				"m_fB": {
+					"type": "float32",
+					"value": 1
+				}
+			},
+			"events": {
+				"Out": {
+					"Input": [
+						"cafe5ff0c05cea31"
 					]
 				}
 			}
