@@ -6691,6 +6691,9 @@
 					"SetFalse": [
 						"cafec1e5b31b80f1"
 					],
+					"SetTrue": [
+						"cafe0cc0e5e1bfad"
+					],
 					"Poll": [
 						"cafe79a0582eebee",
 						"cafe00c0a7282dda",
@@ -7716,6 +7719,7 @@
 					"value": [
 						"cafe889897d1d956",
 						"cafe207a0dc3b970",
+						"cafe0cc0e5e1bfad",
 						{
 							"ref": "cafef8c807a2be56",
 							"externalScene": null,
@@ -10287,63 +10291,6 @@
 			"factory": "[modules:/zentity.class].pc_entitytype",
 			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
 		},
-		"cafe5276fdff3f67": {
-			"parent": "cafed383f7f36bac",
-			"name": "Not Zoomed In and Not Touch Input",
-			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
-			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
-			"properties": {
-				"m_aValues": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": [
-						"cafe4e7db4e1bc45",
-						"cafe7def53c03b57"
-					],
-					"postInit": true
-				}
-			}
-		},
-		"cafe628c8c091214": {
-			"parent": "cafed383f7f36bac",
-			"name": "Is Touch Input",
-			"factory": "[modules:/zinputcontrollertypecondition.class].pc_entitytype",
-			"blueprint": "[modules:/zinputcontrollertypecondition.class].pc_entityblueprint",
-			"properties": {
-				"TouchInput": {
-					"type": "bool",
-					"value": true
-				}
-			}
-		},
-		"cafe092dbcc5f608": {
-			"parent": "cafed383f7f36bac",
-			"name": "Is Zoomed In",
-			"factory": "[modules:/zevergreenmenucondition.class].pc_entitytype",
-			"blueprint": "[modules:/zevergreenmenucondition.class].pc_entityblueprint",
-			"properties": {
-				"m_query": {
-					"type": "ZEvergreenMenuCondition.EQuery",
-					"value": "IS_ZOOMED_IN"
-				},
-				"m_subject": {
-					"type": "SEntityTemplateReference",
-					"value": null,
-					"postInit": true
-				}
-			}
-		},
-		"cafe4e7db4e1bc45": {
-			"parent": "cafed383f7f36bac",
-			"name": "Is Not Zoomed In",
-			"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
-			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
-			"properties": {
-				"m_rCondition": {
-					"type": "SEntityTemplateReference",
-					"value": "cafe092dbcc5f608"
-				}
-			}
-		},
 		"cafed383f7f36bac": {
 			"parent": "cafeed8e3f171765",
 			"name": "Combined Pagination Action",
@@ -10356,26 +10303,11 @@
 				},
 				"m_isVisible": {
 					"type": "SEntityTemplateReference",
-					"value": "cafe5276fdff3f67"
+					"value": "cafe97d6ae376395"
 				},
 				"m_sweetPromptText": {
 					"type": "ZRuntimeResourceID",
-					"value": {
-						"resource": "00ED75F755DAB72F",
-						"flag": "5F"
-					}
-				}
-			}
-		},
-		"cafe7def53c03b57": {
-			"parent": "cafed383f7f36bac",
-			"name": "Is Not Touch Input",
-			"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
-			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
-			"properties": {
-				"m_rCondition": {
-					"type": "SEntityTemplateReference",
-					"value": "cafe628c8c091214"
+					"value": null
 				}
 			}
 		},
@@ -10627,6 +10559,67 @@
 				"OnTrue": {
 					"SetTrue": [
 						"cafe336f30dc5e59"
+					]
+				}
+			}
+		},
+		"cafe0cc0e5e1bfad": {
+			"parent": "cafeddbe76a14ed3",
+			"name": "VB_VisibilityCondition_Hack",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": {
+					"type": "bool",
+					"value": true
+				}
+			}
+		},
+		"cafe7da8ffd4d6b1": {
+			"parent": "cafeddbe76a14ed3",
+			"name": "Timer_VisibilityCondition_Hack",
+			"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": {
+					"type": "int32",
+					"value": 250
+				}
+			},
+			"events": {
+				"Out": {
+					"SetTrue": [
+						"cafe0cc0e5e1bfad"
+					]
+				}
+			}
+		},
+		"cafec49fb11d0ca9": {
+			"parent": "cafeddbe76a14ed3",
+			"name": "ValueBool_Changed",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_changed.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe0d2f3c8dc503"
+				}
+			},
+			"events": {
+				"OnTrue": {
+					"SetFalse": [
+						"cafe0cc0e5e1bfad"
+					],
+					"In": [
+						"cafe7da8ffd4d6b1"
+					]
+				},
+				"OnFalse": {
+					"SetFalse": [
+						"cafe0cc0e5e1bfad"
+					],
+					"In": [
+						"cafe7da8ffd4d6b1"
 					]
 				}
 			}
