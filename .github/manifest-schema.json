@@ -1,6 +1,13 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"required": ["id", "name", "description", "authors", "version", "frameworkVersion"],
+	"required": [
+		"id",
+		"name",
+		"description",
+		"authors",
+		"version",
+		"frameworkVersion"
+	],
 	"allOf": [
 		{
 			"properties": {
@@ -61,11 +68,16 @@
 											},
 											"type": {
 												"description": "The type of the option. Checkbox options appear as checkboxes in the Mod Manager.",
-												"enum": ["checkbox"],
+												"enum": [
+													"checkbox"
+												],
 												"type": "string"
 											}
 										},
-										"required": ["type", "name"],
+										"required": [
+											"type",
+											"name"
+										],
 										"type": "object"
 									},
 									{
@@ -103,11 +115,17 @@
 											},
 											"type": {
 												"description": "The type of the option. Select options appear as radio buttons in the Mod Manager under a heading (the group name).",
-												"enum": ["select"],
+												"enum": [
+													"select"
+												],
 												"type": "string"
 											}
 										},
-										"required": ["type", "name", "group"],
+										"required": [
+											"type",
+											"name",
+											"group"
+										],
 										"type": "object"
 									},
 									{
@@ -131,11 +149,17 @@
 											},
 											"type": {
 												"description": "The type of the option. Conditional options are enabled whenever a condition is met and disabled otherwise. They do not appear in the Mod Manager.",
-												"enum": ["conditional"],
+												"enum": [
+													"conditional"
+												],
 												"type": "string"
 											}
 										},
-										"required": ["type", "name", "condition"],
+										"required": [
+											"type",
+											"name",
+											"condition"
+										],
 										"type": "object"
 									},
 									{
@@ -319,7 +343,9 @@
 										"type": "string"
 									},
 									"type": {
-										"enum": ["partition"],
+										"enum": [
+											"partition"
+										],
 										"type": "string"
 									}
 								},
@@ -335,7 +361,9 @@
 										"type": "string"
 									},
 									"type": {
-										"enum": ["entity"],
+										"enum": [
+											"entity"
+										],
 										"type": "string"
 									}
 								},
@@ -401,7 +429,11 @@
 			"type": "object"
 		},
 		"Platform": {
-			"enum": ["epic", "microsoft", "steam"],
+			"enum": [
+				"epic",
+				"microsoft",
+				"steam"
+			],
 			"type": "string"
 		},
 		"{english:{[k:string]:string;};french:{[k:string]:string;};italian:{[k:string]:string;};german:{[k:string]:string;};spanish:{[k:string]:string;};russian:{[k:string]:string;};chineseSimplified:{[k:string]:string;};chineseTraditional:{[k:string]:string;};japanese:{[k:string]:string;};}": {

@@ -46,9 +46,15 @@
 						}
 					},
 					"events": {
-						"Item": { "SetItem": ["cafeb6192016d8e8"] },
+						"Item": {
+							"SetItem": [
+								"cafeb6192016d8e8"
+							]
+						},
 						"ItemReady": {
-							"PickupIntoPocket": ["cafeb6192016d8e8"]
+							"PickupIntoPocket": [
+								"cafeb6192016d8e8"
+							]
 						}
 					}
 				}
@@ -78,7 +84,11 @@
 						}
 					},
 					"events": {
-						"OnTrue": { "SetTrue": ["cafe037109b00cc1"] }
+						"OnTrue": {
+							"SetTrue": [
+								"cafe037109b00cc1"
+							]
+						}
 					}
 				}
 			]
@@ -98,7 +108,11 @@
 						}
 					},
 					"events": {
-						"EventOccurred": { "Poll": ["cafe463229405d14"] }
+						"EventOccurred": {
+							"Poll": [
+								"cafe463229405d14"
+							]
+						}
 					}
 				}
 			]
@@ -157,7 +171,11 @@
 						}
 					},
 					"events": {
-						"PollFalse": { "SpawnItem": ["cafea98925fa8ec3"] }
+						"PollFalse": {
+							"SpawnItem": [
+								"cafea98925fa8ec3"
+							]
+						}
 					}
 				}
 			]

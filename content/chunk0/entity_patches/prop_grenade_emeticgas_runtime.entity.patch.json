@@ -17,7 +17,9 @@
 						},
 						"m_aHolders": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["e7c305ad5f5f1c2b"],
+							"value": [
+								"e7c305ad5f5f1c2b"
+							],
 							"postInit": true
 						}
 					}
@@ -35,7 +37,9 @@
 					"properties": {
 						"m_Listener": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["e7c305ad5f5f1c2b"],
+							"value": [
+								"e7c305ad5f5f1c2b"
+							],
 							"postInit": true
 						},
 						"m_rTarget": {
@@ -46,8 +50,12 @@
 					},
 					"events": {
 						"OnImpact": {
-							"OnThrown": ["ba693856719982ea"],
-							"DestroyItem": ["9e00f6d94c944206"]
+							"OnThrown": [
+								"ba693856719982ea"
+							],
+							"DestroyItem": [
+								"9e00f6d94c944206"
+							]
 						}
 					}
 				}

@@ -56,7 +56,11 @@
 					"nullable": true
 				}
 			},
-			"required": ["Description", "Id", "Name"],
+			"required": [
+				"Description",
+				"Id",
+				"Name"
+			],
 			"type": "object",
 			"nullable": true
 		},
@@ -71,7 +75,9 @@
 					"nullable": true
 				}
 			},
-			"required": ["Id"],
+			"required": [
+				"Id"
+			],
 			"type": "object",
 			"nullable": true
 		},
@@ -93,12 +99,17 @@
 											"nullable": true
 										}
 									},
-									"required": ["data", "key"],
+									"required": [
+										"data",
+										"key"
+									],
 									"type": "object",
 									"nullable": true
 								}
 							},
-							"required": ["$loc"],
+							"required": [
+								"$loc"
+							],
 							"type": "object",
 							"nullable": true
 						},
@@ -113,7 +124,9 @@
 					"nullable": true
 				}
 			},
-			"required": ["display"],
+			"required": [
+				"display"
+			],
 			"type": "object",
 			"nullable": true
 		},
@@ -137,7 +150,10 @@
 										"nullable": true
 									}
 								},
-								"required": ["Mode", "VideoId"],
+								"required": [
+									"Mode",
+									"VideoId"
+								],
 								"type": "object",
 								"nullable": true
 							},
@@ -175,7 +191,10 @@
 												"nullable": true
 											}
 										},
-										"required": ["Id", "Name"],
+										"required": [
+											"Id",
+											"Name"
+										],
 										"type": "object",
 										"nullable": true
 									}
@@ -188,7 +207,10 @@
 								"nullable": true
 							}
 						},
-						"required": ["Characters", "Mode"],
+						"required": [
+							"Characters",
+							"Mode"
+						],
 						"type": "object",
 						"nullable": true
 					},
@@ -286,7 +308,10 @@
 							"description": "The contract group type."
 						}
 					},
-					"required": ["Order", "Type"],
+					"required": [
+						"Order",
+						"Type"
+					],
 					"type": "object",
 					"nullable": true
 				},
@@ -413,7 +438,10 @@
 										"nullable": true
 									}
 								},
-								"required": ["Image", "Mode"],
+								"required": [
+									"Image",
+									"Mode"
+								],
 								"type": "object",
 								"nullable": true
 							},
@@ -441,7 +469,13 @@
 					"description": "Useless property."
 				}
 			},
-			"required": ["Id", "Location", "ScenePath", "Title", "Type"],
+			"required": [
+				"Id",
+				"Location",
+				"ScenePath",
+				"Title",
+				"Type"
+			],
 			"type": "object",
 			"nullable": true
 		},
@@ -451,7 +485,10 @@
 					"properties": {
 						"$eq": {
 							"items": {
-								"type": ["string", "boolean"]
+								"type": [
+									"string",
+									"boolean"
+								]
 							},
 							"type": "array",
 							"nullable": true
@@ -496,12 +533,17 @@
 											"nullable": true
 										}
 									},
-									"required": ["data", "key"],
+									"required": [
+										"data",
+										"key"
+									],
 									"type": "object",
 									"nullable": true
 								}
 							},
-							"required": ["$loc"],
+							"required": [
+								"$loc"
+							],
 							"type": "object",
 							"nullable": true
 						},
@@ -577,7 +619,9 @@
 							"nullable": true
 						}
 					},
-					"required": ["EventName"],
+					"required": [
+						"EventName"
+					],
 					"type": "object",
 					"nullable": true
 				},
@@ -639,12 +683,17 @@
 											"nullable": true
 										}
 									},
-									"required": ["data", "key"],
+									"required": [
+										"data",
+										"key"
+									],
 									"type": "object",
 									"nullable": true
 								}
 							},
-							"required": ["$loc"],
+							"required": [
+								"$loc"
+							],
 							"type": "object",
 							"nullable": true
 						},
@@ -748,12 +797,17 @@
 									"nullable": true
 								}
 							},
-							"required": ["RepositoryId"],
+							"required": [
+								"RepositoryId"
+							],
 							"type": "object",
 							"nullable": true
 						}
 					},
-					"required": ["EventName", "EventValues"],
+					"required": [
+						"EventName",
+						"EventValues"
+					],
 					"type": "object",
 					"nullable": true
 				},
@@ -773,7 +827,9 @@
 					"nullable": true
 				}
 			},
-			"required": ["Id"],
+			"required": [
+				"Id"
+			],
 			"type": "object",
 			"nullable": true
 		},
@@ -818,7 +874,9 @@
 					"nullable": true
 				}
 			},
-			"required": ["Type"],
+			"required": [
+				"Type"
+			],
 			"type": "object",
 			"nullable": true
 		},
@@ -838,7 +896,10 @@
 					"nullable": true
 				}
 			},
-			"required": ["Bricks", "Quality"],
+			"required": [
+				"Bricks",
+				"Quality"
+			],
 			"type": "object",
 			"nullable": true
 		}
@@ -912,7 +973,10 @@
 								"nullable": true
 							}
 						},
-						"required": ["Bricks", "Difficulty"],
+						"required": [
+							"Bricks",
+							"Difficulty"
+						],
 						"type": "object",
 						"nullable": true
 					},
@@ -957,7 +1021,9 @@
 					"nullable": true
 				}
 			},
-			"required": ["Bricks"],
+			"required": [
+				"Bricks"
+			],
 			"type": "object",
 			"nullable": true
 		},
@@ -1068,7 +1134,10 @@
 			"type": "object"
 		}
 	},
-	"required": ["Data", "Metadata"],
+	"required": [
+		"Data",
+		"Metadata"
+	],
 	"type": "object",
 	"nullable": true
 }

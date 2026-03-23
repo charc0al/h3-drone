@@ -73,7 +73,16 @@
 							{
 								"Name": "gm_mTransform2D_01",
 								"Enabled": 1,
-								"Value": [1.0, -0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+								"Value": [
+									1.0,
+									-0.0,
+									0.0,
+									0.0,
+									0.0,
+									1.0,
+									0.0,
+									0.0
+								]
 							},
 							{
 								"Name": "ConstantVector1D_01_Value",
@@ -125,17 +134,29 @@
 							{
 								"Name": "ConstantColorRGB_02_Value",
 								"Enabled": 1,
-								"Value": [1.0, 1.0, 1.0]
+								"Value": [
+									1.0,
+									1.0,
+									1.0
+								]
 							},
 							{
 								"Name": "ShaderLOD_Speccolor",
 								"Enabled": 1,
-								"Value": [0.21960780024528503, 0.21960780024528503, 0.21960780024528503]
+								"Value": [
+									0.21960780024528503,
+									0.21960780024528503,
+									0.21960780024528503
+								]
 							},
 							{
 								"Name": "ConstantColorRGB_01_Value",
 								"Enabled": 1,
-								"Value": [1.0, 1.0, 1.0]
+								"Value": [
+									1.0,
+									1.0,
+									1.0
+								]
 							}
 						]
 					}
@@ -160,9 +181,21 @@
 		"ShaderLOD_Gloss": 0.0,
 		"ConstantVector1D_07_Value": 0.0,
 		"Color": {
-			"ConstantColorRGB_02_Value": [1.0, 1.0, 1.0],
-			"ShaderLOD_Speccolor": [0.21960780024528503, 0.21960780024528503, 0.21960780024528503],
-			"ConstantColorRGB_01_Value": [1.0, 1.0, 1.0]
+			"ConstantColorRGB_02_Value": [
+				1.0,
+				1.0,
+				1.0
+			],
+			"ShaderLOD_Speccolor": [
+				0.21960780024528503,
+				0.21960780024528503,
+				0.21960780024528503
+			],
+			"ConstantColorRGB_01_Value": [
+				1.0,
+				1.0,
+				1.0
+			]
 		}
 	},
 	"Flags": {

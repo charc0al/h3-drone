@@ -59,11 +59,22 @@
 						"m_mTransform": {
 							"type": "SMatrix43",
 							"value": {
-								"rotation": { "x": 0, "y": 0, "z": 0 },
-								"position": { "x": 0, "y": 0, "z": -1.8 }
+								"rotation": {
+									"x": 0,
+									"y": 0,
+									"z": 0
+								},
+								"position": {
+									"x": 0,
+									"y": 0,
+									"z": -1.8
+								}
 							}
 						},
-						"m_bVisible": { "type": "bool", "value": false },
+						"m_bVisible": {
+							"type": "bool",
+							"value": false
+						},
 						"m_eidParent": {
 							"type": "SEntityTemplateReference",
 							"value": "cafe53f17442a256",
@@ -89,7 +100,9 @@
 					},
 					"events": {
 						"EventReceived": {
-							"Position": ["cafe0fa78a7b5956"]
+							"Position": [
+								"cafe0fa78a7b5956"
+							]
 						}
 					}
 				}
@@ -142,8 +155,16 @@
 						"m_mTransform": {
 							"type": "SMatrix43",
 							"value": {
-								"rotation": { "x": 0, "y": 0, "z": 0 },
-								"position": { "x": 0, "y": 0, "z": 0 }
+								"rotation": {
+									"x": 0,
+									"y": 0,
+									"z": 0
+								},
+								"position": {
+									"x": 0,
+									"y": 0,
+									"z": 0
+								}
 							}
 						}
 					}
@@ -175,8 +196,12 @@
 					},
 					"events": {
 						"OnTrue": {
-							"Get": ["cafe3e082118b534"],
-							"In": ["cafe96d85eae777e"]
+							"Get": [
+								"cafe3e082118b534"
+							],
+							"In": [
+								"cafe96d85eae777e"
+							]
 						}
 					}
 				}
@@ -198,7 +223,9 @@
 					},
 					"events": {
 						"Keyword": {
-							"RemoveKeyword": ["cafe0060a2439a4e"]
+							"RemoveKeyword": [
+								"cafe0060a2439a4e"
+							]
 						}
 					}
 				}
@@ -229,7 +256,9 @@
 					},
 					"events": {
 						"OnGetIActor": {
-							"TransmitEvent": ["cafefab717ef60c4"]
+							"TransmitEvent": [
+								"cafefab717ef60c4"
+							]
 						}
 					}
 				}
@@ -249,7 +278,13 @@
 							"value": 100
 						}
 					},
-					"events": { "Out": { "Attach": ["cafe2f37986da863"] } }
+					"events": {
+						"Out": {
+							"Attach": [
+								"cafe2f37986da863"
+							]
+						}
+					}
 				}
 			]
 		},
@@ -298,8 +333,12 @@
 					},
 					"events": {
 						"Out": {
-							"Start": ["cafe1b6abe44d5ea"],
-							"In": ["cafe723ae28664ab"]
+							"Start": [
+								"cafe1b6abe44d5ea"
+							],
+							"In": [
+								"cafe723ae28664ab"
+							]
 						}
 					}
 				}
@@ -315,15 +354,29 @@
 					"blueprint": "[modules:/zsignalforkentity_void.class].pc_entityblueprint",
 					"events": {
 						"Out01": {
-							"PacifyByAccident": ["cafea38bd598c8cc"]
+							"PacifyByAccident": [
+								"cafea38bd598c8cc"
+							]
 						},
 						"Out02": {
-							"AccidentEndPacify": ["cafea38bd598c8cc"]
+							"AccidentEndPacify": [
+								"cafea38bd598c8cc"
+							]
 						},
-						"Out03": { "In": ["cafedeae02cde427"] },
-						"Out04": { "Poll": ["cafe93cbe28aa1c3"] },
+						"Out03": {
+							"In": [
+								"cafedeae02cde427"
+							]
+						},
+						"Out04": {
+							"Poll": [
+								"cafe93cbe28aa1c3"
+							]
+						},
 						"Out05": {
-							"WireAttach": ["cafe837f65524ed8"],
+							"WireAttach": [
+								"cafe837f65524ed8"
+							],
 							"SetVisible": [
 								{
 									"ref": "cafe837f65524ed8",
@@ -352,7 +405,13 @@
 							"value": 1000
 						}
 					},
-					"events": { "Out": { "Poll": ["cafe54896e89e7c6"] } }
+					"events": {
+						"Out": {
+							"Poll": [
+								"cafe54896e89e7c6"
+							]
+						}
+					}
 				}
 			]
 		},
@@ -371,7 +430,11 @@
 						}
 					},
 					"events": {
-						"EventReceived": { "Poll": ["cafe368138103954"] }
+						"EventReceived": {
+							"Poll": [
+								"cafe368138103954"
+							]
+						}
 					}
 				}
 			]
@@ -419,11 +482,31 @@
 					"factory": "[modules:/zsignalforkentity_void.class].pc_entitytype",
 					"blueprint": "[modules:/zsignalforkentity_void.class].pc_entityblueprint",
 					"events": {
-						"Out01": { "Abort": ["cafedeae02cde427"] },
-						"Out02": { "Abort": ["cafe723ae28664ab"] },
-						"Out03": { "Detach": ["cafe2f37986da863"] },
-						"Out04": { "GetKeyword": ["cafea64eedb97d22"] },
-						"Out05": { "In": ["cafece34de795b57"] }
+						"Out01": {
+							"Abort": [
+								"cafedeae02cde427"
+							]
+						},
+						"Out02": {
+							"Abort": [
+								"cafe723ae28664ab"
+							]
+						},
+						"Out03": {
+							"Detach": [
+								"cafe2f37986da863"
+							]
+						},
+						"Out04": {
+							"GetKeyword": [
+								"cafea64eedb97d22"
+							]
+						},
+						"Out05": {
+							"In": [
+								"cafece34de795b57"
+							]
+						}
 					}
 				}
 			]
@@ -440,15 +523,26 @@
 						"m_mTransform": {
 							"type": "SMatrix43",
 							"value": {
-								"rotation": { "x": 0, "y": 0, "z": 0 },
-								"position": { "x": 0, "y": 0, "z": 0.025 }
+								"rotation": {
+									"x": 0,
+									"y": 0,
+									"z": 0
+								},
+								"position": {
+									"x": 0,
+									"y": 0,
+									"z": 0.025
+								}
 							}
 						},
 						"m_eRoomBehaviour": {
 							"type": "ZSpatialEntity.ERoomBehaviour",
 							"value": "ROOM_DYNAMIC"
 						},
-						"m_bVisible": { "type": "bool", "value": false },
+						"m_bVisible": {
+							"type": "bool",
+							"value": false
+						},
 						"m_Material": {
 							"type": "ZRuntimeResourceID",
 							"value": {
@@ -456,7 +550,10 @@
 								"flag": "5F"
 							}
 						},
-						"m_nNumWires": { "type": "uint32", "value": 1 },
+						"m_nNumWires": {
+							"type": "uint32",
+							"value": 1
+						},
 						"m_fWireWidth": {
 							"type": "float32",
 							"value": 0.01
@@ -485,7 +582,10 @@
 							"type": "bool",
 							"value": false
 						},
-						"m_nIterations": { "type": "uint32", "value": 4 },
+						"m_nIterations": {
+							"type": "uint32",
+							"value": 4
+						},
 						"m_bCalculateRestPose": {
 							"type": "bool",
 							"value": true
@@ -510,12 +610,18 @@
 							"type": "bool",
 							"value": false
 						},
-						"m_bAnchorEnd": { "type": "bool", "value": true },
+						"m_bAnchorEnd": {
+							"type": "bool",
+							"value": true
+						},
 						"m_LocalColliders": {
 							"type": "TArray<SEntityTemplateReference>",
 							"value": []
 						},
-						"m_fWireLength": { "type": "float32", "value": 1 },
+						"m_fWireLength": {
+							"type": "float32",
+							"value": 1
+						},
 						"m_VertexColor": {
 							"type": "SColorRGB",
 							"value": "#ffffff"
@@ -546,7 +652,11 @@
 					"factory": "[modules:/zsignalforkentity_void.class].pc_entitytype",
 					"blueprint": "[modules:/zsignalforkentity_void.class].pc_entityblueprint",
 					"events": {
-						"Out01": { "WireDetach": ["cafe837f65524ed8"] },
+						"Out01": {
+							"WireDetach": [
+								"cafe837f65524ed8"
+							]
+						},
 						"Out02": {
 							"SetVisible": [
 								{
@@ -558,8 +668,16 @@
 								}
 							]
 						},
-						"Out03": { "GetIActor": ["cafea38bd598c8cc"] },
-						"Out04": { "In": ["cafe5405781dea0e"] }
+						"Out03": {
+							"GetIActor": [
+								"cafea38bd598c8cc"
+							]
+						},
+						"Out04": {
+							"In": [
+								"cafe5405781dea0e"
+							]
+						}
 					}
 				}
 			]
@@ -579,7 +697,11 @@
 						}
 					},
 					"events": {
-						"PollTrue": { "In": ["cafedf73c8417cb9"] }
+						"PollTrue": {
+							"In": [
+								"cafedf73c8417cb9"
+							]
+						}
 					}
 				}
 			]
@@ -615,7 +737,11 @@
 						}
 					},
 					"events": {
-						"OnFalse": { "Poll": ["cafe368138103954"] }
+						"OnFalse": {
+							"Poll": [
+								"cafe368138103954"
+							]
+						}
 					}
 				}
 			]
@@ -635,7 +761,11 @@
 						}
 					},
 					"events": {
-						"EventOccurred": { "Poll": ["cafe1b652d33a7a6"] }
+						"EventOccurred": {
+							"Poll": [
+								"cafe1b652d33a7a6"
+							]
+						}
 					}
 				}
 			]
@@ -655,7 +785,11 @@
 						}
 					},
 					"events": {
-						"PollTrue": { "Attach": ["cafe2f37986da863"] }
+						"PollTrue": {
+							"Attach": [
+								"cafe2f37986da863"
+							]
+						}
 					}
 				}
 			]
@@ -710,8 +844,12 @@
 					},
 					"events": {
 						"PollTrue": {
-							"In": ["cafe723ae28664ab"],
-							"Start": ["cafe1b6abe44d5ea"]
+							"In": [
+								"cafe723ae28664ab"
+							],
+							"Start": [
+								"cafe1b6abe44d5ea"
+							]
 						}
 					}
 				}
@@ -776,7 +914,10 @@
 					"properties": {
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["cafeb019b8b619aa", "cafef8b801a403f3"]
+							"value": [
+								"cafeb019b8b619aa",
+								"cafef8b801a403f3"
+							]
 						},
 						"m_eEvaluation": {
 							"type": "ZValueBool_Operation_Signal.EEvaluationType",
@@ -812,9 +953,18 @@
 					"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
 					"properties": {
-						"Delay time (ms)": { "type": "int32", "value": 33 }
+						"Delay time (ms)": {
+							"type": "int32",
+							"value": 33
+						}
 					},
-					"events": { "Out": { "In": ["cafeddd9af18a557"] } }
+					"events": {
+						"Out": {
+							"In": [
+								"cafeddd9af18a557"
+							]
+						}
+					}
 				}
 			]
 		},
@@ -833,7 +983,11 @@
 						}
 					},
 					"events": {
-						"PollTrue": { "ReviveActor": ["cafea38bd598c8cc"] }
+						"PollTrue": {
+							"ReviveActor": [
+								"cafea38bd598c8cc"
+							]
+						}
 					}
 				}
 			]

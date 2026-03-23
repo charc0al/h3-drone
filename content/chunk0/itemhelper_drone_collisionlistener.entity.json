@@ -29,7 +29,10 @@
 			"factory": "[modules:/zcollisionlistenerentity.class].pc_entitytype",
 			"blueprint": "[modules:/zcollisionlistenerentity.class].pc_entityblueprint",
 			"properties": {
-				"m_bEnabled": { "type": "bool", "value": false },
+				"m_bEnabled": {
+					"type": "bool",
+					"value": false
+				},
 				"m_Listener": {
 					"type": "TArray<SEntityTemplateReference>",
 					"value": [],
@@ -37,7 +40,11 @@
 				}
 			},
 			"outputCopying": {
-				"OnImpact": { "OnImpact": ["cafe5c10050c2605"] }
+				"OnImpact": {
+					"OnImpact": [
+						"cafe5c10050c2605"
+					]
+				}
 			}
 		},
 		"cafef92b9f178566": {
@@ -51,7 +58,13 @@
 					"value": "cafe979f3d524d81"
 				}
 			},
-			"events": { "EventReceived": { "Poll": ["cafe723341d7e91a"] } }
+			"events": {
+				"EventReceived": {
+					"Poll": [
+						"cafe723341d7e91a"
+					]
+				}
+			}
 		},
 		"cafe979f3d524d81": {
 			"parent": "cafef92b9f178566",
@@ -76,7 +89,13 @@
 					"value": "cafe1b3d18b2489b"
 				}
 			},
-			"events": { "PollTrue": { "Enable": ["cafe3096f459374d"] } }
+			"events": {
+				"PollTrue": {
+					"Enable": [
+						"cafe3096f459374d"
+					]
+				}
+			}
 		},
 		"cafe1b3d18b2489b": {
 			"parent": "cafe5c10050c2605",
@@ -94,7 +113,10 @@
 					"value": null,
 					"postInit": true
 				},
-				"m_bSubscribe": { "type": "bool", "value": true }
+				"m_bSubscribe": {
+					"type": "bool",
+					"value": true
+				}
 			}
 		},
 		"cafe102c9d2f3b07": {
