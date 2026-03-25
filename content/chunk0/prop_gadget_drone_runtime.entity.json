@@ -6953,7 +6953,7 @@
 		},
 		"cafec2a30524cac0": {
 			"parent": "cafe8160d480094a",
-			"name": "Down",
+			"name": "Trigger NPC Transport Drop",
 			"factory": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -6970,42 +6970,7 @@
 					"value": "F"
 				}
 			},
-			"events": {
-				"Down": {
-					"In": [
-						"cafeef5078a7a8da"
-					],
-					"A": [
-						{
-							"ref": "cafe7c997716c4f0",
-							"value": {
-								"type": "float32",
-								"value": 1
-							}
-						}
-					]
-				},
-				"Up": {
-					"Abort": [
-						"cafeef5078a7a8da"
-					],
-					"SetFalse": [
-						"cafefa473eba3db8"
-					],
-					"In": [
-						"cafeb4fcf01f2b2e"
-					],
-					"A": [
-						{
-							"ref": "cafe7c997716c4f0",
-							"value": {
-								"type": "float32",
-								"value": 0
-							}
-						}
-					]
-				}
-			}
+			"events": { "Up": { "In": ["cafe0a6cd0ee1bcc"] } }
 		},
 		"cafed7a01448aaa2": {
 			"parent": "cafe8160d480094a",
@@ -7063,7 +7028,7 @@
 		},
 		"cafe24a2954f902b": {
 			"parent": "cafe8160d480094a",
-			"name": "Up",
+			"name": "Trigger NPC Transport Grab",
 			"factory": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -7080,42 +7045,7 @@
 					"value": "R"
 				}
 			},
-			"events": {
-				"Down": {
-					"In": [
-						"cafeeed97bbfb639"
-					],
-					"Set_a": [
-						{
-							"ref": "cafe777f40322bbc",
-							"value": {
-								"type": "float32",
-								"value": 1
-							}
-						}
-					]
-				},
-				"Up": {
-					"Abort": [
-						"cafeeed97bbfb639"
-					],
-					"SetFalse": [
-						"cafe17bf0b702703"
-					],
-					"In": [
-						"cafeb4fcf01f2b2e"
-					],
-					"Set_a": [
-						{
-							"ref": "cafe777f40322bbc",
-							"value": {
-								"type": "float32",
-								"value": 0
-							}
-						}
-					]
-				}
-			}
+			"events": { "Up": { "In": ["cafe60f46bac8b4f"] } }
 		},
 		"cafe11305acfbc9a": {
 			"parent": "cafeb4802fc3f7af",
@@ -7560,7 +7490,7 @@
 				},
 				"m_sKeyName": { "type": "ZString", "value": "T" }
 			},
-			"events": { "Up": { "Poll": ["cafe10c4e1a6972a"] } }
+			"events": {}
 		},
 		"cafe334455667788": {
 			"parent": "cafe8160d480094a",
@@ -7575,7 +7505,7 @@
 				},
 				"m_sKeyName": { "type": "ZString", "value": "NUMBER_4" }
 			},
-			"events": { "Up": { "Trigger": ["cafe24e22e61d8df"] } }
+			"events": {}
 		},
 		"cafef1e2d3c4b5a6": {
 			"parent": "cafe8160d480094a",
@@ -7590,11 +7520,11 @@
 				},
 				"m_sKeyName": { "type": "ZString", "value": "V" }
 			},
-			"events": { "Up": { "Poll": ["cafe1c4d3712c23a"] } }
+			"events": { "Up": { "Trigger": ["cafe24e22e61d8df"] } }
 		},
 		"cafe112233445566": {
 			"parent": "cafe8160d480094a",
-			"name": "Trigger NPC Transport Grab",
+			"name": "Trigger Payload",
 			"factory": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -7605,11 +7535,11 @@
 				},
 				"m_sKeyName": { "type": "ZString", "value": "Z" }
 			},
-			"events": { "Up": { "In": ["cafe60f46bac8b4f"] } }
+			"events": { "Up": { "Poll": ["cafe10c4e1a6972a"] } }
 		},
 		"cafe223344556677": {
 			"parent": "cafe8160d480094a",
-			"name": "Trigger NPC Transport Drop",
+			"name": "Drop Payload",
 			"factory": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/Templates/UI/Controls/simplekeyeventhelper.template?/SimpleKeyEventHelper.entitytemplate].pc_entityblueprint",
 			"properties": {
@@ -7620,7 +7550,7 @@
 				},
 				"m_sKeyName": { "type": "ZString", "value": "X" }
 			},
-			"events": { "Up": { "In": ["cafe0a6cd0ee1bcc"] } }
+			"events": { "Up": { "Poll": ["cafe1c4d3712c23a"] } }
 		},
 		"cafe63cdbc9550a9": {
 			"parent": "cafe8890228eded7",
