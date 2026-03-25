@@ -12,16 +12,8 @@
 				"m_mTransform": {
 					"type": "SMatrix43",
 					"value": {
-						"rotation": {
-							"x": -0.0,
-							"y": 0.0,
-							"z": -0.0
-						},
-						"position": {
-							"x": 0.0,
-							"y": 0.0,
-							"z": 0.0
-						}
+						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
+						"position": { "x": 0.0, "y": 0.0, "z": 0.0 }
 					}
 				},
 				"PropEquipped_Sound": {
@@ -59,11 +51,7 @@
 					"postInit": true
 				}
 			},
-			"subsets": {
-				"AudioEmitters": [
-					"35c0f09c4f596c28"
-				]
-			}
+			"subsets": { "AudioEmitters": ["35c0f09c4f596c28"] }
 		},
 		"5d314b0680ddffff": {
 			"parent": "35c0f09c4f596c28",
@@ -80,11 +68,7 @@
 				"m_mTransform": {
 					"type": "SMatrix43",
 					"value": {
-						"rotation": {
-							"x": -0.0,
-							"y": 0.0,
-							"z": -0.0
-						},
+						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
 						"position": {
 							"x": 0.7098199725151062,
 							"y": -1.8774490356445312,
@@ -111,9 +95,7 @@
 				},
 				"m_aSubactions": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": [
-						"cafe06ce98eff2b9"
-					]
+					"value": ["cafe06ce98eff2b9"]
 				},
 				"m_PosHandAttach": {
 					"type": "SEntityTemplateReference",
@@ -149,37 +131,15 @@
 				}
 			},
 			"events": {
-				"OnEquip": {
-					"Item_Equipped": [
-						"c45d2bb9ebcd1268"
-					]
-				},
-				"OnUnEquip": {
-					"Item_UnEquipped": [
-						"c45d2bb9ebcd1268"
-					]
-				},
-				"OnPlaced": {
-					"ItemPlaced": [
-						"c45d2bb9ebcd1268"
-					]
-				},
-				"OnDrop": {
-					"OnDrop_MixingEvent": [
-						"c45d2bb9ebcd1268"
-					]
-				},
+				"OnEquip": { "Item_Equipped": ["c45d2bb9ebcd1268"] },
+				"OnUnEquip": { "Item_UnEquipped": ["c45d2bb9ebcd1268"] },
+				"OnPlaced": { "ItemPlaced": ["c45d2bb9ebcd1268"] },
+				"OnDrop": { "OnDrop_MixingEvent": ["c45d2bb9ebcd1268"] },
 				"OnThrown": {
-					"OnThrown_MixingEvent": [
-						"c45d2bb9ebcd1268"
-					]
+					"OnThrown_MixingEvent": ["c45d2bb9ebcd1268"]
 				}
 			},
-			"subsets": {
-				"Replicable": [
-					"35c0f09c4f596c28"
-				]
-			}
+			"subsets": { "Replicable": ["35c0f09c4f596c28"] }
 		},
 		"35c0f09c4f596c28": {
 			"parent": null,
@@ -190,11 +150,7 @@
 				"m_mTransform": {
 					"type": "SMatrix43",
 					"value": {
-						"rotation": {
-							"x": -0.0,
-							"y": 0.0,
-							"z": -0.0
-						},
+						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
 						"position": {
 							"x": 0.7098199725151062,
 							"y": -1.8774490356445312,
@@ -259,7 +215,7 @@
 			"properties": {
 				"m_eActionType": {
 					"type": "EActionType",
-					"value": "AT_ITEM_INTERACTION"
+					"value": "AT_USE_NORMAL"
 				},
 				"m_RuntimeNetworkResourceID": {
 					"type": "ZRuntimeResourceID",
@@ -267,12 +223,9 @@
 				},
 				"m_eInputAction": {
 					"type": "EHM5GameInputFlag",
-					"value": "eGameInputDefault"
+					"value": "eGameInputReload"
 				},
-				"m_bShowPromptInWorld": {
-					"type": "bool",
-					"value": false
-				},
+				"m_bShowPromptInWorld": { "type": "bool", "value": false },
 				"m_bCanBeOperatedFromAnyAngle": {
 					"type": "bool",
 					"value": true
@@ -289,10 +242,7 @@
 					"type": "bool",
 					"value": true
 				},
-				"m_bUseAnimlayer": {
-					"type": "bool",
-					"value": false
-				},
+				"m_bUseAnimlayer": { "type": "bool", "value": false },
 				"m_nAnimlayerTime": {
 					"type": "float32",
 					"value": 1.1200000047683716
@@ -301,18 +251,9 @@
 					"type": "bool",
 					"value": false
 				},
-				"m_bIsIllegal": {
-					"type": "bool",
-					"value": false
-				},
-				"m_bIsLargeScale": {
-					"type": "bool",
-					"value": true
-				},
-				"m_bIsSevere": {
-					"type": "bool",
-					"value": true
-				},
+				"m_bIsIllegal": { "type": "bool", "value": false },
+				"m_bIsLargeScale": { "type": "bool", "value": true },
+				"m_bIsSevere": { "type": "bool", "value": true },
 				"m_rPromptDescriptionTextResource": {
 					"type": "ZRuntimeResourceID",
 					"value": null
@@ -330,11 +271,7 @@
 				}
 			},
 			"events": {
-				"Completed": {
-					"TransmitEvent": [
-						"cafe544691881c07"
-					]
-				}
+				"Completed": { "TransmitEvent": ["cafe544691881c07"] }
 			}
 		},
 		"cafe544691881c07": {
@@ -343,10 +280,7 @@
 			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
 			"properties": {
-				"m_bEnabled": {
-					"type": "bool",
-					"value": true
-				},
+				"m_bEnabled": { "type": "bool", "value": true },
 				"m_rChannelToken": {
 					"type": "SEntityTemplateReference",
 					"value": "cafe3139a9cfcfe7"
@@ -373,9 +307,7 @@
 			"properties": {
 				"m_aHolders": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": [
-						"03dbf12b653e7e07"
-					]
+					"value": ["03dbf12b653e7e07"]
 				}
 			}
 		},
@@ -387,9 +319,7 @@
 			"properties": {
 				"m_aHolders": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": [
-						"03dbf12b653e7e07"
-					],
+					"value": ["03dbf12b653e7e07"],
 					"postInit": true
 				}
 			}
@@ -407,11 +337,7 @@
 				}
 			},
 			"events": {
-				"EventReceived": {
-					"SetValue": [
-						"cafec1158266c9fb"
-					]
-				}
+				"EventReceived": { "SetValue": ["cafec1158266c9fb"] }
 			}
 		},
 		"cafe5417cb7dc2bd": {
@@ -432,10 +358,7 @@
 			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
 			"properties": {
-				"m_bValue": {
-					"type": "bool",
-					"value": false
-				}
+				"m_bValue": { "type": "bool", "value": false }
 			}
 		}
 	},
