@@ -81,7 +81,10 @@
 					"factory": "[modules:/zuicontrolvisibilitycontrollerentity.class].pc_entitytype",
 					"blueprint": "[modules:/zuicontrolvisibilitycontrollerentity.class].pc_entityblueprint",
 					"properties": {
-						"m_fFadeTime": { "type": "float32", "value": 0 },
+						"m_fFadeTime": {
+							"type": "float32",
+							"value": 0
+						},
 						"m_pTargetControl": {
 							"type": "SEntityTemplateReference",
 							"value": "fffa08ac423eeda2"

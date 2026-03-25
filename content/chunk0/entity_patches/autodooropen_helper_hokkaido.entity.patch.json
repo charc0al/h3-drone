@@ -17,12 +17,16 @@
 						},
 						"m_TriggerEntities": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["cafec936d3fee215"],
+							"value": [
+								"cafec936d3fee215"
+							],
 							"postInit": true
 						},
 						"m_Boxes": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["fb1e7ff7b867b81b"],
+							"value": [
+								"fb1e7ff7b867b81b"
+							],
 							"postInit": true
 						},
 						"m_TriggerOnHitman": {
@@ -63,8 +67,16 @@
 						}
 					},
 					"events": {
-						"OnTrue": { "SetTrue": ["cafe228637764158"] },
-						"OnFalse": { "SetFalse": ["cafe228637764158"] }
+						"OnTrue": {
+							"SetTrue": [
+								"cafe228637764158"
+							]
+						},
+						"OnFalse": {
+							"SetFalse": [
+								"cafe228637764158"
+							]
+						}
 					}
 				}
 			]
@@ -100,11 +112,22 @@
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
 					"properties": {
-						"m_bValue": { "type": "bool", "value": false }
+						"m_bValue": {
+							"type": "bool",
+							"value": false
+						}
 					},
 					"events": {
-						"OnFalse": { "Poll": ["0a6fb798bf21214e"] },
-						"OnTrue": { "Poll": ["a256d762b59cff3b"] }
+						"OnFalse": {
+							"Poll": [
+								"0a6fb798bf21214e"
+							]
+						},
+						"OnTrue": {
+							"Poll": [
+								"a256d762b59cff3b"
+							]
+						}
 					}
 				}
 			]
@@ -126,7 +149,9 @@
 					},
 					"events": {
 						"EventReceived": {
-							"SetValue": ["cafe82b4327dd91a"]
+							"SetValue": [
+								"cafe82b4327dd91a"
+							]
 						}
 					}
 				}
@@ -158,7 +183,10 @@
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
 					"properties": {
-						"m_bValue": { "type": "bool", "value": false }
+						"m_bValue": {
+							"type": "bool",
+							"value": false
+						}
 					}
 				}
 			]
@@ -176,7 +204,10 @@
 							"type": "SEntityTemplateReference",
 							"value": "cafea6c64ba396b4"
 						},
-						"m_TypeHitman": { "type": "bool", "value": false },
+						"m_TypeHitman": {
+							"type": "bool",
+							"value": false
+						},
 						"m_TypeActorAlive": {
 							"type": "bool",
 							"value": true
@@ -189,7 +220,10 @@
 							"type": "bool",
 							"value": true
 						},
-						"m_TypeItem": { "type": "bool", "value": true },
+						"m_TypeItem": {
+							"type": "bool",
+							"value": true
+						},
 						"m_TypeExplodeableItem": {
 							"type": "bool",
 							"value": true

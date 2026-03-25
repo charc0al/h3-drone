@@ -10,12 +10,89 @@
 						"m_States",
 						[
 							{
-								"AddItemAfter": ["cafe1cd21e6a5817", "cafe336f30dc5e59"]
+								"AddItemAfter": [
+									"cafe1cd21e6a5817",
+									"cafe336f30dc5e59"
+								]
 							},
 							{
-								"AddItemAfter": ["cafe336f30dc5e59", "cafe7d4b32d6c5e5"]
+								"AddItemAfter": [
+									"cafe336f30dc5e59",
+									"cafe7d4b32d6c5e5"
+								]
 							}
 						]
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"cafe8b3d38bdc88f",
+				{
+					"PatchArrayPropertyValue": [
+						"m_aPages",
+						[
+							{
+								"AddItemAfter": [
+									"cafe93ab247aed9c",
+									"cafec59ee7ba5ac0"
+								]
+							},
+							{
+								"AddItemAfter": [
+									"cafec59ee7ba5ac0",
+									"cafe98f25f8bfcd0"
+								]
+							}
+						]
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"cafef04cafeba6d1",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_nCompareTo",
+						"value": 5
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"cafed6f665af2340",
+				{
+					"RemoveEventConnection": [
+						"OnTrue",
+						"SetPage",
+						{
+							"ref": "cafe8b3d38bdc88f",
+							"value": {
+								"type": "int32",
+								"value": 3
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"cafed6f665af2340",
+				{
+					"AddEventConnection": [
+						"OnTrue",
+						"SetPage",
+						{
+							"ref": "cafe8b3d38bdc88f",
+							"value": {
+								"type": "int32",
+								"value": 5
+							}
+						}
 					]
 				}
 			]

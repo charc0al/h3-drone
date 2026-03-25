@@ -1,38 +1,63 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "1.8.0",
+	"version": "1.13.0",
 	"id": "Notex.Drone",
 	"name": "Drone",
 	"description": "A flyable drone.",
-	"authors": ["Notex"],
+	"authors": [
+		"Notex", "Charc0al"
+	],
 	"options": [
 		{
 			"name": "Experimental - NPC Transport",
 			"tooltip": "Ability to grab and drop singular or multiple NPCs.",
 			"type": "checkbox",
 			"enabledByDefault": false,
-			"contentFolders": ["experimental_modes/npc_transport"]
+			"contentFolders": [
+				"experimental_modes/npc_transport"
+			]
 		},
 		{
-			"name": "General - Spawn in Freelancer Safehouse",
-			"tooltip": "Drone will spawn in the garage. Will probably work in online mode.",
+			"name": "General - Spawn on start",
+			"tooltip": "Drone will spawn in your inventory when you start a mission. The Spawn in Freelancer Safehouse option has no affect with this option enabled.",
 			"type": "checkbox",
 			"enabledByDefault": false,
-			"contentFolders": ["general/spawn_in_safehouse"]
+			"contentFolders": [
+				"general/spawn_on_start"
+			]
 		},
 		{
 			"name": "General - Infinite Drones",
 			"tooltip": "Drone will respawn after a few seconds of being destroyed.",
 			"type": "checkbox",
 			"enabledByDefault": false,
-			"contentFolders": ["general/infinite_drones"]
+			"contentFolders": [
+				"general/infinite_drones"
+			]
+		},
+		{
+			"name": "General - Spawn in Freelancer Safehouse",
+			"tooltip": "Drone will spawn in the garage.",
+			"type": "checkbox",
+			"enabledByDefault": false,
+			"contentFolders": [
+				"general/spawn_in_safehouse"
+			]
 		}
 	],
-	"contentFolders": ["content"],
-	"blobsFolders": ["blobs"],
+	"contentFolders": [
+		"content"
+	],
+	"blobsFolders": [
+		"blobs"
+	],
 	"dependencies": [
 		"009851E0493468F8",
 		"005C71048D8DAA9D",
+		"00E1936611A5CAF8",
+		"0065F214FF4798D3",
+		"001F5C567F47C7E5",
+		"00F8FF87E2F14590",
 		{
 			"runtimeID": "002597DE2A5CA7CD",
 			"portFromChunk1": true,
@@ -67,6 +92,11 @@
 			"runtimeID": "0039851F2688344D",
 			"portFromChunk1": true,
 			"toChunk": 0
+		},
+		{
+			"runtimeID": "0053433DDC1F6B99",
+			"portFromChunk1": true,
+			"toChunk": 0
 		}
 	],
 	"localisation": {
@@ -77,8 +107,8 @@
 			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "Remote control for the Drone.",
 			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Change camera",
 			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "Trigger EMP",
-			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Trigger payload",
-			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Drop payload",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Trigger payload ({0})",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Drop payload ({0})",
 			"UI_PROP_GADGET_DRONE_BOOST": "Boost",
 			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "Grab NPC(s) (Total {0})",
 			"UI_PROP_GADGET_DRONE_DROP_NPC": "Drop NPC(s) (Total {0})"
@@ -90,8 +120,8 @@
 			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "远程操纵无人机。",
 			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "改变镜头",
 			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "启动EMP",
-			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "启动装载物",
-			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "投放装载物",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "启动装载物 ({0})",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "投放装载物 ({0})",
 			"UI_PROP_GADGET_DRONE_BOOST": "加速",
 			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "抓取NPC (总计 {0})",
 			"UI_PROP_GADGET_DRONE_DROP_NPC": "放下NPC (总计 {0})"
@@ -103,8 +133,8 @@
 			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "遠端操縱無人機。",
 			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "改變鏡頭",
 			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "啟動EMP",
-			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "啟動裝載物",
-			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "投放裝載物",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "啟動裝載物 ({0})",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "投放裝載物 ({0})",
 			"UI_PROP_GADGET_DRONE_BOOST": "加速",
 			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "抓取NPC (總計 {0})",
 			"UI_PROP_GADGET_DRONE_DROP_NPC": "放下NPC (總計 {0})"
@@ -116,8 +146,8 @@
 			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "Une télécommande pour le drone de l'ICA.",
 			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Changez de caméra",
 			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "Déclenchez l'EMP",
-			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Activer l'outil",
-			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Lâchez l'outil",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Activer l'outil ({0})",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Lâchez l'outil ({0})",
 			"UI_PROP_GADGET_DRONE_BOOST": "Boost",
 			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "Attrapez NPC(s) (Total {0})",
 			"UI_PROP_GADGET_DRONE_DROP_NPC": "Lâchez NPC(s) (Total {0})"
@@ -129,8 +159,8 @@
 			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "Fernbedienung der Drone.",
 			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Blickwinkel ändern",
 			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "EMP auslösen",
-			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Sprengladung auslösen",
-			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Sprengladung fallen lassen",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Sprengladung auslösen ({0})",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Sprengladung fallen lassen ({0})",
 			"UI_PROP_GADGET_DRONE_BOOST": "Beschleunigen",
 			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "NPC(s) greifen (Total {0})",
 			"UI_PROP_GADGET_DRONE_DROP_NPC": "NPC(s) loslassen (Total {0})"
@@ -142,8 +172,8 @@
 			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "Remote control for the Drone.",
 			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Change camera",
 			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "Trigger EMP",
-			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Trigger payload",
-			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Drop payload",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Trigger payload ({0})",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Drop payload ({0})",
 			"UI_PROP_GADGET_DRONE_BOOST": "Boost",
 			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "Grab NPC(s) (Total {0})",
 			"UI_PROP_GADGET_DRONE_DROP_NPC": "Drop NPC(s) (Total {0})"
@@ -155,8 +185,8 @@
 			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "Remote control for the Drone.",
 			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Change camera",
 			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "Trigger EMP",
-			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Trigger payload",
-			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Drop payload",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Trigger payload ({0})",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Drop payload ({0})",
 			"UI_PROP_GADGET_DRONE_BOOST": "Boost",
 			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "Grab NPC(s) (Total {0})",
 			"UI_PROP_GADGET_DRONE_DROP_NPC": "Drop NPC(s) (Total {0})"
@@ -168,8 +198,8 @@
 			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "Пульт дистанционного управления дроном",
 			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Переключить режим камеры",
 			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "Активировать ЭМ-заряд",
-			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Подцепить груз",
-			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Сбросить груз",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Подцепить груз ({0})",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Сбросить груз ({0})",
 			"UI_PROP_GADGET_DRONE_BOOST": "Ускорение",
 			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "Захватить NPC (Всего {0})",
 			"UI_PROP_GADGET_DRONE_DROP_NPC": "Отпустить NPC (Всего {0})"
@@ -181,8 +211,8 @@
 			"UI_PROP_REMOTE_GADGET_DRONE_DESC": "Remote control for the Drone.",
 			"UI_PROP_GADGET_DRONE_CHANGE_CAMERA": "Change camera",
 			"UI_PROP_GADGET_DRONE_TRIGGER_EMP": "Trigger EMP",
-			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Trigger payload",
-			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Drop payload",
+			"UI_PROP_GADGET_DRONE_TRIGGER_PAYLOAD": "Trigger payload ({0})",
+			"UI_PROP_GADGET_DRONE_DROP_PAYLOAD": "Drop payload ({0})",
 			"UI_PROP_GADGET_DRONE_BOOST": "Boost",
 			"UI_PROP_GADGET_DRONE_PICKUP_NPC": "Grab NPC(s) (Total {0})",
 			"UI_PROP_GADGET_DRONE_DROP_NPC": "Drop NPC(s) (Total {0})"
@@ -198,7 +228,12 @@
 		"003E117C597CE3F2": "UI_PROP_GADGET_DRONE_PICKUP_NPC",
 		"00DE86E31F78986D": "UI_PROP_GADGET_DRONE_DROP_NPC"
 	},
-	"requirements": [["Notex.SimpleKeyEventHelper", ">=1.1.0"]],
+	"requirements": [
+		[
+			"Notex.SimpleKeyEventHelper",
+			">=1.1.0"
+		]
+	],
 	"frameworkVersion": "2.33.35",
 	"updateCheck": "https://github.com/Charc0al/h3-drone/releases/latest/download/updates.json"
 }

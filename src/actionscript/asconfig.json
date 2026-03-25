@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"source-path": [
+			"src"
+		],
+		"output": "bin/DroneMod_LocaliseText.swf"
+	},
+	"mainClass": "Main"
+}

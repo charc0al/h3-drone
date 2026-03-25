@@ -46,7 +46,10 @@
 					},
 					"events": {
 						"OnTrue": {
-							"SetTrue": ["030294ff09a17fb0", "7a75eb6a6c21f6a6"]
+							"SetTrue": [
+								"030294ff09a17fb0",
+								"7a75eb6a6c21f6a6"
+							]
 						}
 					}
 				}
@@ -84,7 +87,11 @@
 						}
 					},
 					"events": {
-						"EventReceived": { "Get": ["cafed9a006310896"] }
+						"EventReceived": {
+							"Get": [
+								"cafed9a006310896"
+							]
+						}
 					}
 				}
 			]
@@ -122,7 +129,9 @@
 					},
 					"events": {
 						"EventReceived": {
-							"SetItem": ["cafe86a595e67c09"]
+							"SetItem": [
+								"cafe86a595e67c09"
+							]
 						}
 					}
 				}

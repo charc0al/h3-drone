@@ -56,7 +56,11 @@
 						}
 					},
 					"events": {
-						"EventReceived": { "Get": ["cafe834a69ed7744"] }
+						"EventReceived": {
+							"Get": [
+								"cafe834a69ed7744"
+							]
+						}
 					}
 				}
 			]
@@ -98,7 +102,11 @@
 						}
 					},
 					"events": {
-						"OnTrue": { "GetKeyword": ["cafee1967f1a5e60"] }
+						"OnTrue": {
+							"GetKeyword": [
+								"cafee1967f1a5e60"
+							]
+						}
 					}
 				}
 			]
@@ -113,12 +121,20 @@
 					"blueprint": "[modules:/zhm5itemproxy.class].pc_entityblueprint",
 					"events": {
 						"OnGetItem": {
-							"PlaceItem": ["cafe8482b0bbecaf"],
-							"In": ["cafe494a06407e2c"]
+							"PlaceItem": [
+								"cafe8482b0bbecaf"
+							],
+							"In": [
+								"cafe494a06407e2c"
+							]
 						}
 					},
 					"outputCopying": {
-						"OnGetItem": { "ItemUsed": ["b5d4ee000c9b9be4"] }
+						"OnGetItem": {
+							"ItemUsed": [
+								"b5d4ee000c9b9be4"
+							]
+						}
 					}
 				}
 			]
@@ -139,7 +155,10 @@
 					},
 					"events": {
 						"EventReceived": {
-							"SetItem": ["cafeac4b655284f3", "cafe611ae6b73534"]
+							"SetItem": [
+								"cafeac4b655284f3",
+								"cafe611ae6b73534"
+							]
 						}
 					}
 				}
@@ -188,12 +207,16 @@
 						},
 						"m_TriggerEntities": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["cafe50ee6e5decf7"],
+							"value": [
+								"cafe50ee6e5decf7"
+							],
 							"postInit": true
 						},
 						"m_Boxes": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["cafed828b7b38b46"],
+							"value": [
+								"cafed828b7b38b46"
+							],
 							"postInit": true
 						},
 						"m_TriggerOnHitman": {
@@ -234,7 +257,11 @@
 						}
 					},
 					"events": {
-						"OnTrue": { "SetTrue": ["cafe09547292a4ab"] }
+						"OnTrue": {
+							"SetTrue": [
+								"cafe09547292a4ab"
+							]
+						}
 					}
 				}
 			]
@@ -248,10 +275,17 @@
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
 					"properties": {
-						"m_bValue": { "type": "bool", "value": false }
+						"m_bValue": {
+							"type": "bool",
+							"value": false
+						}
 					},
 					"events": {
-						"OnTrue": { "GetItem": ["cafeac4b655284f3"] }
+						"OnTrue": {
+							"GetItem": [
+								"cafeac4b655284f3"
+							]
+						}
 					}
 				}
 			]
@@ -273,7 +307,9 @@
 					},
 					"events": {
 						"EventReceived": {
-							"SetValue": ["cafed2ca24110787"]
+							"SetValue": [
+								"cafed2ca24110787"
+							]
 						}
 					}
 				}
@@ -305,7 +341,10 @@
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
 					"properties": {
-						"m_bValue": { "type": "bool", "value": false }
+						"m_bValue": {
+							"type": "bool",
+							"value": false
+						}
 					}
 				}
 			]
@@ -323,7 +362,10 @@
 							"type": "SEntityTemplateReference",
 							"value": "cafee1967f1a5e60"
 						},
-						"m_TypeHitman": { "type": "bool", "value": false },
+						"m_TypeHitman": {
+							"type": "bool",
+							"value": false
+						},
 						"m_TypeActorAlive": {
 							"type": "bool",
 							"value": true
@@ -336,7 +378,10 @@
 							"type": "bool",
 							"value": true
 						},
-						"m_TypeItem": { "type": "bool", "value": true },
+						"m_TypeItem": {
+							"type": "bool",
+							"value": true
+						},
 						"m_TypeExplodeableItem": {
 							"type": "bool",
 							"value": true
@@ -379,12 +424,20 @@
 									"y": 0,
 									"z": -0.0
 								},
-								"position": { "x": 0, "y": 0, "z": 0.2 }
+								"position": {
+									"x": 0,
+									"y": 0,
+									"z": 0.2
+								}
 							}
 						},
 						"m_vGlobalSize": {
 							"type": "SVector3",
-							"value": { "x": 0.5, "y": 0.5, "z": 0.5 }
+							"value": {
+								"x": 0.5,
+								"y": 0.5,
+								"z": 0.5
+							}
 						},
 						"m_eidParent": {
 							"type": "SEntityTemplateReference",
@@ -405,12 +458,20 @@
 					"blueprint": "[modules:/zvarianttovoidconverterentity.class].pc_entityblueprint",
 					"events": {
 						"Out": {
-							"In": ["cafee871a08d5157"],
-							"GetKeyword2": ["cafee1967f1a5e60"]
+							"In": [
+								"cafee871a08d5157"
+							],
+							"GetKeyword2": [
+								"cafee1967f1a5e60"
+							]
 						}
 					},
 					"outputCopying": {
-						"Out": { "StartedPoison": ["b5d4ee000c9b9be4"] }
+						"Out": {
+							"StartedPoison": [
+								"b5d4ee000c9b9be4"
+							]
+						}
 					}
 				}
 			]
@@ -424,11 +485,24 @@
 					"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
 					"properties": {
-						"Delay time (ms)": { "type": "int32", "value": 33 }
+						"Delay time (ms)": {
+							"type": "int32",
+							"value": 33
+						}
 					},
-					"events": { "Out": { "In": ["cafeedfb7d93c393"] } },
+					"events": {
+						"Out": {
+							"In": [
+								"cafeedfb7d93c393"
+							]
+						}
+					},
 					"outputCopying": {
-						"Out": { "PoisonedA": ["b5d4ee000c9b9be4"] }
+						"Out": {
+							"PoisonedA": [
+								"b5d4ee000c9b9be4"
+							]
+						}
 					}
 				}
 			]
@@ -442,11 +516,16 @@
 					"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
 					"properties": {
-						"Delay time (ms)": { "type": "int32", "value": 33 }
+						"Delay time (ms)": {
+							"type": "int32",
+							"value": 33
+						}
 					},
 					"events": {
 						"Out": {
-							"DestroyAndRemoveItem": ["cafeac4b655284f3"]
+							"DestroyAndRemoveItem": [
+								"cafeac4b655284f3"
+							]
 						}
 					}
 				}
@@ -478,7 +557,9 @@
 						},
 						"m_aHolders": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["cafee90f89eb8f40"],
+							"value": [
+								"cafee90f89eb8f40"
+							],
 							"postInit": true
 						}
 					}
@@ -511,7 +592,11 @@
 						}
 					},
 					"events": {
-						"Keyword": { "AddKeyword": ["cafebc0d927b436b"] }
+						"Keyword": {
+							"AddKeyword": [
+								"cafebc0d927b436b"
+							]
+						}
 					}
 				}
 			]
@@ -543,7 +628,10 @@
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
 					"properties": {
-						"m_bValue": { "type": "bool", "value": true },
+						"m_bValue": {
+							"type": "bool",
+							"value": true
+						},
 						"m_bAlwaysSignalOnSet": {
 							"type": "bool",
 							"value": true
@@ -552,10 +640,17 @@
 							"type": "bool",
 							"value": true
 						},
-						"m_bFireOnInit": { "type": "bool", "value": true }
+						"m_bFireOnInit": {
+							"type": "bool",
+							"value": true
+						}
 					},
 					"events": {
-						"OnTrue": { "GetKeyword": ["cafef35da0b37cf4"] }
+						"OnTrue": {
+							"GetKeyword": [
+								"cafef35da0b37cf4"
+							]
+						}
 					}
 				}
 			]
@@ -575,9 +670,15 @@
 						}
 					},
 					"events": {
-						"Keyword": { "AddKeyword": ["cafe611ae6b73534"] },
+						"Keyword": {
+							"AddKeyword": [
+								"cafe611ae6b73534"
+							]
+						},
 						"Keyword2": {
-							"RemoveKeyword": ["cafe611ae6b73534"]
+							"RemoveKeyword": [
+								"cafe611ae6b73534"
+							]
 						}
 					}
 				}

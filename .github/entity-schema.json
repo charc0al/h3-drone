@@ -229,7 +229,12 @@
 					}
 				}
 			},
-			"required": ["parent", "name", "factory", "blueprint"],
+			"required": [
+				"parent",
+				"name",
+				"factory",
+				"blueprint"
+			],
 			"default": {
 				"parent": "fffffffffffffffe",
 				"name": "New Entity",
@@ -258,13 +263,19 @@
 					"type": "string"
 				},
 				"externalScene": {
-					"type": ["string", "null"]
+					"type": [
+						"string",
+						"null"
+					]
 				},
 				"exposedEntity": {
 					"type": "string"
 				}
 			},
-			"required": ["ref", "externalScene"],
+			"required": [
+				"ref",
+				"externalScene"
+			],
 			"default": {
 				"ref": "",
 				"externalScene": null
@@ -282,7 +293,10 @@
 					"default": false
 				}
 			},
-			"required": ["type", "value"],
+			"required": [
+				"type",
+				"value"
+			],
 			"default": {
 				"type": "",
 				"value": ""
@@ -308,7 +322,10 @@
 					"$ref": "#/definitions/SimpleProperty"
 				}
 			},
-			"required": ["ref", "value"]
+			"required": [
+				"ref",
+				"value"
+			]
 		},
 		"SimpleProperty": {
 			"type": "object",
@@ -318,7 +335,10 @@
 				},
 				"value": {}
 			},
-			"required": ["type", "value"]
+			"required": [
+				"type",
+				"value"
+			]
 		},
 		"PropertyAlias": {
 			"type": "object",
@@ -330,7 +350,10 @@
 					"$ref": "#/definitions/Ref"
 				}
 			},
-			"required": ["originalProperty", "originalEntity"],
+			"required": [
+				"originalProperty",
+				"originalEntity"
+			],
 			"default": {
 				"originalProperty": "",
 				"originalEntity": ""
@@ -349,7 +372,10 @@
 					}
 				}
 			},
-			"required": ["isArray", "refersTo"],
+			"required": [
+				"isArray",
+				"refersTo"
+			],
 			"default": {
 				"isArray": false,
 				"refersTo": []
@@ -371,7 +397,10 @@
 					}
 				}
 			},
-			"required": ["entities", "properties"],
+			"required": [
+				"entities",
+				"properties"
+			],
 			"default": {
 				"entities": [],
 				"properties": {}
@@ -385,7 +414,10 @@
 				},
 				"value": {}
 			},
-			"required": ["type", "value"]
+			"required": [
+				"type",
+				"value"
+			]
 		},
 		"PinConnectionOverride": {
 			"type": "object",
@@ -409,7 +441,12 @@
 				},
 				"value": {}
 			},
-			"required": ["fromEntity", "fromPin", "toEntity", "toPin"]
+			"required": [
+				"fromEntity",
+				"fromPin",
+				"toEntity",
+				"toPin"
+			]
 		},
 		"PinConnectionOverrideDelete": {
 			"type": "object",
@@ -434,12 +471,21 @@
 					"$ref": "#/definitions/SimpleProperty"
 				}
 			},
-			"required": ["fromEntity", "fromPin", "toEntity", "toPin"]
+			"required": [
+				"fromEntity",
+				"fromPin",
+				"toEntity",
+				"toPin"
+			]
 		},
 		"SubType": {
 			"type": "string",
 			"description": "The type of this entity.",
-			"enum": ["brick", "scene", "template"]
+			"enum": [
+				"brick",
+				"scene",
+				"template"
+			]
 		},
 		"Dependency": {
 			"anyOf": [
@@ -461,7 +507,10 @@
 					"type": "string"
 				}
 			},
-			"required": ["resource", "flag"],
+			"required": [
+				"resource",
+				"flag"
+			],
 			"default": {
 				"resource": "",
 				"flag": "1F"
@@ -480,7 +529,11 @@
 					"type": "string"
 				}
 			},
-			"required": ["parent", "name", "text"]
+			"required": [
+				"parent",
+				"name",
+				"text"
+			]
 		}
 	}
 }

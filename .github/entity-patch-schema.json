@@ -19,7 +19,12 @@
 			"const": 6
 		}
 	},
-	"required": ["tempHash", "tbluHash", "patch", "patchVersion"],
+	"required": [
+		"tempHash",
+		"tbluHash",
+		"patch",
+		"patchVersion"
+	],
 	"definitions": {
 		"PatchOperation": {
 			"anyOf": [
@@ -29,7 +34,9 @@
 							"type": "string"
 						}
 					},
-					"required": ["SetRootEntity"],
+					"required": [
+						"SetRootEntity"
+					],
 					"type": "object"
 				},
 				{
@@ -38,7 +45,9 @@
 							"$ref": "#/definitions/SubType"
 						}
 					},
-					"required": ["SetSubType"],
+					"required": [
+						"SetSubType"
+					],
 					"type": "object"
 				},
 				{
@@ -57,7 +66,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["AddEntity"],
+					"required": [
+						"AddEntity"
+					],
 					"type": "object"
 				},
 				{
@@ -66,7 +77,9 @@
 							"type": "string"
 						}
 					},
-					"required": ["RemoveEntityByID"],
+					"required": [
+						"RemoveEntityByID"
+					],
 					"type": "object"
 				},
 				{
@@ -85,7 +98,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["SubEntityOperation"],
+					"required": [
+						"SubEntityOperation"
+					],
 					"type": "object"
 				},
 				{
@@ -94,7 +109,9 @@
 							"$ref": "#/definitions/PropertyOverride"
 						}
 					},
-					"required": ["AddPropertyOverride"],
+					"required": [
+						"AddPropertyOverride"
+					],
 					"type": "object"
 				},
 				{
@@ -103,7 +120,9 @@
 							"$ref": "#/definitions/PropertyOverride"
 						}
 					},
-					"required": ["RemovePropertyOverride"],
+					"required": [
+						"RemovePropertyOverride"
+					],
 					"type": "object"
 				},
 				{
@@ -112,7 +131,9 @@
 							"$ref": "#/definitions/PropertyOverrideConnection"
 						}
 					},
-					"required": ["AddPropertyOverrideConnection"],
+					"required": [
+						"AddPropertyOverrideConnection"
+					],
 					"type": "object"
 				},
 				{
@@ -121,7 +142,9 @@
 							"$ref": "#/definitions/PropertyOverrideConnection"
 						}
 					},
-					"required": ["RemovePropertyOverrideConnection"],
+					"required": [
+						"RemovePropertyOverrideConnection"
+					],
 					"type": "object"
 				},
 				{
@@ -130,7 +153,9 @@
 							"$ref": "#/definitions/Ref"
 						}
 					},
-					"required": ["AddOverrideDelete"],
+					"required": [
+						"AddOverrideDelete"
+					],
 					"type": "object"
 				},
 				{
@@ -139,7 +164,9 @@
 							"$ref": "#/definitions/Ref"
 						}
 					},
-					"required": ["RemoveOverrideDelete"],
+					"required": [
+						"RemoveOverrideDelete"
+					],
 					"type": "object"
 				},
 				{
@@ -148,7 +175,9 @@
 							"$ref": "#/definitions/PinConnectionOverride"
 						}
 					},
-					"required": ["AddPinConnectionOverride"],
+					"required": [
+						"AddPinConnectionOverride"
+					],
 					"type": "object"
 				},
 				{
@@ -157,7 +186,9 @@
 							"$ref": "#/definitions/PinConnectionOverride"
 						}
 					},
-					"required": ["RemovePinConnectionOverride"],
+					"required": [
+						"RemovePinConnectionOverride"
+					],
 					"type": "object"
 				},
 				{
@@ -166,7 +197,9 @@
 							"$ref": "#/definitions/PinConnectionOverrideDelete"
 						}
 					},
-					"required": ["AddPinConnectionOverrideDelete"],
+					"required": [
+						"AddPinConnectionOverrideDelete"
+					],
 					"type": "object"
 				},
 				{
@@ -175,7 +208,9 @@
 							"$ref": "#/definitions/PinConnectionOverrideDelete"
 						}
 					},
-					"required": ["RemovePinConnectionOverrideDelete"],
+					"required": [
+						"RemovePinConnectionOverrideDelete"
+					],
 					"type": "object"
 				},
 				{
@@ -184,7 +219,9 @@
 							"type": "string"
 						}
 					},
-					"required": ["AddExternalScene"],
+					"required": [
+						"AddExternalScene"
+					],
 					"type": "object"
 				},
 				{
@@ -193,7 +230,9 @@
 							"type": "string"
 						}
 					},
-					"required": ["RemoveExternalScene"],
+					"required": [
+						"RemoveExternalScene"
+					],
 					"type": "object"
 				},
 				{
@@ -202,7 +241,9 @@
 							"$ref": "#/definitions/Dependency"
 						}
 					},
-					"required": ["AddExtraFactoryDependency"],
+					"required": [
+						"AddExtraFactoryDependency"
+					],
 					"type": "object"
 				},
 				{
@@ -211,7 +252,9 @@
 							"$ref": "#/definitions/Dependency"
 						}
 					},
-					"required": ["RemoveExtraFactoryDependency"],
+					"required": [
+						"RemoveExtraFactoryDependency"
+					],
 					"type": "object"
 				},
 				{
@@ -220,7 +263,9 @@
 							"$ref": "#/definitions/Dependency"
 						}
 					},
-					"required": ["AddExtraBlueprintDependency"],
+					"required": [
+						"AddExtraBlueprintDependency"
+					],
 					"type": "object"
 				},
 				{
@@ -229,7 +274,9 @@
 							"$ref": "#/definitions/Dependency"
 						}
 					},
-					"required": ["RemoveExtraBlueprintDependency"],
+					"required": [
+						"RemoveExtraBlueprintDependency"
+					],
 					"type": "object"
 				},
 				{
@@ -238,7 +285,9 @@
 							"$ref": "#/definitions/CommentEntity"
 						}
 					},
-					"required": ["AddComment"],
+					"required": [
+						"AddComment"
+					],
 					"type": "object"
 				},
 				{
@@ -247,7 +296,9 @@
 							"$ref": "#/definitions/CommentEntity"
 						}
 					},
-					"required": ["RemoveComment"],
+					"required": [
+						"RemoveComment"
+					],
 					"type": "object"
 				}
 			]
@@ -258,38 +309,52 @@
 					"properties": {
 						"RemoveItemByValue": {}
 					},
-					"required": ["RemoveItemByValue"],
+					"required": [
+						"RemoveItemByValue"
+					],
 					"type": "object"
 				},
 				{
 					"properties": {
 						"AddItemAfter": {
-							"items": [{}, {}],
+							"items": [
+								{},
+								{}
+							],
 							"maxItems": 2,
 							"minItems": 2,
 							"type": "array"
 						}
 					},
-					"required": ["AddItemAfter"],
+					"required": [
+						"AddItemAfter"
+					],
 					"type": "object"
 				},
 				{
 					"properties": {
 						"AddItemBefore": {
-							"items": [{}, {}],
+							"items": [
+								{},
+								{}
+							],
 							"maxItems": 2,
 							"minItems": 2,
 							"type": "array"
 						}
 					},
-					"required": ["AddItemBefore"],
+					"required": [
+						"AddItemBefore"
+					],
 					"type": "object"
 				},
 				{
 					"properties": {
 						"AddItem": {}
 					},
-					"required": ["AddItem"],
+					"required": [
+						"AddItem"
+					],
 					"type": "object"
 				}
 			]
@@ -306,7 +371,11 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "parent", "text"],
+			"required": [
+				"name",
+				"parent",
+				"text"
+			],
 			"type": "object"
 		},
 		"Dependency": {
@@ -328,7 +397,10 @@
 					"type": "string"
 				}
 			},
-			"required": ["flag", "resource"],
+			"required": [
+				"flag",
+				"resource"
+			],
 			"type": "object"
 		},
 		"ExposedEntity": {
@@ -343,7 +415,10 @@
 					"type": "array"
 				}
 			},
-			"required": ["isArray", "refersTo"],
+			"required": [
+				"isArray",
+				"refersTo"
+			],
 			"type": "object"
 		},
 		"FullRef": {
@@ -358,7 +433,10 @@
 					"type": "string"
 				}
 			},
-			"required": ["externalScene", "ref"],
+			"required": [
+				"externalScene",
+				"ref"
+			],
 			"type": "object"
 		},
 		"OverriddenProperty": {
@@ -368,7 +446,10 @@
 				},
 				"value": {}
 			},
-			"required": ["type", "value"],
+			"required": [
+				"type",
+				"value"
+			],
 			"type": "object"
 		},
 		"PinConnectionOverride": {
@@ -387,7 +468,12 @@
 				},
 				"value": {}
 			},
-			"required": ["fromEntity", "fromPin", "toEntity", "toPin"],
+			"required": [
+				"fromEntity",
+				"fromPin",
+				"toEntity",
+				"toPin"
+			],
 			"type": "object"
 		},
 		"PinConnectionOverrideDelete": {
@@ -408,7 +494,12 @@
 					"$ref": "#/definitions/SimpleProperty"
 				}
 			},
-			"required": ["fromEntity", "fromPin", "toEntity", "toPin"],
+			"required": [
+				"fromEntity",
+				"fromPin",
+				"toEntity",
+				"toPin"
+			],
 			"type": "object"
 		},
 		"Property": {
@@ -421,7 +512,10 @@
 				},
 				"value": {}
 			},
-			"required": ["type", "value"],
+			"required": [
+				"type",
+				"value"
+			],
 			"type": "object"
 		},
 		"PropertyAlias": {
@@ -433,7 +527,10 @@
 					"type": "string"
 				}
 			},
-			"required": ["originalEntity", "originalProperty"],
+			"required": [
+				"originalEntity",
+				"originalProperty"
+			],
 			"type": "object"
 		},
 		"PropertyOverride": {
@@ -448,7 +545,10 @@
 					"$ref": "#/definitions/Record<string,OverriddenProperty>"
 				}
 			},
-			"required": ["entities", "properties"],
+			"required": [
+				"entities",
+				"properties"
+			],
 			"type": "object"
 		},
 		"PropertyOverrideConnection": {
@@ -463,7 +563,11 @@
 					"$ref": "#/definitions/OverriddenProperty"
 				}
 			},
-			"required": ["entity", "propertyName", "propertyOverride"],
+			"required": [
+				"entity",
+				"propertyName",
+				"propertyOverride"
+			],
 			"type": "object"
 		},
 		"Record<string,ExposedEntity>": {
@@ -525,7 +629,10 @@
 					"$ref": "#/definitions/SimpleProperty"
 				}
 			},
-			"required": ["ref", "value"],
+			"required": [
+				"ref",
+				"value"
+			],
 			"type": "object"
 		},
 		"SimpleProperty": {
@@ -535,7 +642,10 @@
 				},
 				"value": {}
 			},
-			"required": ["type", "value"],
+			"required": [
+				"type",
+				"value"
+			],
 			"type": "object"
 		},
 		"SubEntity": {
@@ -586,7 +696,12 @@
 					"$ref": "#/definitions/Record<string,String[]>"
 				}
 			},
-			"required": ["blueprint", "factory", "name", "parent"],
+			"required": [
+				"blueprint",
+				"factory",
+				"name",
+				"parent"
+			],
 			"type": "object"
 		},
 		"SubEntityOperation": {
@@ -597,7 +712,9 @@
 							"$ref": "#/definitions/Ref"
 						}
 					},
-					"required": ["SetParent"],
+					"required": [
+						"SetParent"
+					],
 					"type": "object"
 				},
 				{
@@ -606,7 +723,9 @@
 							"type": "string"
 						}
 					},
-					"required": ["SetName"],
+					"required": [
+						"SetName"
+					],
 					"type": "object"
 				},
 				{
@@ -615,7 +734,9 @@
 							"type": "string"
 						}
 					},
-					"required": ["SetFactory"],
+					"required": [
+						"SetFactory"
+					],
 					"type": "object"
 				},
 				{
@@ -624,7 +745,9 @@
 							"type": "string"
 						}
 					},
-					"required": ["SetFactoryFlag"],
+					"required": [
+						"SetFactoryFlag"
+					],
 					"type": "object"
 				},
 				{
@@ -633,7 +756,9 @@
 							"type": "string"
 						}
 					},
-					"required": ["SetBlueprint"],
+					"required": [
+						"SetBlueprint"
+					],
 					"type": "object"
 				},
 				{
@@ -642,7 +767,9 @@
 							"type": "boolean"
 						}
 					},
-					"required": ["SetEditorOnly"],
+					"required": [
+						"SetEditorOnly"
+					],
 					"type": "object"
 				},
 				{
@@ -661,7 +788,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["AddProperty"],
+					"required": [
+						"AddProperty"
+					],
 					"type": "object"
 				},
 				{
@@ -680,7 +809,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["SetPropertyType"],
+					"required": [
+						"SetPropertyType"
+					],
 					"type": "object"
 				},
 				{
@@ -692,11 +823,16 @@
 								},
 								"value": {}
 							},
-							"required": ["property_name", "value"],
+							"required": [
+								"property_name",
+								"value"
+							],
 							"type": "object"
 						}
 					},
-					"required": ["SetPropertyValue"],
+					"required": [
+						"SetPropertyValue"
+					],
 					"type": "object"
 				},
 				{
@@ -718,7 +854,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["PatchArrayPropertyValue"],
+					"required": [
+						"PatchArrayPropertyValue"
+					],
 					"type": "object"
 				},
 				{
@@ -737,7 +875,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["SetPropertyPostInit"],
+					"required": [
+						"SetPropertyPostInit"
+					],
 					"type": "object"
 				},
 				{
@@ -746,7 +886,9 @@
 							"type": "string"
 						}
 					},
-					"required": ["RemovePropertyByName"],
+					"required": [
+						"RemovePropertyByName"
+					],
 					"type": "object"
 				},
 				{
@@ -768,7 +910,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["AddPlatformSpecificProperty"],
+					"required": [
+						"AddPlatformSpecificProperty"
+					],
 					"type": "object"
 				},
 				{
@@ -790,7 +934,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["SetPlatformSpecificPropertyType"],
+					"required": [
+						"SetPlatformSpecificPropertyType"
+					],
 					"type": "object"
 				},
 				{
@@ -805,11 +951,17 @@
 								},
 								"value": {}
 							},
-							"required": ["platform", "property_name", "value"],
+							"required": [
+								"platform",
+								"property_name",
+								"value"
+							],
 							"type": "object"
 						}
 					},
-					"required": ["SetPlatformSpecificPropertyValue"],
+					"required": [
+						"SetPlatformSpecificPropertyValue"
+					],
 					"type": "object"
 				},
 				{
@@ -834,7 +986,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["PatchPlatformSpecificArrayPropertyValue"],
+					"required": [
+						"PatchPlatformSpecificArrayPropertyValue"
+					],
 					"type": "object"
 				},
 				{
@@ -856,7 +1010,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["SetPlatformSpecificPropertyPostInit"],
+					"required": [
+						"SetPlatformSpecificPropertyPostInit"
+					],
 					"type": "object"
 				},
 				{
@@ -875,7 +1031,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["RemovePlatformSpecificPropertyByName"],
+					"required": [
+						"RemovePlatformSpecificPropertyByName"
+					],
 					"type": "object"
 				},
 				{
@@ -884,7 +1042,9 @@
 							"type": "string"
 						}
 					},
-					"required": ["RemovePlatformSpecificPropertiesForPlatform"],
+					"required": [
+						"RemovePlatformSpecificPropertiesForPlatform"
+					],
 					"type": "object"
 				},
 				{
@@ -906,7 +1066,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["AddEventConnection"],
+					"required": [
+						"AddEventConnection"
+					],
 					"type": "object"
 				},
 				{
@@ -928,7 +1090,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["RemoveEventConnection"],
+					"required": [
+						"RemoveEventConnection"
+					],
 					"type": "object"
 				},
 				{
@@ -947,7 +1111,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["RemoveAllEventConnectionsForTrigger"],
+					"required": [
+						"RemoveAllEventConnectionsForTrigger"
+					],
 					"type": "object"
 				},
 				{
@@ -956,7 +1122,9 @@
 							"type": "string"
 						}
 					},
-					"required": ["RemoveAllEventConnectionsForEvent"],
+					"required": [
+						"RemoveAllEventConnectionsForEvent"
+					],
 					"type": "object"
 				},
 				{
@@ -978,7 +1146,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["AddInputCopyConnection"],
+					"required": [
+						"AddInputCopyConnection"
+					],
 					"type": "object"
 				},
 				{
@@ -1000,7 +1170,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["RemoveInputCopyConnection"],
+					"required": [
+						"RemoveInputCopyConnection"
+					],
 					"type": "object"
 				},
 				{
@@ -1019,7 +1191,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["RemoveAllInputCopyConnectionsForTrigger"],
+					"required": [
+						"RemoveAllInputCopyConnectionsForTrigger"
+					],
 					"type": "object"
 				},
 				{
@@ -1028,7 +1202,9 @@
 							"type": "string"
 						}
 					},
-					"required": ["RemoveAllInputCopyConnectionsForInput"],
+					"required": [
+						"RemoveAllInputCopyConnectionsForInput"
+					],
 					"type": "object"
 				},
 				{
@@ -1050,7 +1226,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["AddOutputCopyConnection"],
+					"required": [
+						"AddOutputCopyConnection"
+					],
 					"type": "object"
 				},
 				{
@@ -1072,7 +1250,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["RemoveOutputCopyConnection"],
+					"required": [
+						"RemoveOutputCopyConnection"
+					],
 					"type": "object"
 				},
 				{
@@ -1091,7 +1271,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["RemoveAllOutputCopyConnectionsForPropagate"],
+					"required": [
+						"RemoveAllOutputCopyConnectionsForPropagate"
+					],
 					"type": "object"
 				},
 				{
@@ -1100,7 +1282,9 @@
 							"type": "string"
 						}
 					},
-					"required": ["RemoveAllOutputCopyConnectionsForOutput"],
+					"required": [
+						"RemoveAllOutputCopyConnectionsForOutput"
+					],
 					"type": "object"
 				},
 				{
@@ -1119,7 +1303,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["AddPropertyAliasConnection"],
+					"required": [
+						"AddPropertyAliasConnection"
+					],
 					"type": "object"
 				},
 				{
@@ -1128,7 +1314,9 @@
 							"type": "string"
 						}
 					},
-					"required": ["RemovePropertyAlias"],
+					"required": [
+						"RemovePropertyAlias"
+					],
 					"type": "object"
 				},
 				{
@@ -1147,7 +1335,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["RemoveConnectionForPropertyAlias"],
+					"required": [
+						"RemoveConnectionForPropertyAlias"
+					],
 					"type": "object"
 				},
 				{
@@ -1166,7 +1356,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["SetExposedEntity"],
+					"required": [
+						"SetExposedEntity"
+					],
 					"type": "object"
 				},
 				{
@@ -1175,7 +1367,9 @@
 							"type": "string"
 						}
 					},
-					"required": ["RemoveExposedEntity"],
+					"required": [
+						"RemoveExposedEntity"
+					],
 					"type": "object"
 				},
 				{
@@ -1194,7 +1388,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["SetExposedInterface"],
+					"required": [
+						"SetExposedInterface"
+					],
 					"type": "object"
 				},
 				{
@@ -1203,7 +1399,9 @@
 							"type": "string"
 						}
 					},
-					"required": ["RemoveExposedInterface"],
+					"required": [
+						"RemoveExposedInterface"
+					],
 					"type": "object"
 				},
 				{
@@ -1222,7 +1420,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["AddSubset"],
+					"required": [
+						"AddSubset"
+					],
 					"type": "object"
 				},
 				{
@@ -1241,7 +1441,9 @@
 							"type": "array"
 						}
 					},
-					"required": ["RemoveSubset"],
+					"required": [
+						"RemoveSubset"
+					],
 					"type": "object"
 				},
 				{
@@ -1250,13 +1452,19 @@
 							"type": "string"
 						}
 					},
-					"required": ["RemoveAllSubsetsFor"],
+					"required": [
+						"RemoveAllSubsetsFor"
+					],
 					"type": "object"
 				}
 			]
 		},
 		"SubType": {
-			"enum": ["brick", "scene", "template"],
+			"enum": [
+				"brick",
+				"scene",
+				"template"
+			],
 			"type": "string"
 		}
 	}

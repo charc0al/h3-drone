@@ -13,7 +13,9 @@
 					"properties": {
 						"m_Listener": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["2d6acb184acb91b5"],
+							"value": [
+								"2d6acb184acb91b5"
+							],
 							"postInit": true
 						},
 						"m_rTarget": {
@@ -24,8 +26,12 @@
 					},
 					"events": {
 						"OnImpact": {
-							"Impact": ["da1f474ec9011cf5"],
-							"In": ["8d51781b33935c82"]
+							"Impact": [
+								"da1f474ec9011cf5"
+							],
+							"In": [
+								"8d51781b33935c82"
+							]
 						}
 					}
 				}

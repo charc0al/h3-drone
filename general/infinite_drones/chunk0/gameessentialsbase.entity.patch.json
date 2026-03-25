@@ -18,7 +18,11 @@
 						}
 					},
 					"events": {
-						"OnTrue": { "SetTrue": ["cafeb396720bd7fd"] }
+						"OnTrue": {
+							"SetTrue": [
+								"cafeb396720bd7fd"
+							]
+						}
 					}
 				}
 			]
@@ -49,9 +53,18 @@
 					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
 					"properties": {
-						"m_bValue": { "type": "bool", "value": false }
+						"m_bValue": {
+							"type": "bool",
+							"value": false
+						}
 					},
-					"events": { "OnTrue": { "In": ["cafe833ed1e94117"] } }
+					"events": {
+						"OnTrue": {
+							"In": [
+								"cafe833ed1e94117"
+							]
+						}
+					}
 				}
 			]
 		},
@@ -99,10 +112,18 @@
 						}
 					},
 					"events": {
-						"Item": { "SetItem": ["cafe35d196b3b1fd"] },
+						"Item": {
+							"SetItem": [
+								"cafe35d196b3b1fd"
+							]
+						},
 						"ItemReady": {
-							"SetFalse": ["cafeb396720bd7fd"],
-							"PickupIntoPocket": ["cafe35d196b3b1fd"]
+							"SetFalse": [
+								"cafeb396720bd7fd"
+							],
+							"PickupIntoPocket": [
+								"cafe35d196b3b1fd"
+							]
 						}
 					}
 				}
@@ -132,7 +153,11 @@
 						}
 					},
 					"events": {
-						"OnTrue": { "SetTrue": ["cafe460e0c16acfb"] }
+						"OnTrue": {
+							"SetTrue": [
+								"cafe460e0c16acfb"
+							]
+						}
 					}
 				}
 			]
@@ -152,7 +177,11 @@
 						}
 					},
 					"events": {
-						"EventOccurred": { "Poll": ["cafe0c3608870287"] }
+						"EventOccurred": {
+							"Poll": [
+								"cafe0c3608870287"
+							]
+						}
 					}
 				}
 			]
@@ -210,7 +239,11 @@
 							"value": "cafe460e0c16acfb"
 						}
 					},
-					"events": { "PollFalse": { "SpawnItem": [] } }
+					"events": {
+						"PollFalse": {
+							"SpawnItem": []
+						}
+					}
 				}
 			]
 		},
@@ -240,7 +273,11 @@
 						}
 					},
 					"events": {
-						"Out": { "SpawnItem": ["cafeb145ab4d4a45"] }
+						"Out": {
+							"SpawnItem": [
+								"cafeb145ab4d4a45"
+							]
+						}
 					}
 				}
 			]
