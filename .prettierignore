@@ -1,0 +1,4 @@
+content/**/*.json
+experimental_modes/**/*.json
+general/**/*.json
+blobs/**/*.json

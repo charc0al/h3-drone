@@ -19,6 +19,10 @@
 		"prepare": "husky install"
 	},
 	"lint-staged": {
-		"**/*": "biome format --write --no-errors-on-unmatched"
+		"package.json": "biome format --write --no-errors-on-unmatched",
+		"package-lock.json": "biome format --write --no-errors-on-unmatched",
+		"biome.json": "biome format --write --no-errors-on-unmatched",
+		"manifest.json": "biome format --write --no-errors-on-unmatched",
+		".github/**/*.json": "biome format --write --no-errors-on-unmatched"
 	}
 }
